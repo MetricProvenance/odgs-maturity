@@ -1,0 +1,166 @@
+{
+  "charterTemplates": [
+    {
+      "charterType": "LifecyclePainPoint",
+      "titleTemplate": "Draft Initiative Charter: Enhancing Strategic Data & AI Readiness for '{StageName}' within the '{LifecycleName}' Process",
+      "sections": [
+        {
+          "heading": "A. Business Case / Opportunity Statement",
+          "id": "business_case",
+          "copyTemplate": [
+            "Current challenges within the **{StageName}** stage of the **{LifecycleName}** lifecycle, notably issues such as **'{PainPoint1}'** {PainPoint2_if_exists?and '{PainPoint2}'}, are leading to significant operational inefficiencies, hindering AI adoption, and creating business impacts such as **{SummarizedNegativeImpactsFromDQDimensions}**. For example, poor {ExampleDimensionNameForPainPoint1} contributes directly to {SpecificExampleImpactForPainPoint1}, impacting our ability to leverage data effectively for AI.",
+            "Addressing the root foundational data characteristics – primarily **{DimensionNameList}** – presents a clear opportunity to mitigate these issues. Successfully improving these characteristics is expected to result in tangible benefits like **{SummarizedPositiveImpactsFromDQDimensions}**, reduce operational friction, enhance stakeholder satisfaction, and improve our overall Strategic Data & AI Readiness.",
+            "This initiative directly supports the broader strategic objective of **'{RelevantStrategicObjectiveName}'** by strengthening the foundational data integrity of core business processes, making them more amenable to AI integration."
+          ],
+          "guidanceForUser": "Review and quantify the current impacts if possible (e.g., 'estimated cost of rework due to X', 'missed AI opportunities'). Refine the link to strategic objectives with specific business and AI goals."
+        },
+        {
+          "heading": "B. Problem Statement",
+          "id": "problem_statement",
+          "copyTemplate": [
+            "The core problem this initiative aims to address is suboptimal performance and/or unacceptable risk within the **{StageName}** of the **{LifecycleName}** process, driven by deficiencies in key foundational data characteristics. These deficiencies directly impact our Strategic Data & AI Readiness.",
+            "Diagnostic insights from ODGS Maturity indicate that **{DimensionNameList}** are the primary foundational data characteristics contributing to the identified pain points and AI roadblocks.",
+            "{EnvironmentalFactorInsight_if_exists?This situation appears to be exacerbated by underlying environmental factors such as **'{EnvironmentalFactor1_Name}'**, which {BriefDescriptionOfFactor1ImpactOnDQDimensions}.}",
+            "Specifically, issues such as {SpecificExampleOfPoorDQ1} (related to {DimensionName1}) and {SpecificExampleOfPoorDQ2} (related to {DimensionName2}) are manifesting as {ReiterateKeyPainPointSymptoms}, hindering both current operations and future AI potential."
+          ],
+          "guidanceForUser": "Validate these identified foundational data characteristics with your team. Gather specific examples of how these data issues manifest in your daily operations and how they might affect planned or potential AI applications."
+        },
+        {
+          "heading": "C. Goal Statement (SMART Suggestion)",
+          "id": "goal_statement",
+          "copyTemplate": [
+            "The primary goal of this initiative is to **improve the {PrimaryDimensionToImproveName} of {KeyDataTypeInvolved, e.g., 'customer order data'} within the {StageName} process by a target of [Specify % or Measurable Improvement, e.g., '25% reduction in errors'] within [Specify Timeframe, e.g., 'the next 6 months'], thereby enhancing its suitability for AI applications.**",
+            "Achieving this goal is expected to lead to a measurable reduction in '{KeyPainPointToAlleviate}', contribute to an improvement in the '{Relevant_KPI_Name}' KPI, and increase the reliability of this data for AI model training and execution.",
+            "Secondary goals include enhancing overall data reliability for this process, establishing clearer data handling practices conducive to AI, and improving the Strategic Data & AI Readiness score for this process area."
+          ],
+          "guidanceForUser": "Refine this goal to be Specific, Measurable, Achievable, Relevant, and Time-bound (SMART) for your context. Define how you will measure the improvement in both operational terms and AI readiness."
+        },
+        {
+          "heading": "D. In-Scope (Key Focus Areas)",
+          "id": "in_scope",
+          "copyTemplate": [
+            "**Process Area:** The '{LifecycleName}' lifecycle, specifically focusing on the '{StageName}' stage and its associated activities, with an emphasis on data elements critical for AI.",
+            "**Key Foundational Data Characteristics to Address:** {DimensionNameList}.",
+            "**Primary Data Categories / Entities Involved (Examples):** {RelevantDataCategoriesList, e.g., 'Customer Master Data', 'Order Transaction Data', 'Product Reference Data'}.",
+            "**Key Data Elements (Examples):** {SpecificDataElementsList, e.g., 'Customer Address', 'Order Quantity', 'Product SKU', 'Invoice Amount'}. Prioritize those feeding into AI models or critical analytics.",
+            "**Systems to Review (Initial Consideration):** [User to identify relevant systems, e.g., 'CRM', 'ERP Order Module', 'Billing System']."
+          ],
+          "guidanceForUser": "Identify the specific systems, data sources, and detailed data elements that will be directly part of this improvement effort, especially those crucial for AI."
+        },
+        {
+          "heading": "E. Out-of-Scope (Initial Boundaries)",
+          "id": "out_of_scope",
+          "copyTemplate": [
+            "To maintain focus and achievability, the following are initially considered out-of-scope for this specific initiative:",
+            "- Full-scale replacement of core IT systems (unless identified as the *only* viable solution post-analysis).",
+            "- Enterprise-wide Master Data Management (MDM) program implementation (though findings may inform such a program).",
+            "- Improvements to foundational data characteristics for processes or data domains not directly linked to the '{StageName}' of the '{LifecycleName}' or its AI readiness.",
+            "- Development of new AI models (this initiative focuses on data preparedness)."
+          ],
+          "guidanceForUser": "Clearly define boundaries to manage expectations and scope creep. Be specific about what this particular initiative will *not* address, e.g., it prepares data for AI, but doesn't build the AI."
+        },
+        {
+          "heading": "F. Key Roles & Responsibilities (Suggested)",
+          "id": "roles_responsibilities",
+          "copyTemplate": [
+            "**Project Sponsor:** [To be identified - e.g., Manager/Director of {DepartmentOwningProcess}] - Champions the initiative, secures resources, removes roadblocks, understands AI strategic value.",
+            "**Business Process Owner(s):** [To be identified - e.g., Lead from {DepartmentOwningProcess}] - Provides deep process knowledge, defines requirements for operational and AI use, validates improvements.",
+            "**Data Steward(s) / Owner(s):** [To be identified, or 'To Be Assigned'] - Accountable for the definition, quality, and authorized use of specific data elements within scope, ensuring AI suitability.",
+            "**IT / Technical Representative(s):** [To be identified] - Assists with data analysis, system access, potential technical changes, or tool implementation if needed.",
+            "**AI / Data Science Liaison (if applicable):** [To be identified] - Provides input on data requirements for current or future AI models.",
+            "**Project Lead / Data & AI Readiness Champion:** [User of ODGS Maturity or assigned individual] - Manages the improvement effort, tracks progress, facilitates communication."
+          ],
+          "guidanceForUser": "Identify specific individuals for these roles. Ensure they have the capacity and authority to contribute effectively, including understanding AI data needs."
+        },
+        {
+          "heading": "G. Preliminary Success Metrics",
+          "id": "success_metrics",
+          "copyTemplate": [
+            "- Target reduction in '{KeyPainPointToAlleviate}' by [Specify Target, e.g., '30%'].",
+            "- Improvement in the '{Relevant_KPI_Name}' KPI from [Current Value/Baseline] to [Target Value].",
+            "- Measurable improvement in key foundational data characteristics, e.g.:",
+            "  - Increase in {PrimaryDimensionToImproveName} of {KeyDataTypeInvolved} to [Target % or Score], meeting AI ingestion standards.",
+            "  - Reduction in data errors related to {DimensionName2} by [Target %].",
+            "- Positive feedback from users of the '{StageName}' process regarding data reliability and fitness for AI.",
+            "- Improved confidence score for data inputs to relevant AI models (if applicable)."
+          ],
+          "guidanceForUser": "Establish clear, measurable metrics to track the success of this initiative, including impact on AI readiness. Define baselines before starting."
+        },
+        {
+          "heading": "H. Next Steps & Call to Action",
+          "id": "next_steps",
+          "copyTemplate": [
+            "1. **Validate & Refine Charter:** Review this draft charter with key stakeholders, including those involved in AI initiatives. Gather input and finalize the scope, goals, and roles.",
+            "2. **Form Project Team:** Formally assign individuals to the identified roles, ensuring AI/data science representation if applicable.",
+            "3. **Detailed Root Cause Analysis:** Conduct a deeper investigation into *why* the identified foundational data characteristics are poor within the scoped process (e.g., process gaps, system limitations, lack of training, unclear standards for AI).",
+            "4. **Develop Action Plan:** Create a detailed project plan with specific tasks, timelines, responsibilities, and required resources to address the root causes and implement improvements for Strategic Data & AI Readiness.",
+            "5. **Secure Sponsorship & Resources:** Present the finalized charter and action plan to leadership to secure necessary approvals and resources.",
+            "6. **Implement & Monitor:** Execute the action plan and continuously monitor data metrics to track progress against goals and impact on AI initiatives."
+          ],
+          "guidanceForUser": "This charter is your starting point. Use it to build momentum and a structured approach for your Strategic Data & AI Readiness journey."
+        }
+      ]
+    },
+    {
+      "charterType": "KPIImprovement",
+      "titleTemplate": "Draft Initiative Charter: Ensuring Data Trust & AI Readiness for the '{KPI_Name}' KPI",
+      "sections": [
+        {
+          "heading": "A. Business Case / Opportunity Statement",
+          "id": "business_case",
+          "copyTemplate": [
+            "The reliability and accuracy of the **'{KPI_Name}'** Key Performance Indicator are currently compromised due to deficiencies in underlying foundational data characteristics. This limits our ability to accurately measure performance related to '{KPI_Objective_or_Area}', make confident data-driven decisions, and reliably use this KPI for AI model training or monitoring.",
+            "ODGS Maturity has identified that foundational data characteristics such as **{DimensionNameList}** are critical for this KPI's integrity. Addressing these issues presents an opportunity to significantly improve the trustworthiness of '{KPI_Name}', leading to **{SummarizedPositiveImpactsFromDQDimensions_KPI_Context}** and better Strategic Data & AI Readiness.",
+            "A reliable '{KPI_Name}' is essential for achieving our strategic objective of **'{RelevantStrategicObjectiveName}'** and for leveraging AI effectively."
+          ],
+          "guidanceForUser": "Quantify the current impact of an unreliable KPI if possible (e.g., 'cost of decisions based on flawed KPI data', 'risk to AI model performance')."
+        },
+        {
+          "heading": "B. Problem Statement",
+          "id": "problem_statement",
+          "copyTemplate": [
+            "The core problem is the reduced reliability and trustworthiness of the '{KPI_Name}' KPI, stemming from weaknesses in **{DimensionNameList}** within the underlying data sources: {DataSourceListForKPI}. This directly impacts its utility for business insights and AI applications.",
+            "{EnvironmentalFactorInsight_if_exists?This is potentially compounded by broader environmental factors like **'{EnvironmentalFactor1_Name}'**.}",
+            "Specific manifestations include {ExampleImpactOfPoorDQonKPI}, which can skew AI model learning if this KPI is used as an input or target."
+          ],
+          "guidanceForUser": "Gather specific examples of how poor foundational data characteristics in the listed dimensions affect the calculation, interpretation, or AI-usability of this KPI."
+        },
+        {
+          "heading": "C. Goal Statement (SMART Suggestion)",
+          "id": "goal_statement",
+          "copyTemplate": [
+            "The primary goal of this initiative is to **improve the foundational data characteristics ({DimensionNameList}) underpinning the '{KPI_Name}' KPI, such that its reported value achieves a [Specify Target, e.g., 'confidence level of 95%' or 'variance of less than X% from audited figures'] within [Specify Timeframe, e.g., 'the next quarter'], ensuring its reliability for both business decisions and AI applications.**",
+            "This will enable more reliable performance tracking, decision-making related to '{KPI_Objective_or_Area}', and provide trustworthy data for AI initiatives."
+          ],
+           "guidanceForUser": "Define how you will measure both the improvement in the underlying data characteristics and the resulting improvement in the KPI's reliability and AI-fitness."
+        }
+      ]
+    },
+    {
+      "charterType": "StrategicOrAIInitiative",
+      "titleTemplate": "Draft Initiative Charter: Achieving Strategic Data & AI Readiness for '{StrategicInitiativeName}'",
+      "sections": [
+        {
+          "heading": "A. Business Case / Opportunity Statement",
+          "id": "business_case",
+          "copyTemplate": [
+            "The successful execution of our strategic initiative, **'{StrategicInitiativeName}'** {AIUseCaseContext_if_exists?(specifically our AI use case: '{AIUseCaseName}')}, is critically dependent on a high degree of Strategic Data & AI Readiness. Current assessments, guided by ODGS Maturity, indicate potential risks to this initiative due to deficiencies in key foundational data characteristics.",
+            "Proactively addressing foundational data characteristics such as **{DimensionNameList}** is essential to de-risk this initiative, ensure its effectiveness, enhance AI model performance (if applicable), and maximize its potential to deliver on objectives like **{SummarizedPositiveImpactsFromDQDimensions_StrategicContext}**.",
+            "Failure to improve these foundational data aspects could lead to {SummarizedNegativeImpactsFromDQDimensions_StrategicContext}, potentially jeopardizing the initiative's success and our ability to leverage AI effectively."
+          ],
+          "guidanceForUser": "Clearly articulate how this data readiness initiative is a critical enabler for the success of the larger strategic or AI program."
+        },
+        {
+          "heading": "B. Problem Statement",
+          "id": "problem_statement",
+          "copyTemplate": [
+            "The key foundational data challenges that pose a risk to the '{StrategicInitiativeName}' {AIUseCaseContext_if_exists?and the '{AIUseCaseName}' AI model} are primarily related to **{DimensionNameList}** in the required input datasets ({ExampleInputDatasets}). These challenges directly impact our Strategic Data & AI Readiness for this initiative.",
+            "{EnvironmentalFactorInsight_if_exists?Factors such as **'{EnvironmentalFactor1_Name}'** may be contributing to these data deficiencies, further hindering AI readiness.}",
+            "For instance, poor {DimensionName1} could lead to {SpecificRiskToAIModelOrStrategy}, while inadequate {DimensionName2} might result in {AnotherSpecificRiskToAIModelOrStrategy}. These issues can lead to flawed AI insights, biased outcomes, or model failure."
+          ],
+           "guidanceForUser": "Detail how specific data quality issues directly threaten the desired outcomes of your strategic or AI initiative. Consult with data scientists or project leads."
+        }
+      ]
+    }
+  ]
+}

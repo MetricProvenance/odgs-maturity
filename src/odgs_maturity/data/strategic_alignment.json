@@ -1,0 +1,64 @@
+[
+  {
+    "strategicObjectiveId": "SO_001",
+    "strategicObjective": "Enhance Customer Experience & Personalization",
+    "description": "Creating superior, seamless, and personalized interactions across all customer touchpoints to increase loyalty, satisfaction, and lifetime value.",
+    "criticalDimensionDamaIds": [3, 5, 12, 14, 15, 19, 20, 26, 53, 54, 55, 57, 58], 
+    "supportingDimensionDamaIds": [1, 2, 4, 6, 7, 31, 33, 37, 48], 
+    "howDqContributes": "Accurate customer data ensures correct personalization and avoids frustrating errors. Complete profiles enable tailored offerings and deeper understanding. Consistent data across channels prevents conflicting experiences. Current and timely data ensures relevance of interactions. Confidentiality builds trust. Traceability helps understand customer journey. Uniqueness ensures a single view of the customer. Valid data ensures smooth processing. Ultimately, valuable data drives valuable experiences."
+  },
+  {
+    "strategicObjectiveId": "SO_002",
+    "strategicObjective": "Drive AI/ML Innovation & Data-Driven Insights",
+    "description": "Leveraging advanced analytics, Artificial Intelligence, and Machine Learning to gain competitive advantages, optimize processes, discover new opportunities, and create new value propositions.",
+    "criticalDimensionDamaIds": [3, 5, 8, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 26, 33, 34, 38, 41, 42, 48, 49, 50, 53, 54, 55, 56, 57, 58, 59, 60], 
+    "howDqContributes": "AI/ML models are highly sensitive to data quality. 'Garbage In, Garbage Out' is paramount. Accuracy, completeness, consistency, and currency of training and input data are crucial for reliable, unbiased, and effective AI outcomes. Relevance ensures models focus on the right signals. Traceability is key for explainable AI (XAI) and debugging. Validity and proper formatting prevent processing errors. Coherence and linkability allow for richer feature engineering. Variety of data sources can lead to more robust models, but volatility needs management. Ultimately, high-value data is needed to generate high-value AI insights."
+  },
+  {
+    "strategicObjectiveId": "SO_003",
+    "strategicObjective": "Optimize Operational Efficiency & Reduce Costs",
+    "description": "Streamlining internal processes, automating tasks, minimizing waste, and improving resource utilization to enhance productivity and lower operational expenditures.",
+    "criticalDimensionDamaIds": [3, 5, 12, 14, 15, 20, 24, 26, 30, 32, 47, 53, 56, 57, 58], 
+    "supportingDimensionDamaIds": [2, 4, 6, 7, 8, 11, 13, 28, 29, 31, 34, 37, 43, 44, 46, 49], 
+    "howDqContributes": "Accurate data prevents errors that cause rework and delays. Complete and consistent data enables smooth handoffs in automated workflows. Current and timely data allows for real-time operational adjustments. Low latency ensures quick response. Integrity prevents data corruption impacting processes. Uniqueness of records avoids duplicated efforts. Validity ensures data is processable. Reducing redundancy cuts storage and maintenance costs. Reliable data supports dependable automation."
+  },
+  {
+    "strategicObjectiveId": "SO_004",
+    "strategicObjective": "Ensure Regulatory Compliance & Mitigate Risk",
+    "description": "Adhering to all applicable laws, regulations, industry standards, and internal policies to avoid penalties, protect reputation, and manage operational, financial, and legal risks.",
+    "criticalDimensionDamaIds": [1, 3, 11, 12, 13, 14, 16, 17, 18, 19, 20, 34, 45, 47, 50, 52, 54, 56, 57], 
+    "howDqContributes": "Accurate and complete data is essential for correct regulatory reporting. Access security and confidentiality protect sensitive data as required by privacy laws (GDPR, HIPAA etc.). Traceability and reproducibility provide audit trails. Proper retention ensures data is available for legal or audit purposes. Validity and consistency ensure reports are reliable. Compliance dimensions directly address adherence to standards. Recoverability ensures business continuity and data preservation after incidents."
+  },
+  {
+    "strategicObjectiveId": "SO_005",
+    "strategicObjective": "Accelerate Product/Service Innovation & Time-to-Market",
+    "description": "Developing and launching new products, services, or features faster and more effectively to meet evolving customer needs and gain a competitive edge.",
+    "criticalDimensionDamaIds": [3, 5, 8, 12, 14, 26, 33, 48, 53, 58, 59], 
+    "supportingDimensionDamaIds": [2, 4, 7, 16, 27, 31, 37, 39, 40, 49], 
+    "howDqContributes": "Accurate and relevant market/customer data informs innovation. Timely and current data allows quick identification of emerging trends. Coherent and linkable datasets enable richer insights for R&D. Availability and accessibility of diverse (variety) data sources fuel creativity. High-value data on customer needs directly guides development. Efficient data processes (supported by good DQ) speed up development cycles."
+  },
+  {
+    "strategicObjectiveId": "SO_006",
+    "strategicObjective": "Improve Supply Chain & Logistics Performance",
+    "description": "Optimizing the flow of goods, information, and finances from source to consumption to enhance speed, reliability, and cost-effectiveness.",
+    "criticalDimensionDamaIds": [3, 5, 12, 14, 20, 26, 30, 32, 33, 47, 53, 56, 57, 59], 
+    "supportingDimensionDamaIds": [2, 4, 7, 8, 10, 31, 34, 43, 44, 48, 54], 
+    "howDqContributes": "Accurate inventory, shipment, and location data is fundamental. Timely and current information (low latency) enables real-time tracking and adjustments. Consistent data across partners and systems ensures smooth collaboration. Linkability and referential integrity allow end-to-end visibility. Validity of data (e.g., shipping codes, addresses) prevents errors. Variety of data (e.g., weather, traffic, partner systems) helps in dynamic optimization."
+  },
+  {
+    "strategicObjectiveId": "SO_007",
+    "strategicObjective": "Empower Workforce & Enhance Collaboration",
+    "description": "Providing employees with the right tools, information, and environment to be productive, make informed decisions, and work effectively together.",
+    "criticalDimensionDamaIds": [2, 3, 5, 7, 8, 12, 14, 20, 26, 31, 48, 53, 58], 
+    "supportingDimensionDamaIds": [1, 4, 6, 16, 33, 37, 39, 40, 54], 
+    "howDqContributes": "Accessible, accurate, and timely data empowers employees to make confident decisions. Clarity and interpretability ensure everyone understands the data correctly. Coherent and consistent data facilitates seamless collaboration across teams and departments. Relevant information reduces noise and improves focus. Valuable data directly supports task completion and goal achievement."
+  },
+  {
+    "strategicObjectiveId": "SO_008",
+    "strategicObjective": "Achieve Sustainable Growth & Profitability",
+    "description": "Ensuring long-term financial health and expansion through strategic market positioning, efficient resource management, and continuous value creation.",
+    "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 44, 48, 50, 53, 57, 58], 
+    "supportingDimensionDamaIds": [1, 2, 5, 7, 8, 10, 17, 30, 32, 33, 43, 46, 54, 59], 
+    "howDqContributes": "Accurate financial and market data is crucial for strategic planning and performance monitoring. Relevant insights drive profitable decisions. Timely data allows adaptation to market changes. Value from data directly impacts revenue and cost optimization. Reproducible financial reporting builds investor confidence. Reasonability checks prevent costly errors based on anomalous data. Compliance avoids fines. Reducing redundancy saves costs."
+  }
+]

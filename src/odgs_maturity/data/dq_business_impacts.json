@@ -1,0 +1,1026 @@
+[
+  {
+    "damaId": 1,
+    "dimensionName": "Access security",
+    "positiveImpactsGoodDQ": [
+      "Protection of sensitive company, customer, and employee data, maintaining trust and legal standing.",
+      "Reduced risk of data breaches, leading to avoidance of financial losses, regulatory fines, and reputational damage.",
+      "Ensured compliance with data privacy regulations (e.g., GDPR, CCPA, HIPAA).",
+      "Preservation of competitive advantage by safeguarding intellectual property and strategic plans."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data breaches resulting in direct financial costs (remediation, fines), legal liabilities, and loss of intellectual property.",
+      "Severe reputational damage and erosion of customer, partner, and employee trust.",
+      "Unauthorized access, modification, or misuse of sensitive information leading to competitive disadvantage or operational disruption.",
+      "Non-compliance with data privacy laws, attracting significant penalties and sanctions."
+    ],
+    "illustrativeKpisAffected": ["Number of Security Incidents/Breaches", "Cost of Compliance Fines (Security)", "Customer Churn Rate (post-breach)", "Brand Reputation Score", "Time to Detect Security Incidents"]
+  },
+  {
+    "damaId": 2,
+    "dimensionName": "Accessibility",
+    "positiveImpactsGoodDQ": [
+      "Faster, more informed decision-making through quick and easy access to necessary information.",
+      "Increased employee productivity and operational efficiency as less time is wasted searching for data.",
+      "Improved collaboration and knowledge sharing as data can be readily consulted by authorized users.",
+      "Enhanced agility in responding to customer needs, market changes, or operational issues."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Delayed or suboptimal decision-making due to difficulties in finding, retrieving, or understanding available data.",
+      "Reduced employee productivity, increased frustration, and wasted resources searching for information.",
+      "Information silos hindering cross-departmental collaboration and a unified view of the business.",
+      "Slower response times to market opportunities, competitive threats, or critical operational events."
+    ],
+    "illustrativeKpisAffected": ["Time to Decision", "Employee Productivity Rate", "Project Completion Time", "Customer Service Resolution Time", "Data Search Time"]
+  },
+  {
+    "damaId": 3,
+    "dimensionName": "Accuracy",
+    "positiveImpactsGoodDQ": [
+      "Improved strategic and operational decision-making based on reliable, factual data.",
+      "Increased operational efficiency by reducing errors, rework, and waste (e.g., accurate shipping, correct billing, precise manufacturing).",
+      "Enhanced customer trust and satisfaction (e.g., correct personal details, accurate product information, fair pricing).",
+      "Reliable financial reporting, forecasting, auditability, and investor confidence.",
+      "Foundation for trustworthy and effective AI/ML model outputs and predictions."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Flawed strategic decisions based on incorrect data leading to misallocated resources or missed opportunities.",
+      "Financial losses due to errors (e.g., mis-shipments, incorrect invoicing, compliance penalties for inaccurate reporting, flawed inventory counts).",
+      "Operational inefficiencies and increased costs from rework, correcting mistakes, and handling exceptions.",
+      "Damaged customer relationships and loss of trust (e.g., wrong deliveries, incorrect billing, unfair treatment).",
+      "Inaccurate AI predictions leading to poor business outcomes, biased results, or operational failures."
+    ],
+    "illustrativeKpisAffected": ["Customer Satisfaction Score (CSAT)", "Operational Cost", "Return on Investment (ROI)", "AI Model Prediction Accuracy", "Compliance Breach Incidents", "Order Fulfillment Accuracy", "Inventory Shrinkage"]
+  },
+  {
+    "damaId": 4,
+    "dimensionName": "Appropriateness (Format)",
+    "positiveImpactsGoodDQ": [
+      "Seamless data processing and integration between systems due to suitable data formats.",
+      "Reduced need for complex data transformations, saving time and resources.",
+      "Improved usability of data for analytics, reporting, and automated processes.",
+      "Enhanced interoperability with partner systems and industry standards."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data processing errors or failures when formats are unsuitable for receiving systems or analytical tools.",
+      "Increased development and maintenance costs for data transformation routines.",
+      "Limited usability of data, hindering analytics, automation, or calculations.",
+      "Difficulties in data exchange with external partners or compliance with industry data format standards."
+    ],
+    "illustrativeKpisAffected": ["Data Integration Success Rate", "ETL Development Cost/Time", "System Interoperability Score", "Data Processing Error Rate"]
+  },
+  {
+    "damaId": 5,
+    "dimensionName": "Availability",
+    "positiveImpactsGoodDQ": [
+      "Uninterrupted business operations and continuous service delivery to customers and internal users.",
+      "Timely access to critical data for operational control, strategic decision-making, and customer support.",
+      "Enhanced customer experience and satisfaction through reliable access to services and information.",
+      "Ability to consistently meet Service Level Agreements (SLAs) for data and system uptime."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Business disruptions, system downtime, and lost revenue if critical data or systems are unavailable.",
+      "Delayed or impossible decision-making when needed data cannot be accessed during critical periods.",
+      "Poor customer experience, frustration, and potential customer loss due to inaccessible services or information.",
+      "Failure to meet SLAs, potentially leading to contractual penalties, loss of business, or reputational damage."
+    ],
+    "illustrativeKpisAffected": ["System Uptime Percentage", "Service Availability Rate", "Mean Time To Recovery (MTTR)", "Customer Self-Service Success Rate", "Lost Revenue Due to Downtime"]
+  },
+  {
+    "damaId": 6,
+    "dimensionName": "Ability to represent null values",
+    "positiveImpactsGoodDQ": [
+      "Accurate representation of missing or inapplicable information, preventing misinterpretation.",
+      "Improved data integrity by distinguishing between a zero value and an unknown value.",
+      "More effective data analysis as nulls can be handled appropriately (e.g., excluded or imputed).",
+      "Reduced data entry errors caused by forcing users to input dummy values."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Misinterpretation of data if nulls are not allowed and dummy values (e.g., 0, 'N/A') are used inconsistently.",
+      "Skewed analytical results if dummy values are treated as real data.",
+      "Increased data cleansing effort to identify and correct inappropriately used dummy values.",
+      "Process failures if systems expect true nulls but receive ambiguous placeholders."
+    ],
+    "illustrativeKpisAffected": ["Data Cleansing Effort/Cost", "Analytical Model Accuracy", "Report Accuracy", "Data Entry Error Rate"]
+  },
+  {
+    "damaId": 7,
+    "dimensionName": "Clarity (of Metadata)",
+    "positiveImpactsGoodDQ": [
+      "Faster and more accurate data interpretation, analysis, and usage by all stakeholders.",
+      "Reduced ambiguity and miscommunication regarding data meaning, lineage, and business rules.",
+      "Improved data governance, easier onboarding for new data users, and effective self-service analytics.",
+      "Increased confidence and trust in data, leading to more data-driven decisions."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Misinterpretation of data leading to incorrect conclusions, flawed strategies, and poor business decisions.",
+      "Wasted time, resources, and duplicated effort trying to understand poorly defined or undocumented data.",
+      "Inconsistent data usage and reporting across the organization due to varying interpretations.",
+      "Reduced trust in data and analytics, hindering adoption of data-driven culture."
+    ],
+    "illustrativeKpisAffected": ["Time to Insight", "Data User Onboarding Time", "Number of Data Misinterpretation Incidents", "Adoption Rate of BI/Analytics Tools", "Data Governance Maturity Score"]
+  },
+  {
+    "damaId": 8,
+    "dimensionName": "Coherence",
+    "positiveImpactsGoodDQ": [
+      "Ability to create a unified, consistent view of business entities (e.g., 360-degree customer view, end-to-end product lifecycle).",
+      "Enhanced data integration capabilities for comprehensive and reliable enterprise-wide analysis.",
+      "Improved consistency and comparability in reporting and analytics across different datasets and business units.",
+      "Streamlined data exchange and improved interoperability between internal systems and with external partners."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Difficulty in combining data from different sources, leading to a fragmented and incomplete understanding of the business.",
+      "Inconsistent or conflicting insights when analyzing disparate datasets, leading to confusion and distrust.",
+      "Increased complexity, cost, and time required for data integration and reconciliation efforts.",
+      "Siloed information hindering strategic alignment and operational coordination."
+    ],
+    "illustrativeKpisAffected": ["Data Integration Project Success Rate/Cost", "Time to Consolidate Enterprise Reports", "Customer Data Completeness (360 view %)", "Inter-departmental Process Efficiency Score"]
+  },
+  {
+    "damaId": 9,
+    "dimensionName": "Comparability of populations",
+    "positiveImpactsGoodDQ": [
+      "Fair and meaningful comparisons of performance or characteristics across different groups or segments.",
+      "Reliable benchmarking against peers or different business units.",
+      "Improved accuracy of market analysis and demographic studies.",
+      "Evidence-based policy making and resource allocation."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Misleading conclusions when comparing groups based on inconsistently defined or measured data.",
+      "Unfair or inaccurate performance evaluations or resource allocations.",
+      "Flawed market segmentation or competitor analysis.",
+      "Ineffective policies based on non-comparable data."
+    ],
+    "illustrativeKpisAffected": ["Benchmarking Accuracy", "Market Share Analysis Reliability", "Policy Effectiveness Measurement", "Resource Allocation Equity"]
+  },
+  {
+    "damaId": 10,
+    "dimensionName": "Comparability over time",
+    "positiveImpactsGoodDQ": [
+      "Accurate trend analysis and reliable tracking of performance changes over time.",
+      "Consistent historical reporting for long-term strategic planning and forecasting.",
+      "Ability to effectively measure the impact of changes or interventions over periods.",
+      "Enhanced understanding of business evolution and seasonal patterns."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Unreliable or misleading trend analysis due to changes in definitions or measurement methods.",
+      "Inability to accurately compare past performance with current results.",
+      "Difficulty in assessing the true impact of strategic initiatives or market shifts over time.",
+      "Flawed forecasting models based on inconsistent historical data."
+    ],
+    "illustrativeKpisAffected": ["Forecast Accuracy", "Historical Reporting Consistency", "Long-term KPI Trend Reliability", "Return on Investment (Time-Series Analysis)"]
+  },
+  {
+    "damaId": 11,
+    "dimensionName": "Completeness (Attributes)",
+    "positiveImpactsGoodDQ": [
+      "Ensures data models and datasets capture all necessary characteristics of an entity for business processes.",
+      "Facilitates comprehensive data analysis and richer feature engineering for AI/ML.",
+      "Reduces the need for ad-hoc data collection or inferring missing structural information.",
+      "Supports better data understanding and context as all relevant facets are defined."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to perform required business functions if critical attributes are missing from the data structure.",
+      "Limited analytical capabilities due to lack of necessary descriptive data points.",
+      "Increased effort to augment datasets with missing structural elements.",
+      "Poor data modeling leading to systems that don't fully support business needs."
+    ],
+    "illustrativeKpisAffected": ["Data Model Fitness for Purpose Score", "Analytical Richness Score", "Time to Develop New Reports/Analyses", "Business Process Exception Rate (due to missing attributes)"]
+  },
+  {
+    "damaId": 12,
+    "dimensionName": "Completeness (Records)",
+    "positiveImpactsGoodDQ": [
+      "Comprehensive and accurate understanding of business operations, customer populations, and market activities.",
+      "More reliable reporting, robust analytics, and trustworthy forecasting based on full datasets.",
+      "Reduced risk of missed opportunities, unaddressed customer issues, or hidden operational gaps.",
+      "Improved compliance by ensuring all required transactional or entity records are present and accounted for."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Incomplete view of business performance leading to skewed analysis, biased insights, and flawed decisions.",
+      "Inaccurate or misleading reports and forecasts due to missing segments of data.",
+      "Missed sales opportunities, customer service failures, or unidentified operational inefficiencies.",
+      "Non-compliance if required transactional, regulatory, or customer records are missing."
+    ],
+    "illustrativeKpisAffected": ["Sales Coverage Rate", "Customer Database Completeness %", "Operational Process Audit Completeness", "Audit Pass Rate (Record Integrity)"]
+  },
+  {
+    "damaId": 13,
+    "dimensionName": "Completeness (Data files)",
+    "positiveImpactsGoodDQ": [
+      "Ensures all necessary data feeds and files are available for batch processing and system updates.",
+      "Reliable execution of scheduled data integration and reporting tasks.",
+      "Avoidance of process interruptions or incomplete analyses due to missing input files.",
+      "Improved operational stability for data-dependent workflows."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Failure or delay of critical business processes (e.g., payroll, billing, inventory updates) if input files are missing.",
+      "Incomplete or outdated information in downstream systems and reports.",
+      "Increased manual effort to track down missing files and re-run processes.",
+      "Potential for financial or operational impact due to missed data updates."
+    ],
+    "illustrativeKpisAffected": ["Batch Job Success Rate", "Data Pipeline Reliability", "End-of-Day Processing Completion Rate", "Manual Intervention Rate (for missing files)"]
+  },
+  {
+    "damaId": 14,
+    "dimensionName": "Completeness (Data values)",
+    "positiveImpactsGoodDQ": [
+      "More effective and efficient execution of business processes that rely on complete data fields for each record.",
+      "Enhanced ability to segment markets, personalize customer interactions, and tailor services based on full attribute sets.",
+      "Improved data quality and reliability for downstream analytics, BI reporting, and AI/ML models.",
+      "Reduced exceptions, manual interventions, and fallbacks in automated processes and decision engines."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Process failures, delays, or incorrect execution due to missing critical data values (e.g., missing shipping address, undefined product category).",
+      "Inability to effectively personalize marketing, target specific customer segments, or make accurate risk assessments due to incomplete profiles.",
+      "Poor performance, bias, or failure of AI/ML models trained or operating on data with many missing values.",
+      "Increased manual effort and cost to fill in missing data, handle exceptions, or perform data cleansing."
+    ],
+    "illustrativeKpisAffected": ["Process Automation Rate", "Marketing Campaign Effectiveness/Targeting Accuracy", "AI Model Performance Metrics (e.g., F1 score, AUC)", "Manual Data Entry/Correction Hours"]
+  },
+  {
+    "damaId": 15,
+    "dimensionName": "Completeness (Data values of an attribute)",
+    "positiveImpactsGoodDQ": [
+      "Ensures specific critical attributes are consistently populated across all records, supporting key processes.",
+      "Improved reliability of analyses or reports that depend heavily on certain key attributes.",
+      "Reduced need to make assumptions or impute values for frequently missing attributes.",
+      "Better targeting and segmentation if key profiling attributes are consistently filled."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to execute specific functions if a required attribute is frequently blank (e.g., cannot send email if email address attribute is empty).",
+      "Skewed or unreliable analysis if a key analytical attribute has many missing values.",
+      "Increased uncertainty in data-driven decisions if critical information points are often missing.",
+      "Operational delays or errors when processes require specific attribute values to proceed."
+    ],
+    "illustrativeKpisAffected": ["Fill Rate for Critical Attributes (%)", "Targeted Communication Success Rate", "Specific Process Step Completion Rate", "Report Field Population Rate"]
+  },
+  {
+    "damaId": 16,
+    "dimensionName": "Completeness (Metadata)",
+    "positiveImpactsGoodDQ": [
+      "Thorough understanding of data assets, including definitions, lineage, business rules, and ownership.",
+      "Facilitates effective data discovery, self-service analytics, and data governance.",
+      "Reduces reliance on tribal knowledge and accelerates onboarding of new data users.",
+      "Builds trust in data as its context and meaning are fully documented."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Difficulty in finding, understanding, or trusting data due to missing or inadequate descriptions.",
+      "Increased risk of data misinterpretation and misuse.",
+      "Inefficient data management and governance efforts.",
+      "Slower development of new analytics, reports, or AI models due to lack of data understanding."
+    ],
+    "illustrativeKpisAffected": ["Data Catalog Completion Rate (%)", "Self-Service BI Adoption Rate", "Time to Understand a Dataset", "Data Governance Audit Findings (Metadata)"]
+  },
+  {
+    "damaId": 17,
+    "dimensionName": "Compliance (Data)",
+    "positiveImpactsGoodDQ": [
+      "Avoidance of legal penalties, significant fines, and sanctions from regulatory bodies.",
+      "Enhanced corporate reputation, stakeholder trust, and brand image.",
+      "Reduced risk of litigation, legal challenges, and associated costs.",
+      "Smoother audits, easier regulatory reviews, and maintenance of licenses to operate."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Significant financial penalties, legal costs, and potential business disruptions for non-compliance with laws (e.g., GDPR, SOX, HIPAA).",
+      "Severe damage to brand reputation, public trust, and customer loyalty.",
+      "Increased scrutiny from regulators, potential operational shutdowns, or loss of certifications.",
+      "Litigation risks from affected parties (customers, employees, shareholders) due to data misuse or non-compliance."
+    ],
+    "illustrativeKpisAffected": ["Number of Regulatory Compliance Breaches", "Cost of Regulatory Fines & Penalties", "Audit Finding Severity/Frequency", "Legal Expenditure on Compliance Issues", "Customer Trust Index"]
+  },
+  {
+    "damaId": 18,
+    "dimensionName": "Compliance (Composition of datasets)",
+    "positiveImpactsGoodDQ": [
+      "Ensures aggregated or derived datasets meet reporting standards and legal requirements.",
+      "Mitigates risks associated with inappropriate data aggregation or linkage (e.g., re-identification).",
+      "Supports ethical data use and responsible AI by adhering to composition rules.",
+      "Facilitates compliant data sharing and collaboration."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Violation of privacy laws or ethical guidelines through improper data aggregation or de-anonymization.",
+      "Non-compliant reporting if dataset composition does not meet specific standards (e.g., financial reporting rules).",
+      "Legal and reputational risks from misuse of combined datasets.",
+      "Barriers to data sharing if composition standards are not met."
+    ],
+    "illustrativeKpisAffected": ["Data Aggregation Compliance Rate", "Ethical AI Review Pass Rate", "Regulatory Reporting Accuracy (Composition)", "Data Sharing Agreement Violations"]
+  },
+  {
+    "damaId": 19,
+    "dimensionName": "Confidentiality",
+    "positiveImpactsGoodDQ": [
+      "Protection of sensitive business, customer, and personal information from unauthorized disclosure or theft.",
+      "Maintenance of customer and employee privacy, fostering trust and loyalty.",
+      "Safeguarding of valuable trade secrets, intellectual property, and competitive intelligence.",
+      "Adherence to data privacy and security mandates, avoiding breaches and associated penalties."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Leakage or theft of sensitive data leading to competitive disadvantage, financial loss, or personal harm to individuals.",
+      "Severe erosion of customer, partner, and employee trust if privacy or confidential information is breached.",
+      "Loss of intellectual property, strategic plans, or M&A information.",
+      "Legal and financial repercussions, including fines and lawsuits, for failing to protect confidential data."
+    ],
+    "illustrativeKpisAffected": ["Number of Confidentiality Incidents/Data Spills", "Value of Intellectual Property Lost", "Employee/Customer Trust Score (Privacy)", "Data Loss Prevention (DLP) Effectiveness Rate", "Cost of Data Breach Remediation"]
+  },
+  {
+    "damaId": 20,
+    "dimensionName": "Consistency",
+    "positiveImpactsGoodDQ": [
+      "Reliable, coherent, and trustworthy data across different systems, reports, and analytical outputs.",
+      "Reduced confusion, ambiguity, and misinterpretation for data users and decision-makers.",
+      "Improved data integrity and accuracy of consolidated views and enterprise-wide reporting.",
+      "More efficient and predictable business processes due to harmonious and predictable data interactions."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Conflicting or contradictory information leading to confusion, distrust in data, and poor or delayed decision-making.",
+      "Erosion of trust in information systems, BI tools, and analytical insights.",
+      "Wasted effort, time, and resources in reconciling discrepancies between different data sources or reports.",
+      "Process breakdowns, errors, or inefficiencies when systems or people encounter inconsistent data values."
+    ],
+    "illustrativeKpisAffected": ["Data Reconciliation Effort (Hours/Cost)", "Report Generation Accuracy & Consistency", "User Trust in Data Score", "Cross-System Process Error Rate", "Decision Reversal Rate (due to conflicting data)"]
+  },
+  {
+    "damaId": 21,
+    "dimensionName": "Consistency (Temporal)",
+    "positiveImpactsGoodDQ": [
+      "Reliable tracking of changes and states over time.",
+      "Accurate historical analysis and trend identification.",
+      "Trustworthy audit trails for transactional data.",
+      "Predictable behavior of time-series dependent models and forecasts."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to accurately reconstruct historical states or event sequences.",
+      "Misleading trend analysis if data changes illogically over time.",
+      "Compromised audit trails and difficulty in investigating historical transactions.",
+      "Unreliable time-series forecasts or AI models."
+    ],
+    "illustrativeKpisAffected": ["Historical Data Reconstruction Accuracy", "Audit Trail Integrity Score", "Time-Series Forecast Error Rate", "Event Sequence Anomaly Rate"]
+  },
+  {
+    "damaId": 22,
+    "dimensionName": "Consistency (Across Datasets)",
+    "positiveImpactsGoodDQ": [
+      "Single version of truth for key entities and metrics across the enterprise.",
+      "Improved accuracy of enterprise-wide reporting and analytics.",
+      "Reduced data integration complexity and cost.",
+      "Enhanced ability to make holistic business decisions."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Conflicting reports and analyses from different departments or systems.",
+      "Difficulty in achieving a unified view of customers, products, or operations.",
+      "Increased manual effort for data reconciliation between systems.",
+      "Suboptimal decisions based on fragmented or contradictory information."
+    ],
+    "illustrativeKpisAffected": ["Cross-Departmental Report Discrepancy Rate", "Data Silo Reduction Index", "Enterprise Data Warehouse Accuracy", "Strategic Alignment Score"]
+  },
+  {
+    "damaId": 23,
+    "dimensionName": "Consistency (Cross-Record)",
+    "positiveImpactsGoodDQ": [
+      "Ensures that unique identifiers or key attributes are not improperly duplicated across different records representing distinct entities.",
+      "Maintains the integrity of relationships where one record should uniquely map to another based on specific rules (e.g. one primary contact per account).",
+      "Prevents ambiguity when linking records based on supposedly unique shared attributes.",
+      "Supports accurate aggregation and counting when business rules dictate unique relationships between records."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Incorrect linkage of records leading to flawed analysis or operational errors (e.g. attributing multiple SSNs to one person indirectly).",
+      "Violation of business rules that define unique relationships between different types of records.",
+      "Difficulty in accurately identifying distinct entities when linking data based on shared attributes that should be unique in one table but map to multiple in another.",
+      "Skewed counts or aggregations if cross-record uniqueness rules are violated."
+    ],
+    "illustrativeKpisAffected": ["Unique Constraint Violation Rate (Cross-Record Rules)", "Data Relationship Integrity Score", "Accuracy of Network Analysis", "False Positive/Negative Linkage Rate"]
+  },
+  {
+    "damaId": 24,
+    "dimensionName": "Consistency (Record-Level)",
+    "positiveImpactsGoodDQ": [
+      "Ensures logical sense and adherence to business rules within individual data records.",
+      "Prevents internal contradictions within a record that could lead to processing errors or misinterpretation.",
+      "Improved data quality at the most granular level, forming a reliable base for aggregation.",
+      "Reduced exceptions in automated data validation and processing."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Illogical data entries (e.g., shipment date before order date) leading to process failures or incorrect calculations.",
+      "Increased manual effort to identify and correct internal inconsistencies within records.",
+      "Reduced reliability of individual records used in decision-making or customer interactions.",
+      "Poor performance of AI models if training data contains internally inconsistent records."
+    ],
+    "illustrativeKpisAffected": ["Internal Record Error Rate", "Automated Validation Exception Rate", "Data Quality Score (Record Level)", "Process Straight-Through Processing (STP) Rate"]
+  },
+  {
+    "damaId": 25,
+    "dimensionName": "Credibility",
+    "positiveImpactsGoodDQ": [
+      "Increased trust and confidence in data among users and decision-makers.",
+      "Higher adoption rates for data-driven insights, BI tools, and analytical reports.",
+      "Stronger foundation for making critical business decisions based on believable information.",
+      "Enhanced reputation of data sources and data providers within the organization."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Users ignoring or distrusting data and reports, leading to decisions based on gut feel or intuition.",
+      "Wasted investment in BI and analytics systems if users do not believe the data.",
+      "Reluctance to act on data-driven recommendations.",
+      "Poor data culture and skepticism towards data initiatives."
+    ],
+    "illustrativeKpisAffected": ["User Trust in Data (Survey Score)", "BI/Analytics Tool Adoption Rate", "Data-Driven Decision Rate", "Perceived Reliability of Data Sources"]
+  },
+  {
+    "damaId": 26,
+    "dimensionName": "Currency",
+    "positiveImpactsGoodDQ": [
+      "Decisions based on the most up-to-date and recent information available, reflecting current reality.",
+      "Enhanced responsiveness and agility in reacting to real-time events, market changes, or operational fluctuations.",
+      "Improved accuracy of operational monitoring, control systems, and short-term forecasting.",
+      "Better customer service and personalized interactions through access to current customer status and preferences."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Outdated information leading to incorrect assumptions, flawed analyses, and suboptimal or risky decisions.",
+      "Missed opportunities, delayed responses, or competitive disadvantage due to reliance on stale data.",
+      "Operational inefficiencies or errors if actions are based on old information (e.g., outdated inventory levels, incorrect customer contact details).",
+      "Poor customer experience and dissatisfaction if interactions or services are based on non-current data."
+    ],
+    "illustrativeKpisAffected": ["Time to Market for New Products/Services (Data Refresh Rate)", "Inventory Accuracy (Real-time vs. Batch)", "Customer Complaint Rate (due to outdated info)", "Effectiveness of Real-time Alerts & Monitoring", "Data Freshness Index"]
+  },
+  {
+    "damaId": 27,
+    "dimensionName": "Equivalence",
+    "positiveImpactsGoodDQ": [
+      "Simplified data integration and mapping between different systems or datasets.",
+      "Reduced ambiguity when attributes representing the same concept have different names or formats.",
+      "Improved consistency in understanding and using conceptually similar data across the organization.",
+      "Facilitates creation of a common business vocabulary and semantic layer."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Increased complexity and cost in data integration due to mismatches in attribute definitions.",
+      "Risk of misinterpreting or incorrectly joining data if conceptually equivalent attributes are not recognized.",
+      "Inconsistent reporting or analysis if different terms are used for the same underlying business concept.",
+      "Barriers to establishing a shared understanding of data across business units."
+    ],
+    "illustrativeKpisAffected": ["Data Mapping Effort/Complexity", "Semantic Consistency Score", "Common Business Vocabulary Adoption", "Cross-System Data Harmonization Rate"]
+  },
+  {
+    "damaId": 28,
+    "dimensionName": "Granularity (Attributes)",
+    "positiveImpactsGoodDQ": [
+      "Enables precise data capture and more detailed analysis.",
+      "Improved flexibility in querying, filtering, and aggregating data based on specific sub-components.",
+      "Better support for complex business rules that depend on fine-grained attribute details.",
+      "Enhanced data quality as validation can be applied to more specific data points."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Loss of detail, limiting the depth of analysis and insight generation (e.g., cannot analyze by city if only full address is stored).",
+      "Difficulty in applying specific business rules or validations if attributes are too broad.",
+      "Increased complexity in parsing or splitting combined attributes for specific uses.",
+      "Inability to answer specific business questions requiring finer detail."
+    ],
+    "illustrativeKpisAffected": ["Analytical Depth Score", "Data Query Flexibility", "Business Rule Implementation Complexity", "Report Customization Capability"]
+  },
+  {
+    "damaId": 29,
+    "dimensionName": "Granularity (Records)",
+    "positiveImpactsGoodDQ": [
+      "Ability to perform detailed, low-level analysis of transactions, events, or individual entities.",
+      "More accurate and nuanced understanding of patterns, trends, and anomalies.",
+      "Foundation for building more precise predictive models or detailed operational reports.",
+      "Flexibility to aggregate data to various summary levels as needed."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to analyze data at the required level of detail, obscuring important insights.",
+      "Loss of information when data is pre-aggregated too early in the lifecycle.",
+      "Difficulty in identifying root causes of issues or understanding specific event details.",
+      "Limited ability to drill down into summary data for deeper investigation."
+    ],
+    "illustrativeKpisAffected": ["Drill-Down Capability Index", "Root Cause Analysis Effectiveness", "Predictive Model Granularity Fit", "Lowest Level of Detail Available for Analysis"]
+  },
+  {
+    "damaId": 30,
+    "dimensionName": "Integrity",
+    "positiveImpactsGoodDQ": [
+      "Preservation of data accuracy and completeness during storage, processing, and transmission.",
+      "Reduced risk of data corruption, unauthorized modification, or accidental loss.",
+      "Increased trust in the reliability and wholeness of data assets.",
+      "More stable and dependable system operations and data pipelines."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data corruption leading to inaccurate information, process failures, or system errors.",
+      "Loss of critical data due to system malfunctions, transmission errors, or inadequate controls.",
+      "Reduced confidence in data if its integrity is questionable.",
+      "Increased costs for data recovery, correction, and validation."
+    ],
+    "illustrativeKpisAffected": ["Data Corruption Rate", "Data Loss Incident Frequency", "System Error Rate (Data Integrity related)", "Data Validation Success Rate"]
+  },
+  {
+    "damaId": 31,
+    "dimensionName": "Interpretability",
+    "positiveImpactsGoodDQ": [
+      "Clear understanding of data by users, regardless of their technical background.",
+      "Reduced misinterpretation and more accurate application of data in business contexts.",
+      "Improved communication and collaboration when discussing data-driven insights.",
+      "Enhanced data literacy across the organization."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Misunderstanding of data leading to flawed conclusions, poor decisions, or incorrect actions.",
+      "Wasted time as users struggle to decipher cryptic codes, ambiguous terms, or unclear units.",
+      "Barriers to effective data use, particularly for non-technical business users.",
+      "Low data literacy and reluctance to engage with data."
+    ],
+    "illustrativeKpisAffected": ["Data Literacy Score", "User Comprehension Test Score (for data reports)", "Time to Understand Reports/Dashboards", "Error Rate in Data Application"]
+  },
+  {
+    "damaId": 32,
+    "dimensionName": "Latency",
+    "positiveImpactsGoodDQ": [
+      "Real-time or near real-time availability of data for immediate operational decisions and actions.",
+      "Enhanced ability to monitor dynamic situations and respond quickly to events.",
+      "Improved performance of time-sensitive applications (e.g., fraud detection, algorithmic trading).",
+      "Better customer experience through instant access to up-to-the-second information."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Delayed availability of critical data, hindering timely responses and effective decision-making.",
+      "Inability to effectively manage real-time operations or capitalize on fleeting opportunities.",
+      "Poor performance or failure of applications that require low-latency data.",
+      "Suboptimal customer experience if information or services are delayed."
+    ],
+    "illustrativeKpisAffected": ["Data Refresh Rate/Frequency", "Real-time Decision Window Adherence", "Algorithmic Trading Profitability (Latency Impact)", "Customer Wait Time (Information Dependent)"]
+  },
+  {
+    "damaId": 33,
+    "dimensionName": "Linkability",
+    "positiveImpactsGoodDQ": [
+      "Ability to create comprehensive, interconnected views of business entities and processes (e.g., 360-degree customer view, supply chain visibility).",
+      "Deeper insights from analyzing relationships, networks, and flows between different data entities.",
+      "Improved data integration efficiency for BI, advanced analytics, and AI/ML applications.",
+      "Enhanced master data management capabilities and establishment of a connected data ecosystem."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to connect related information across disparate datasets, leading to fragmented understanding and missed insights.",
+      "Missed opportunities for value creation that could be derived from analyzing linked data relationships.",
+      "Costly, complex, and error-prone data integration projects due to difficulties in establishing reliable links.",
+      "Challenges in building accurate master data records and understanding complex interdependencies."
+    ],
+    "illustrativeKpisAffected": ["Master Data Record Accuracy & Linkage Completeness", "Customer Lifetime Value (CLV) Calculation Accuracy", "Supply Chain End-to-End Visibility Percentage", "Analytical Query Performance on Joins", "Network Analysis Effectiveness"]
+  },
+  {
+    "damaId": 34,
+    "dimensionName": "Metadata compliance",
+    "positiveImpactsGoodDQ": [
+      "Ensures data values adhere to their defined business rules, formats, and value domains.",
+      "Improved data consistency and predictability, reducing processing errors.",
+      "Easier data validation and quality control through automated checks against metadata.",
+      "Increased trust in data as it conforms to its documented specifications."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data errors and inconsistencies when values violate defined metadata rules (e.g., wrong data type, out-of-range values).",
+      "System failures or incorrect processing if data does not match expected formats or structures.",
+      "Increased manual effort for data cleansing and correction.",
+      "Reduced reliability of analytics and reports if based on non-compliant data."
+    ],
+    "illustrativeKpisAffected": ["Data Validation Error Rate", "Automated Data Quality Rule Pass Rate", "Data Conformance to Schema (%)", "Data Transformation Error Rate (due to non-compliance)"]
+  },
+  {
+    "damaId": 35,
+    "dimensionName": "Naturalness",
+    "positiveImpactsGoodDQ": [
+      "Data models that intuitively reflect real-world business entities and processes.",
+      "Easier understanding and use of data by business users and analysts.",
+      "More stable and maintainable data structures that adapt well to business changes.",
+      "Reduced complexity in data modeling and database design."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Complex and counter-intuitive data models that are difficult for users to understand and query.",
+      "Increased risk of misinterpreting data due to unnatural or convoluted structures.",
+      "Higher maintenance costs and difficulties in evolving data models as business needs change.",
+      "Overly denormalized or poorly structured data leading to redundancy and update anomalies."
+    ],
+    "illustrativeKpisAffected": ["Data Model Understandability Score", "Query Complexity Index", "Data Model Maintenance Effort", "User Satisfaction with Data Structure"]
+  },
+  {
+    "damaId": 36,
+    "dimensionName": "Objectivity",
+    "positiveImpactsGoodDQ": [
+      "Data collection and recording processes are free from personal bias or subjective influence.",
+      "More trustworthy and impartial data for decision-making and performance evaluation.",
+      "Fairer and more equitable outcomes when data is used for assessments or allocations.",
+      "Increased credibility of analyses and reports based on unbiased data."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Skewed or biased data leading to unfair decisions, inaccurate assessments, or flawed conclusions.",
+      "Erosion of trust if data is perceived as being manipulated or subjectively influenced.",
+      "Potential for discriminatory outcomes if biased data is used in AI models or decision-making processes.",
+      "Difficulty in achieving consensus or buy-in for decisions based on questionable data."
+    ],
+    "illustrativeKpisAffected": ["Data Bias Audit Findings", "Fairness Metrics for AI Models", "Employee/Customer Perception of Fairness Score", "Decision Appeal Rate (due to perceived bias)"]
+  },
+  {
+    "damaId": 37,
+    "dimensionName": "Obtainability",
+    "positiveImpactsGoodDQ": [
+      "Data needed for business processes and decision-making can be readily acquired when needed.",
+      "Reduced delays in accessing critical information.",
+      "Improved efficiency as users do not struggle to locate or gain permission for data.",
+      "Better support for ad-hoc analysis and time-sensitive tasks."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to acquire necessary data, leading to incomplete analysis or stalled processes.",
+      "Significant delays and inefficiencies if data is hard to find, access-restricted without clear process, or in unusable formats.",
+      "Missed opportunities if time-critical data cannot be obtained quickly.",
+      "Frustration among users unable to get the data they need to perform their jobs."
+    ],
+    "illustrativeKpisAffected": ["Time to Acquire Data", "Data Access Request Fulfillment Time", "User Frustration Score (Data Access)", "Process Cycle Time (Data Dependent Steps)"]
+  },
+  {
+    "damaId": 38,
+    "dimensionName": "Plausibility",
+    "positiveImpactsGoodDQ": [
+      "Early detection of potential data errors or anomalies that contradict real-world knowledge.",
+      "Increased confidence in data that aligns with expected norms and common sense.",
+      "Reduced risk of making absurd decisions based on clearly illogical data values.",
+      "Improved data quality through validation against known constraints and business understanding."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data containing values that are clearly impossible or highly improbable (e.g., negative age, future transaction dates for past events).",
+      "Erosion of trust in data if it frequently contains implausible entries.",
+      "Potential for serious errors if automated systems act on nonsensical data.",
+      "Wasted effort investigating or explaining data that defies basic logic."
+    ],
+    "illustrativeKpisAffected": ["Data Anomaly Detection Rate", "Number of Implausible Data Values Flagged", "User Reported Data Absurdities", "Automated Decision Override Rate (due to implausible inputs)"]
+  },
+  {
+    "damaId": 39,
+    "dimensionName": "Portability (Data)",
+    "positiveImpactsGoodDQ": [
+      "Ability to easily migrate data between systems, platforms, or cloud providers.",
+      "Reduced vendor lock-in and greater flexibility in choosing technology solutions.",
+      "Simplified data sharing with partners or for regulatory purposes.",
+      "Enhanced disaster recovery and business continuity options."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Difficulty and high cost in moving data from legacy systems or proprietary formats.",
+      "Increased vendor lock-in, limiting technological agility and negotiating power.",
+      "Barriers to data sharing or collaboration due to incompatible data structures.",
+      "Complicated and risky data migration projects during system upgrades or replacements."
+    ],
+    "illustrativeKpisAffected": ["Data Migration Cost/Time", "Vendor Switching Cost Index", "Data Sharing Compatibility Score", "Disaster Recovery Test Success Rate (Data Portability)"]
+  },
+  {
+    "damaId": 40,
+    "dimensionName": "Portability (Format)",
+    "positiveImpactsGoodDQ": [
+      "Data formats that are widely supported and can be used across various applications and platforms.",
+      "Improved interoperability and ease of data exchange with internal and external systems.",
+      "Reduced need for custom format conversions, saving time and development effort.",
+      "Long-term accessibility of data as standard formats are less likely to become obsolete."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data stored in proprietary or obscure formats that limit its usability and accessibility.",
+      "Difficulties in sharing data with partners or integrating with new technologies.",
+      "Increased costs and complexities associated with developing and maintaining format converters.",
+      "Risk of data becoming inaccessible if the software supporting a proprietary format is discontinued."
+    ],
+    "illustrativeKpisAffected": ["Format Conversion Effort/Cost", "Industry Standard Adoption Rate (Formats)", "Number of Systems Supporting Data Format", "Long-Term Data Accessibility Risk Score"]
+  },
+  {
+    "damaId": 41,
+    "dimensionName": "Precision (1 - Recording Accuracy)",
+    "positiveImpactsGoodDQ": [
+      "Data recorded with sufficient detail and exactness to meet business or analytical requirements.",
+      "Accurate calculations and measurements based on precisely captured values.",
+      "Improved ability to distinguish between small but significant variations in data.",
+      "Better fit for applications requiring high levels of detail (e.g., scientific research, engineering design)."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Loss of information if data is recorded with insufficient precision (e.g., rounding errors obscuring true values).",
+      "Inaccurate calculations or analysis if measurements are too coarse.",
+      "Inability to detect subtle changes or make fine distinctions in data.",
+      "Unsuitability of data for tasks requiring high precision."
+    ],
+    "illustrativeKpisAffected": ["Measurement Error Rate", "Calculation Accuracy (Precision Dependent)", "Smallest Detectable Change (Data Sensitivity)", "Fitness for Purpose (High Precision Tasks)"]
+  },
+  {
+    "damaId": 42,
+    "dimensionName": "Precision (2 - Statistical Spread)",
+    "positiveImpactsGoodDQ": [
+      "High degree of repeatability and low random error in measurements or data collection processes.",
+      "Increased confidence in the stability and reliability of data points.",
+      "More accurate statistical analysis and modeling due to reduced noise and variance.",
+      "Better process control if data used for monitoring has low variability."
+    ],
+    "negativeImpactsPoorDQ": [
+      "High variability or wide spread of data values around the true mean, indicating inconsistency or random error.",
+      "Reduced confidence in individual data points due to large statistical error margins.",
+      "Less reliable statistical inferences and model predictions.",
+      "Difficulty in controlling processes if monitoring data is inherently noisy."
+    ],
+    "illustrativeKpisAffected": ["Standard Deviation/Variance of Measurements", "Confidence Interval Width", "Signal-to-Noise Ratio", "Process Capability Index (Cp/Cpk)"]
+  },
+  {
+    "damaId": 43,
+    "dimensionName": "Punctuality",
+    "positiveImpactsGoodDQ": [
+      "Reliable and predictable delivery of data and reports according to agreed schedules.",
+      "Smooth execution of time-dependent business processes and workflows.",
+      "Improved planning and coordination as stakeholders can count on timely information.",
+      "Enhanced trust in data providers and information systems."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Delays in critical business processes if data or reports are not delivered on time.",
+      "Disruption to planning and decision-making cycles.",
+      "Wasted resources and inefficiencies waiting for late information.",
+      "Reduced confidence in data delivery reliability, leading to workarounds or mistrust."
+    ],
+    "illustrativeKpisAffected": ["On-Time Data Delivery Rate (%)", "Schedule Adherence for Reports", "Process Delay Time (Waiting for Data)", "User Satisfaction with Data Punctuality"]
+  },
+  {
+    "damaId": 44,
+    "dimensionName": "Reasonability",
+    "positiveImpactsGoodDQ": [
+      "Data patterns and trends align with business expectations and known behaviors.",
+      "Early identification of unexpected or anomalous data that may indicate underlying issues.",
+      "Increased confidence in data that follows logical and predictable patterns.",
+      "Better basis for forecasting and planning if historical patterns are reasonable."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data exhibits erratic, unexplainable, or counter-intuitive patterns, raising suspicion.",
+      "Difficulty in distinguishing genuine anomalies from systemic data quality problems.",
+      "Reduced trust in data if it frequently deviates from expected behaviors without clear cause.",
+      "Flawed forecasts if based on unreasonable historical data patterns."
+    ],
+    "illustrativeKpisAffected": ["Data Pattern Anomaly Rate", "Number of Unexplained Data Fluctuations", "Forecast Deviation from Expected Patterns", "User Confidence in Data Predictability"]
+  },
+  {
+    "damaId": 45,
+    "dimensionName": "Recoverability",
+    "positiveImpactsGoodDQ": [
+      "Ability to restore data and resume business operations quickly after an incident (e.g., system failure, cyber-attack, disaster).",
+      "Minimized data loss and reduced downtime in a crisis.",
+      "Compliance with business continuity and disaster recovery requirements.",
+      "Increased organizational resilience and stakeholder confidence."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Significant data loss or prolonged downtime following an incident, leading to severe financial and operational impact.",
+      "Inability to meet Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
+      "Non-compliance with business continuity regulations or contractual obligations.",
+      "Damage to reputation and loss of customer trust if data cannot be recovered."
+    ],
+    "illustrativeKpisAffected": ["Recovery Time Objective (RTO) Adherence", "Recovery Point Objective (RPO) Adherence", "Data Loss Percentage (Post-Incident)", "Disaster Recovery Test Success Rate", "Cost of Downtime"]
+  },
+  {
+    "damaId": 46,
+    "dimensionName": "Redundancy",
+    "positiveImpactsGoodDQ": [
+      "Reduced data storage costs and streamlined data management.",
+      "Improved data consistency as updates only need to be made in one place (if mastered).",
+      "Simplified data landscapes and reduced complexity.",
+      "Lower risk of inconsistencies arising from multiple, out-of-sync copies of data."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Increased storage costs and inefficient use of resources.",
+      "Higher risk of data inconsistencies if redundant copies are not synchronized perfectly.",
+      "Increased complexity in data management, updates, and reconciliation.",
+      "Wasted effort in maintaining and validating multiple instances of the same data."
+    ],
+    "illustrativeKpisAffected": ["Data Storage Costs", "Data Consistency Rate Across Systems", "Data Management Overhead", "Data Reconciliation Effort"]
+  },
+  {
+    "damaId": 47,
+    "dimensionName": "Referential integrity",
+    "positiveImpactsGoodDQ": [
+      "Ensures valid and consistent relationships between data in different tables, files, or datasets.",
+      "Prevents orphan records (e.g., orders without customers) and maintains logical data linkages.",
+      "Improved data accuracy and reliability for joined datasets and relational queries.",
+      "More stable, predictable, and robust database operations and application behavior."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Orphan records leading to incomplete information, erroneous reports, or process failures.",
+      "Data inconsistencies and inaccuracies when related records are missing, mismatched, or incorrectly linked.",
+      "Errors in applications, analytics, and reports that rely on the integrity of data relationships.",
+      "Potential for database instability, data corruption, or application crashes in severe cases."
+    ],
+    "illustrativeKpisAffected": ["Number of Orphan Records/Broken Relationships", "Data Processing Error Rate (due to linkage issues)", "Application Stability Score (Data Dependent)", "Database Maintenance Effort (Integrity Checks)"]
+  },
+  {
+    "damaId": 48,
+    "dimensionName": "Relevance",
+    "positiveImpactsGoodDQ": [
+      "Users receive information that is pertinent, applicable, and useful for their specific roles, tasks, and decisions.",
+      "Reduced information overload and improved focus on key data points that matter.",
+      "More efficient and effective decision-making as users are not sifting through irrelevant or distracting data.",
+      "Higher adoption rates and perceived value of reports, dashboards, and analytics tools."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Information overload leading to analysis paralysis, user fatigue, or users ignoring reports and data altogether.",
+      "Wasted time, cognitive effort, and resources for users trying to find truly relevant information within large, unfocused datasets.",
+      "Poor or delayed decisions if critical relevant data is obscured by a high volume of irrelevant information.",
+      "Low user satisfaction with data systems, reports, and BI tools that don't meet their specific needs."
+    ],
+    "illustrativeKpisAffected": ["Report/Dashboard Usage Statistics", "User Satisfaction Score with BI Tools (Relevance)", "Time to Find Relevant Information", "Decision Effectiveness & Speed", "Actionable Insight Rate from Data"]
+  },
+  {
+    "damaId": 49,
+    "dimensionName": "Reliability",
+    "positiveImpactsGoodDQ": [
+      "Consistent and dependable data values over repeated measurements or observations under stable conditions.",
+      "Increased trust in the stability and predictability of data from specific sources or processes.",
+      "More accurate tracking of changes when they genuinely occur, as opposed to random fluctuations.",
+      "Better foundation for process control and monitoring systems."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data values that fluctuate erratically or unpredictably even when the underlying phenomenon is stable.",
+      "Reduced confidence in data due to high variability or inconsistent readings.",
+      "Difficulty in distinguishing true signals or changes from inherent data noise or source instability.",
+      "Ineffective process control if monitoring data is unreliable."
+    ],
+    "illustrativeKpisAffected": ["Measurement System Variation (Gage R&R)", "Data Point Stability Index", "False Alarm Rate (Monitoring Systems)", "Process Control Chart Stability"]
+  },
+  {
+    "damaId": 50,
+    "dimensionName": "Reproducibility",
+    "positiveImpactsGoodDQ": [
+      "Ability to recreate datasets, reports, or analytical results consistently using the same inputs and processes.",
+      "Enhanced auditability and verifiability of data and findings.",
+      "Increased trust in results that can be independently confirmed.",
+      "Facilitates scientific rigor, regulatory compliance, and debugging of data pipelines."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Inability to consistently reproduce results, leading to questions about validity and reliability.",
+      "Difficulties in auditing processes or verifying findings if they are not reproducible.",
+      "Reduced trust in analyses or reports that yield different outcomes on different runs.",
+      "Challenges in debugging data processing errors or understanding variations in AI model outputs."
+    ],
+    "illustrativeKpisAffected": ["Audit Pass Rate (Reproducibility)", "Scientific Validation Success Rate", "Report Consistency Score (Across Runs)", "AI Model Output Variance (Fixed Inputs)"]
+  },
+  {
+    "damaId": 51,
+    "dimensionName": "Reputation",
+    "positiveImpactsGoodDQ": [
+      "Data from specific sources or systems is widely trusted and highly regarded within and outside the organization.",
+      "Increased willingness to use and act upon data from reputable sources.",
+      "Enhanced credibility for decisions and communications based on such data.",
+      "Stronger brand image if the organization is known for high-quality, reputable data."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Data from certain sources is viewed with skepticism or outright distrust due to past issues or perceived bias.",
+      "Reluctance by users to rely on data from sources with a poor reputation.",
+      "Reduced impact of insights or recommendations if the underlying data is not considered reputable.",
+      "Damage to organizational credibility if decisions are based on data from untrustworthy sources."
+    ],
+    "illustrativeKpisAffected": ["Data Source Trust Score (User Survey)", "Adoption Rate of Data from Specific Sources", "Perceived Credibility of Reports (Source Dependent)", "Brand Trust Index (Data Handling)"]
+  },
+  {
+    "damaId": 52,
+    "dimensionName": "Retention period",
+    "positiveImpactsGoodDQ": [
+      "Compliance with legal, regulatory, and business requirements for data archival and disposal.",
+      "Availability of historical data for long-term analysis, audits, or legal discovery.",
+      "Optimized storage costs by disposing of data that is no longer needed.",
+      "Reduced risk associated with holding outdated or irrelevant sensitive data."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Non-compliance with data retention laws, leading to fines or legal action (e.g., keeping data too long or deleting too soon).",
+      "Inability to access critical historical data for business analysis, legal defense, or regulatory audits.",
+      "Excessive storage costs for keeping unnecessary data indefinitely.",
+      "Increased privacy or security risks from retaining sensitive data beyond its useful or legally mandated life."
+    ],
+    "illustrativeKpisAffected": ["Data Retention Policy Compliance Rate (%)", "Storage Cost Savings (from disposal)", "Audit Findings (Retention Related)", "Legal Discovery Cost/Time"]
+  },
+  {
+    "damaId": 53,
+    "dimensionName": "Timeliness",
+    "positiveImpactsGoodDQ": [
+      "Ability to make decisions and take actions based on data that accurately reflects recent events and current conditions.",
+      "Improved operational agility, faster response to market changes, and enhanced real-time monitoring.",
+      "Better customer experience through prompt information updates, service delivery, and issue resolution.",
+      "Effective operational control and ability to capitalize on time-sensitive opportunities."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Decisions based on outdated information that no longer reflects the current business reality, leading to suboptimal outcomes.",
+      "Slow response to critical events, customer needs, or market shifts, resulting in missed opportunities or increased risks.",
+      "Operational inefficiencies, delays, or errors if processes rely on delayed data updates.",
+      "Customer dissatisfaction and frustration due to lack of timely information, slow service, or outdated product details."
+    ],
+    "illustrativeKpisAffected": ["Order-to-Cash Cycle Time", "Incident Response Time", "Customer Issue Resolution Time", "Real-time Process Adherence Rate", "Data Lag Time (Creation to Availability)"]
+  },
+  {
+    "damaId": 54,
+    "dimensionName": "Traceability (Data Lineage)",
+    "positiveImpactsGoodDQ": [
+      "Increased trust, transparency, and confidence in data by understanding its origin, journey, and transformations.",
+      "Easier and faster root cause analysis for data errors, anomalies, or unexpected analytical results.",
+      "Improved auditability and demonstrable compliance with data governance policies and regulatory requirements.",
+      "Enhanced ability to manage data changes effectively and assess their downstream impact.",
+      "Key enabler for explainable AI (XAI), understanding model behavior, and debugging AI systems."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Lack of trust in data if its provenance and processing history are unknown (black box data).",
+      "Difficulty and significant effort in identifying and resolving data quality issues at their source.",
+      "Challenges in meeting audit and regulatory requirements for data provenance and process transparency.",
+      "Inability to accurately assess the impact of changes in source systems on downstream reports, analytics, and AI models.",
+      "Difficult or impossible to explain AI model outputs or biases if data lineage is unclear or unavailable."
+    ],
+    "illustrativeKpisAffected": ["Audit Trail Completeness & Accessibility", "Time to Resolve Data Issues (Root Cause Analysis)", "Data Governance Compliance Rate (Traceability aspect)", "AI Model Explainability Score", "Impact Analysis Accuracy (for data changes)"]
+  },
+  {
+    "damaId": 55,
+    "dimensionName": "Uniqueness (Objects)",
+    "positiveImpactsGoodDQ": [
+      "Accurate counting, reporting, and representation of real-world entities (e.g., customers, products, employees, assets).",
+      "Avoidance of duplicated operational effort, wasted marketing spend, and customer confusion caused by multiple records for the same entity.",
+      "Reliable foundation for Master Data Management (MDM) initiatives and achieving a true single source of truth.",
+      "Improved accuracy and reliability of analytics, segmentation, and reporting based on unique, de-duplicated entities."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Skewed analytics, inaccurate reports, and flawed business intelligence due to double-counting or fragmented views of key entities.",
+      "Inefficient processes, wasted resources, and increased operational costs dealing with duplicate entities (e.g., multiple customer profiles, redundant inventory items).",
+      "Poor customer experience, inconsistent service, and brand damage if interactions are fragmented across duplicate customer records.",
+      "Compromised MDM initiatives and inability to establish a true, reliable single source of truth for critical data domains."
+    ],
+    "illustrativeKpisAffected": ["Customer Record Duplication Rate (%)", "Product Master Duplication Rate (%)", "Marketing Spend Effectiveness (Impacted by targeting duplicates)", "Data Cleansing & De-duplication Costs", "MDM 'Golden Record' Accuracy"]
+  },
+  {
+    "damaId": 56,
+    "dimensionName": "Uniqueness (Records)",
+    "positiveImpactsGoodDQ": [
+      "Ensures each record in a dataset is distinct and not an exact duplicate, preventing processing errors.",
+      "Accurate aggregation and counting where each record represents a unique instance or transaction.",
+      "Improved data integrity and reliability of datasets used for operations or analytics.",
+      "Reduced storage waste from identical duplicate records."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Processing errors, incorrect aggregations, or skewed analytics if identical records are counted multiple times.",
+      "Potential for duplicated actions in operational systems (e.g., double billing, repeated order fulfillment).",
+      "Increased data storage and processing overhead due to redundant identical records.",
+      "Reduced confidence in dataset integrity if plagued by exact duplicates."
+    ],
+    "illustrativeKpisAffected": ["Exact Duplicate Record Rate (%)", "Transactional Error Rate (due to duplicates)", "Report Aggregation Accuracy", "Storage Utilization Efficiency"]
+  },
+  {
+    "damaId": 57,
+    "dimensionName": "Validity",
+    "positiveImpactsGoodDQ": [
+      "Smooth data processing, system interoperability, and adherence to defined data structures.",
+      "Reduced data entry errors and improved data capture accuracy through conformance to formats and rules.",
+      "Consistent application of business rules and data standards across the organization.",
+      "More reliable and predictable data for automated processes, decision engines, and AI model inputs."
+    ],
+    "negativeImpactsPoorDQ": [
+      "System errors, application crashes, and process failures when data does not conform to expected formats, types, or value ranges.",
+      "Increased manual effort, time, and cost to cleanse, correct, or transform invalid data entries.",
+      "Inconsistent application of business rules leading to operational discrepancies and unreliable reporting.",
+      "Poor performance or failure of automated systems and AI models that rely on valid, well-structured data inputs."
+    ],
+    "illustrativeKpisAffected": ["Data Entry Error Rate (Format/Type)", "System Processing Failure Rate (due to invalid data)", "Automated Decision Accuracy & Reliability", "Data Transformation Success Rate", "Data Quality Rule Pass Rate (Validity Checks)"]
+  },
+  {
+    "damaId": 58,
+    "dimensionName": "Value",
+    "positiveImpactsGoodDQ": [
+      "Data assets directly contribute to achieving specific business objectives and key strategic goals.",
+      "Demonstrable and quantifiable Return on Investment (ROI) from data, analytics, and AI initiatives.",
+      "Improved strategic and operational decision-making leading to competitive advantage, revenue growth, and cost optimization.",
+      "Efficient resource allocation, optimized processes, and new revenue streams based on valuable data-driven insights."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Collection, storage, and management of data that provides no discernible business benefit, leading to wasted resources and data hoarding.",
+      "Missed business opportunities because the potential value of existing data assets is not understood, accessed, or realized.",
+      "Substantial investments in data infrastructure, analytics tools, or AI projects that do not yield expected returns or tangible business outcomes.",
+      "Difficulty in justifying data-related expenditures and initiatives to business stakeholders due to lack of clear value demonstration."
+    ],
+    "illustrativeKpisAffected": ["Return on Data Investment (RODI)", "Revenue Growth Attributable to Data Insights", "Cost Savings from Data-Driven Optimizations", "Strategic Goal Achievement Rate (Data-linked goals)", "New Product/Service Success Rate (Data-informed)"]
+  },
+  {
+    "damaId": 59,
+    "dimensionName": "Variety",
+    "positiveImpactsGoodDQ": [
+      "Richer insights and more robust models from integrating diverse data types and sources (structured, unstructured, internal, external).",
+      "More comprehensive understanding of complex phenomena by considering multiple perspectives.",
+      "Enhanced innovation and discovery through the combination of previously siloed information.",
+      "Improved resilience of analytical models by training on a wider range of data scenarios."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Limited analytical capabilities and potentially biased insights if relying on a narrow set of data sources.",
+      "Missed opportunities that could be uncovered by combining different types of data.",
+      "Difficulty in creating a holistic view of customers, markets, or operations.",
+      "Models that are not robust or generalizable to new, unseen data types."
+    ],
+    "illustrativeKpisAffected": ["Number of Data Sources Integrated", "Richness of Analytical Features", "Predictive Model Generalizability Score", "Innovation Rate (Data-driven ideas)", "Completeness of 360-Degree Views"]
+  },
+  {
+    "damaId": 60,
+    "dimensionName": "Volatility",
+    "positiveImpactsGoodDQ": [ 
+      "Accurate reflection of highly dynamic data environments where change is frequent and expected.",
+      "Ability to track and analyze rapid changes for time-sensitive decision making.",
+      "Systems designed to handle high change rates can maintain accuracy and currency.",
+      "Understanding data volatility helps in designing appropriate data refresh and validation strategies."
+    ],
+    "negativeImpactsPoorDQ": [
+      "Difficulty in maintaining data accuracy and currency if data changes faster than update processes can cope.",
+      "Increased risk of decisions based on stale data in highly dynamic environments.",
+      "Higher data management overhead to track and reconcile frequent changes.",
+      "Instability in reports or analyses if based on constantly shifting, unmanaged volatile data."
+    ],
+    "illustrativeKpisAffected": ["Data Staleness Rate (for volatile data)", "Real-time Monitoring Accuracy (in volatile systems)", "Data Update Frequency vs. Change Rate Gap", "Cost of Managing High-Volatility Data"]
+  }
+]

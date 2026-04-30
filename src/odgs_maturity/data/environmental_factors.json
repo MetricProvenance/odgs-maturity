@@ -1,0 +1,170 @@
+[
+  {
+    "factorId": "ENV_001",
+    "factorName": "Lack of Clear System of Record (SoR)",
+    "description": "Critical data elements (e.g., customer information, product specifications, financial master data) exist in multiple systems or locations without a formally designated, single authoritative source. This leads to conflicting versions of the truth across the organization.",
+    "typicalSymptomsInOrg": [
+      "Different departments or reports show conflicting numbers for the same metric (e.g., 'total active customers', 'QTD sales').",
+      "Significant time and effort spent manually reconciling data between various systems before reporting or decision-making.",
+      "Customer service representatives see different customer histories or statuses depending on the system they access.",
+      "High levels of data redundancy and inconsistency for key master data entities.",
+      "Confusion about which data source to trust for specific information."
+    ],
+    "dqDimensionsImpactedDamaIds": [3, 8, 10, 12, 14, 15, 20, 21, 22, 23, 24, 25, 26, 46, 47, 48, 50, 53, 54, 55, 56, 57, 58], 
+    
+    "potentialSolutionsTeaser": [
+      "Establish formal Data Governance to define and assign ownership for SoRs.",
+      "Implement Master Data Management (MDM) strategies and solutions for critical data domains.",
+      "Develop clear data integration and synchronization policies between systems.",
+      "Create a centralized, trusted data repository (e.g., data warehouse/lakehouse) fed from designated SoRs."
+    ]
+  },
+  {
+    "factorId": "ENV_002",
+    "factorName": "Prevalence of 'Excel Hell' / Shadow IT",
+    "description": "Critical business processes, data management, analysis, and reporting rely heavily on uncontrolled spreadsheets (Excel, Google Sheets) or unmanaged departmental applications (e.g., Access databases, niche cloud tools) outside of central IT governance.",
+    "typicalSymptomsInOrg": [
+      "Key operational or financial reports are manually compiled and distributed as complex Excel files.",
+      "Multiple versions of the same spreadsheet exist with no clear version control ('Report_Final_v3_Johns_Copy.xlsx').",
+      "Formulas in critical spreadsheets are prone to breaking, contain errors, or are poorly understood.",
+      "Sensitive data is frequently emailed around in unprotected spreadsheets.",
+      "Lack of audit trails, security controls, and proper backup for data managed in these shadow systems.",
+      "Business continuity risk if the person who built/maintains the spreadsheet leaves."
+    ],
+    "dqDimensionsImpactedDamaIds": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 60], 
+   
+    "potentialSolutionsTeaser": [
+      "Identify and inventory critical business processes reliant on Excel/Shadow IT.",
+      "Prioritize migrating high-risk/high-value processes to controlled, auditable systems (databases, ERP modules, BI platforms).",
+      "Implement proper BI and data visualization tools fed from governed data sources to replace Excel reporting.",
+      "Improve data literacy and provide users with better, sanctioned tools for data analysis.",
+      "Establish clear IT policies regarding data management and application usage."
+    ]
+  },
+  {
+    "factorId": "ENV_003",
+    "factorName": "Absence or Inconsistent Application of Data Standards",
+    "description": "Lack of agreed-upon definitions, formats, value domains, and business rules for key data elements across the organization. If standards exist, they are not consistently enforced or adopted.",
+    "typicalSymptomsInOrg": [
+      "The same term (e.g., 'customer', 'product category', 'sale date') has different meanings or interpretations in different departments.",
+      "Data fields for the same concept have varying formats (e.g., date formats, address structures, naming conventions).",
+      "Frequent data transformation and cleansing required when integrating data from different sources.",
+      "Difficulty in performing enterprise-wide reporting or analytics due to inconsistent data.",
+      "High number of data validation errors when data is moved between systems."
+    ],
+    "dqDimensionsImpactedDamaIds": [3, 4, 6, 7, 8, 9, 10, 16, 20, 21, 22, 23, 24, 27, 31, 33, 34, 35, 40, 47, 57],
+   
+    "potentialSolutionsTeaser": [
+      "Develop and implement a Data Governance framework that includes defining data standards.",
+      "Establish a common business glossary and data dictionary.",
+      "Implement Master Data Management (MDM) for critical data domains (Customer, Product, Supplier).",
+      "Integrate data validation rules based on standards into data capture and processing systems.",
+      "Invest in data quality tools for profiling, cleansing, and monitoring adherence to standards."
+    ]
+  },
+  {
+    "factorId": "ENV_004",
+    "factorName": "Data Silos Between Departments/Systems",
+    "description": "Data is stored and managed within isolated departmental systems or applications that do not effectively integrate or share information with other parts of the organization.",
+    "typicalSymptomsInOrg": [
+      "Departments operate with their own 'version of the truth' for shared entities like customers or products.",
+      "Inability to get a complete, end-to-end view of business processes (e.g., O2C, P2P).",
+      "Redundant data entry and storage across multiple systems.",
+      "Significant manual effort required to consolidate data for enterprise-level reporting or analysis.",
+      "Missed opportunities for cross-functional insights or collaboration."
+    ],
+    "dqDimensionsImpactedDamaIds": [2, 3, 5, 8, 10, 12, 14, 20, 21, 22, 26, 33, 46, 48, 53, 55, 58, 59],
+    
+    "potentialSolutionsTeaser": [
+      "Develop an enterprise data strategy focusing on integration and data sharing.",
+      "Implement data integration platforms (ETL/ELT tools, APIs, message queues).",
+      "Establish data warehouses, data lakes, or lakehouses as centralized repositories for analytical data.",
+      "Promote cross-functional data governance and standardized data models.",
+      "Break down organizational silos through improved communication and shared objectives."
+    ]
+  },
+  {
+    "factorId": "ENV_005",
+    "factorName": "Immature or Informal Data Governance",
+    "description": "Lack of clearly defined roles, responsibilities, policies, standards, and processes for managing the organization's data assets. Data quality is often an afterthought or managed reactively.",
+    "typicalSymptomsInOrg": [
+      "No clear ownership or accountability for critical data domains (e.g., who owns 'customer data'?).",
+      "Inconsistent data handling practices across different teams or departments.",
+      "Data quality issues are frequently discovered late in processes or by end-users/customers.",
+      "Difficulty in making decisions about data standards, SoRs, or data access rules.",
+      "Limited proactive monitoring or management of data quality."
+    ],
+    "dqDimensionsImpactedDamaIds": [1, 3, 7, 8, 10, 12, 14, 16, 17, 18, 19, 20, 25, 30, 34, 36, 45, 46, 47, 48, 50, 51, 52, 54, 55, 56, 57, 58],
+   
+    "potentialSolutionsTeaser": [
+      "Establish a formal Data Governance framework with clear roles (e.g., Data Owners, Data Stewards, Data Council).",
+      "Develop and communicate enterprise-wide data policies, standards, and procedures.",
+      "Implement processes for data quality monitoring, issue management, and remediation.",
+      "Foster a data-aware culture with an emphasis on shared responsibility for data quality.",
+      "Secure executive sponsorship and funding for data governance initiatives."
+    ]
+  },
+  {
+    "factorId": "ENV_006",
+    "factorName": "Reliance on Legacy Systems",
+    "description": "Core business operations depend on older technology systems that may be difficult to integrate with modern applications, lack flexibility, have poor data structures, or are costly to maintain.",
+    "typicalSymptomsInOrg": [
+      "Data is 'trapped' in outdated systems with limited extraction or integration capabilities.",
+      "Legacy systems often have rigid, non-standard data formats or undocumented data models.",
+      "High costs associated with maintaining or customizing legacy applications.",
+      "Difficult to adapt legacy systems to new business requirements or modern data analytics needs.",
+      "Shortage of skilled personnel familiar with legacy system technologies."
+    ],
+    "dqDimensionsImpactedDamaIds": [2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 16, 20, 26, 27, 31, 32, 33, 35, 37, 39, 40, 53, 57, 59],
+    
+    "potentialSolutionsTeaser": [
+      "Develop a modernization strategy for legacy systems (e.g., encapsulate, re-platform, re-engineer, replace).",
+      "Implement data extraction and integration layers to make legacy data accessible to modern systems.",
+      "Invest in reverse-engineering and documenting data models of critical legacy systems.",
+      "Prioritize migration of high-value data from legacy systems to modern platforms.",
+      "Consider data archiving strategies for historical legacy data."
+    ]
+  },
+  {
+    "factorId": "ENV_007",
+    "factorName": "High Degree of Manual Data Processes",
+    "description": "Significant reliance on human intervention for data entry, updates, validation, reconciliation, and movement between systems, rather than automated processes.",
+    "typicalSymptomsInOrg": [
+      "Employees spend a large amount of time on repetitive data input or swivel-chair integration (copy-pasting between screens).",
+      "High incidence of typographical errors, omissions, and inconsistencies in data.",
+      "Slow process cycle times due to manual bottlenecks.",
+      "Limited scalability of processes as volume increases.",
+      "Lack of audit trails for manually changed data."
+    ],
+    "dqDimensionsImpactedDamaIds": [3, 5, 12, 14, 15, 20, 24, 26, 30, 32, 36, 43, 50, 53, 54, 56, 57],
+    
+    "potentialSolutionsTeaser": [
+      "Identify and map critical manual data processes and their pain points.",
+      "Invest in process automation technologies (e.g., RPA, workflow automation, ETL tools).",
+      "Improve system integrations to reduce the need for manual data transfer.",
+      "Implement data validation rules at the point of entry to reduce errors.",
+      "Provide training and tools to improve data entry accuracy where manual input is unavoidable."
+    ]
+  },
+  {
+    "factorId": "ENV_008",
+    "factorName": "Lack of Data-Aware Culture / Low Data Literacy",
+    "description": "A general lack of understanding across the organization about the importance of data quality, how data is created and used, and the impact of poor data. Employees may not have the skills to interpret or use data effectively.",
+    "typicalSymptomsInOrg": [
+      "Data quality is seen as IT's problem rather than a shared business responsibility.",
+      "Employees are unaware of how their actions impact downstream data quality.",
+      "Decisions are often made based on gut feeling or anecdotal evidence rather than data.",
+      "Resistance to adopting new data tools or data-driven approaches.",
+      "Misinterpretation of reports and dashboards due to lack of understanding of data concepts or visualizations."
+    ],
+    "dqDimensionsImpactedDamaIds": [3, 7, 16, 25, 31, 36, 44, 48, 51, 57, 58],
+    
+    "potentialSolutionsTeaser": [
+      "Invest in data literacy training programs for employees at all levels.",
+      "Promote a data-aware culture through leadership commitment and communication.",
+      "Establish clear data ownership and stewardship roles with defined responsibilities.",
+      "Make data more accessible and understandable through user-friendly BI tools and clear metadata.",
+      "Celebrate successes and demonstrate the value of high-quality data through impactful use cases."
+    ]
+  }
+]

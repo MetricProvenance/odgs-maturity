@@ -1,0 +1,275 @@
+[
+  {
+    "lifecycleId": "LC_O2C",
+    "lifecycleName": "Order to Cash (O2C)",
+    "description": "The end-to-end set of business processes for receiving and processing customer orders for goods or services and collecting payment.",
+    "typicalIndustries": ["Manufacturing", "Retail", "Wholesale Distribution", "Services", "E-commerce"],
+    "keyStakeholders": ["Sales", "Customer Service", "Logistics/Supply Chain", "Finance/Accounts Receivable", "Operations"],
+    "stages": [
+      {
+        "stageId": "O2C_S01",
+        "stageName": "Customer Inquiry & Quotation",
+        "description": "Handling initial customer interest, providing information, and generating quotes or proposals."
+      },
+      {
+        "stageId": "O2C_S02",
+        "stageName": "Order Entry & Management",
+        "description": "Capturing customer orders, validating order details, checking credit, and confirming product/service availability."
+      },
+      {
+        "stageId": "O2C_S03",
+        "stageName": "Order Fulfillment & Shipping",
+        "description": "Picking, packing, and dispatching goods, or provisioning services as per the order."
+      },
+      {
+        "stageId": "O2C_S04",
+        "stageName": "Invoicing & Billing",
+        "description": "Generating and sending accurate invoices to customers based on fulfilled orders or services rendered."
+      },
+      {
+        "stageId": "O2C_S05",
+        "stageName": "Payment Collection & Reconciliation",
+        "description": "Receiving customer payments, managing accounts receivable, applying payments to invoices, and handling discrepancies."
+      },
+      {
+        "stageId": "O2C_S06",
+        "stageName": "Returns & Dispute Management",
+        "description": "Handling customer returns, managing claims or disputes related to orders or invoices."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_P2P",
+    "lifecycleName": "Procure to Pay (P2P)",
+    "description": "The end-to-end process of obtaining and managing the raw materials, goods, and services needed to manufacture a product or operate a business, through to payment.",
+    "typicalIndustries": ["Manufacturing", "Retail", "Construction", "Services", "Government"],
+    "keyStakeholders": ["Procurement", "Sourcing", "Operations", "Finance/Accounts Payable", "Receiving/Warehouse"],
+    "stages": [
+      {
+        "stageId": "P2P_S01",
+        "stageName": "Requisition & Need Identification",
+        "description": "Identifying the need for goods or services and creating a purchase requisition."
+      },
+      {
+        "stageId": "P2P_S02",
+        "stageName": "Supplier Selection & Purchase Order Creation",
+        "description": "Selecting suppliers (often through RFx processes), negotiating terms, and issuing a formal Purchase Order (PO)."
+      },
+      {
+        "stageId": "P2P_S03",
+        "stageName": "Goods/Service Receipt & Inspection",
+        "description": "Receiving delivered goods or confirming service completion, and inspecting for quality and quantity against the PO."
+      },
+      {
+        "stageId": "P2P_S04",
+        "stageName": "Invoice Processing & Verification",
+        "description": "Receiving supplier invoices, validating them against POs and goods receipts (3-way match), and resolving discrepancies."
+      },
+      {
+        "stageId": "P2P_S05",
+        "stageName": "Payment & Reconciliation",
+        "description": "Processing payments to suppliers according to agreed terms and reconciling accounts payable."
+      },
+      {
+        "stageId": "P2P_S06",
+        "stageName": "Supplier Relationship Management",
+        "description": "Ongoing management and performance evaluation of suppliers."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_H2R",
+    "lifecycleName": "Hire to Retire (H2R) / Employee Lifecycle",
+    "description": "The complete journey of an employee within an organization, from recruitment and onboarding through their tenure, development, and eventual separation.",
+    "typicalIndustries": ["All industries"],
+    "keyStakeholders": ["Human Resources (HR)", "Recruiting", "Payroll", "Department Managers", "IT (for access provisioning)"],
+    "stages": [
+      {
+        "stageId": "H2R_S01",
+        "stageName": "Recruitment & Talent Acquisition",
+        "description": "Attracting, sourcing, screening, interviewing, and selecting candidates for open positions."
+      },
+      {
+        "stageId": "H2R_S02",
+        "stageName": "Onboarding & Integration",
+        "description": "Integrating new hires into the organization, including paperwork, system access, orientation, and initial training."
+      },
+      {
+        "stageId": "H2R_S03",
+        "stageName": "Performance Management & Development",
+        "description": "Setting goals, evaluating performance, providing feedback, identifying development needs, and offering training/growth opportunities."
+      },
+      {
+        "stageId": "H2R_S04",
+        "stageName": "Compensation & Benefits Administration",
+        "description": "Managing salaries, bonuses, benefits enrollment, payroll processing, and leave management."
+      },
+      {
+        "stageId": "H2R_S05",
+        "stageName": "Employee Engagement & Relations",
+        "description": "Fostering a positive work environment, managing employee relations, and handling grievances."
+      },
+      {
+        "stageId": "H2R_S06",
+        "stageName": "Offboarding & Separation",
+        "description": "Managing the process of an employee leaving the organization, including exit interviews, final settlements, and de-provisioning access."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_R2R",
+    "lifecycleName": "Record to Report (R2R)",
+    "description": "The process of collecting, processing, and presenting financial data to provide internal and external stakeholders with accurate financial statements and reports.",
+    "typicalIndustries": ["All industries, especially publicly traded companies"],
+    "keyStakeholders": ["Finance/Accounting", "Controllership", "Financial Planning & Analysis (FP&A)", "Internal Audit", "External Auditors"],
+    "stages": [
+      {
+        "stageId": "R2R_S01",
+        "stageName": "Transaction Recording & Data Capture",
+        "description": "Capturing all financial transactions (e.g., sales, purchases, journal entries) accurately and completely in the general ledger and sub-ledgers."
+      },
+      {
+        "stageId": "R2R_S02",
+        "stageName": "Period-End Close & Consolidation",
+        "description": "Performing month-end, quarter-end, and year-end closing procedures, including accruals, reconciliations, and intercompany eliminations. Consolidating financial data from various entities."
+      },
+      {
+        "stageId": "R2R_S03",
+        "stageName": "Financial Reporting & Analysis",
+        "description": "Preparing financial statements (Balance Sheet, Income Statement, Cash Flow Statement), management reports, variance analysis, and regulatory filings."
+      },
+      {
+        "stageId": "R2R_S04",
+        "stageName": "Budgeting & Forecasting",
+        "description": "Developing financial budgets, forecasts, and scenarios based on historical data and business plans."
+      },
+      {
+        "stageId": "R2R_S05",
+        "stageName": "Audit & Compliance",
+        "description": "Supporting internal and external audits, ensuring compliance with accounting standards (e.g., IFRS, GAAP) and regulatory requirements."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_I2M",
+    "lifecycleName": "Idea to Market / New Product Development (NPD)",
+    "description": "The complete process of conceiving, designing, developing, testing, and launching new products or services.",
+    "typicalIndustries": ["Manufacturing", "Technology", "Consumer Goods", "Pharmaceuticals", "Automotive"],
+    "keyStakeholders": ["R&D", "Product Management", "Engineering", "Marketing", "Sales", "Operations/Manufacturing"],
+    "stages": [
+      {
+        "stageId": "I2M_S01",
+        "stageName": "Ideation & Concept Generation",
+        "description": "Generating and screening new ideas based on market research, customer needs, and technological opportunities."
+      },
+      {
+        "stageId": "I2M_S02",
+        "stageName": "Feasibility Study & Business Case Development",
+        "description": "Assessing the technical feasibility, market potential, and financial viability of promising concepts. Developing a business case."
+      },
+      {
+        "stageId": "I2M_S03",
+        "stageName": "Design & Development",
+        "description": "Detailed design of the product/service, engineering, prototyping, and development of manufacturing processes."
+      },
+      {
+        "stageId": "I2M_S04",
+        "stageName": "Testing & Validation",
+        "description": "Testing prototypes, conducting pilot runs, gathering user feedback, and validating that the product/service meets requirements and quality standards."
+      },
+      {
+        "stageId": "I2M_S05",
+        "stageName": "Launch & Commercialization",
+        "description": "Developing marketing and sales plans, ramping up production, launching the product/service to the market, and managing initial sales."
+      },
+      {
+        "stageId": "I2M_S06",
+        "stageName": "Post-Launch Review & Lifecycle Management",
+        "description": "Monitoring market performance, gathering customer feedback post-launch, and managing the product through its lifecycle (updates, enhancements, end-of-life)."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_CRM",
+    "lifecycleName": "Customer Relationship Management (CRM) Lifecycle",
+    "description": "The overall process of managing interactions and relationships with current and potential customers to drive sales, improve customer service, and increase retention.",
+    "typicalIndustries": ["All B2C and B2B industries"],
+    "keyStakeholders": ["Sales", "Marketing", "Customer Service/Support", "Account Management"],
+    "stages": [
+      {
+        "stageId": "CRM_S01",
+        "stageName": "Lead Generation & Acquisition",
+        "description": "Identifying and attracting potential customers through various marketing channels and campaigns."
+      },
+      {
+        "stageId": "CRM_S02",
+        "stageName": "Lead Nurturing & Qualification",
+        "description": "Engaging with leads, providing relevant information, and qualifying them based on interest and fit."
+      },
+      {
+        "stageId": "CRM_S03",
+        "stageName": "Sales Conversion & Opportunity Management",
+        "description": "Managing the sales pipeline, pursuing opportunities, negotiating deals, and closing sales."
+      },
+      {
+        "stageId": "CRM_S04",
+        "stageName": "Customer Onboarding & Service Delivery",
+        "description": "Successfully onboarding new customers and ensuring smooth delivery of products/services."
+      },
+      {
+        "stageId": "CRM_S05",
+        "stageName": "Customer Support & Issue Resolution",
+        "description": "Providing ongoing support, addressing customer inquiries, and resolving issues effectively."
+      },
+      {
+        "stageId": "CRM_S06",
+        "stageName": "Customer Retention & Loyalty Building",
+        "description": "Engaging existing customers, fostering loyalty, encouraging repeat business, and managing advocacy programs."
+      }
+    ]
+  },
+  {
+    "lifecycleId": "LC_OPS",
+    "lifecycleName": "Operations & Execution Management",
+    "description": "The core day-to-day processes involved in producing goods or delivering services, managing resources, and ensuring operational performance.",
+    "typicalIndustries": ["Manufacturing", "Logistics", "Energy/Utilities", "Construction", "Healthcare Delivery", "Hospitality", "Field Services"],
+    "keyStakeholders": ["Operations Management", "Production Planning", "Shop Floor/Field Teams", "Quality Assurance", "Maintenance", "Inventory/Warehouse Management"],
+    "stages": [
+      {
+        "stageId": "OPS_S01",
+        "stageName": "Demand & Capacity Planning",
+        "description": "Forecasting demand, planning production/service capacity, and scheduling resources (materials, labor, equipment)."
+      },
+      {
+        "stageId": "OPS_S02",
+        "stageName": "Production / Service Execution",
+        "description": "The actual process of manufacturing goods or delivering services according to plans and quality standards."
+      },
+      {
+        "stageId": "OPS_S03",
+        "stageName": "Inventory & Materials Management",
+        "description": "Managing raw materials, work-in-progress (WIP), and finished goods inventory levels, including storage, movement, and replenishment."
+      },
+      {
+        "stageId": "OPS_S04",
+        "stageName": "Quality Control & Assurance",
+        "description": "Monitoring and ensuring that products or services meet defined quality standards through inspections, testing, and process controls."
+      },
+      {
+        "stageId": "OPS_S05",
+        "stageName": "Maintenance & Asset Management",
+        "description": "Maintaining equipment, facilities, and other assets to ensure operational readiness and minimize downtime."
+      },
+      {
+        "stageId": "OPS_S06",
+        "stageName": "Logistics & Distribution (Outbound)",
+        "description": "Managing the storage, transportation, and delivery of finished goods to customers or distribution centers (overlaps with O2C fulfillment)."
+      },
+      {
+        "stageId": "OPS_S07",
+        "stageName": "Operational Performance Monitoring & Reporting",
+        "description": "Tracking key operational metrics, analyzing performance, identifying bottlenecks, and reporting on efficiency and effectiveness."
+      }
+    ]
+  }
+]
