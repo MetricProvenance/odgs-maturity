@@ -2,7 +2,7 @@
   {
     "strategicObjectiveId": "SO_001",
     "strategicObjective": "Enhance Customer Experience & Personalization",
-    "description": "Creating superior, seamless, and personalized interactions across all customer touchpoints to increase loyalty, satisfaction, and lifetime value.",
+    "description": "Creating superior, deterministic, and personalized interactions across all customer touchpoints to increase loyalty, satisfaction, and lifetime value.",
     "criticalDimensionDamaIds": [3, 5, 12, 14, 15, 19, 20, 26, 53, 54, 55, 57, 58], 
     "supportingDimensionDamaIds": [1, 2, 4, 6, 7, 31, 33, 37, 48], 
     "howDqContributes": "Accurate customer data ensures correct personalization and avoids frustrating errors. Complete profiles enable tailored offerings and deeper understanding. Consistent data across channels prevents conflicting experiences. Current and timely data ensures relevance of interactions. Confidentiality builds trust. Traceability helps understand customer journey. Uniqueness ensures a single view of the customer. Valid data ensures smooth processing. Ultimately, valuable data drives valuable experiences."
@@ -51,7 +51,7 @@
     "description": "Providing employees with the right tools, information, and environment to be productive, make informed decisions, and work effectively together.",
     "criticalDimensionDamaIds": [2, 3, 5, 7, 8, 12, 14, 20, 26, 31, 48, 53, 58], 
     "supportingDimensionDamaIds": [1, 4, 6, 16, 33, 37, 39, 40, 54], 
-    "howDqContributes": "Accessible, accurate, and timely data empowers employees to make confident decisions. Clarity and interpretability ensure everyone understands the data correctly. Coherent and consistent data facilitates seamless collaboration across teams and departments. Relevant information reduces noise and improves focus. Valuable data directly supports task completion and goal achievement."
+    "howDqContributes": "Accessible, accurate, and timely data empowers employees to make confident decisions. Clarity and interpretability ensure everyone understands the data correctly. Coherent and consistent data facilitates deterministic collaboration across teams and departments. Relevant information reduces noise and improves focus. Valuable data directly supports task completion and goal achievement."
   },
   {
     "strategicObjectiveId": "SO_008",

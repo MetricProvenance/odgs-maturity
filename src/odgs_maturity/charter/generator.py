@@ -54,6 +54,7 @@ RULE_DIMENSION_MAP: dict[str, list[int]] = {
     "GOV-01": [7, 12, 20],    # Clarity, Completeness (Records), Consistency
     "GOV-02": [16, 31, 33],   # Completeness (Metadata), Interpretability, Linkability
     "GOV-03": [7, 14, 20],    # Clarity, Completeness (Values), Consistency
+    "GOV-04": [17, 34, 7],     # Compliance (Data), Metadata compliance, Clarity
     # Quality Enforcement
     "QE-01": [3, 20, 34],     # Accuracy, Consistency, Metadata compliance
     "QE-02": [16, 17, 37],    # Completeness (Metadata), Compliance (Data), Obtainability
@@ -86,6 +87,7 @@ RULE_SPOT_MAP: dict[str, SPOTCategory] = {
     "GOV-01": SPOTCategory.ORGANIZATION,
     "GOV-02": SPOTCategory.PROCESS,
     "GOV-03": SPOTCategory.STANDARD,
+    "GOV-04": SPOTCategory.STANDARD,
     "QE-01":  SPOTCategory.STANDARD,
     "QE-02":  SPOTCategory.ORGANIZATION,
     "QE-03":  SPOTCategory.STANDARD,

@@ -2,7 +2,7 @@
 
 > **Diagnostic scoring and improvement charters for any ODGS workspace.**
 
-[![Protocol](https://img.shields.io/badge/Protocol-v6.0.2_(Sovereign_Engine)-0055AA)](https://platform.metricprovenance.com)
+[![Protocol](https://img.shields.io/badge/Protocol-v6.0.3_(Sovereign_Engine)-0055AA)](https://github.com/MetricProvenance/odgs-protocol)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![DAMA DMBOK](https://img.shields.io/badge/Framework-DAMA_DMBOK_8--Pillar-006644)](https://www.dama.org/cpages/body-of-knowledge)
 [![License](https://img.shields.io/badge/License-Apache_2.0-lightgrey)](LICENSE)
@@ -400,7 +400,7 @@ The engine automatically discovers all registered rules at import time.
 The **Open Data Governance Standard** is a sovereign enforcement protocol that validates data operations against governance rules at runtime. It produces cryptographic S-Certs (Sovereign Certificates) — machine-verifiable proof that governance rules were evaluated before data entered a pipeline.
 
 - [ODGS on PyPI](https://pypi.org/project/odgs/)
-- [Documentation](https://metricprovenance.com)
+- [Documentation](https://github.com/MetricProvenance/odgs-protocol)
 - [Research Paper (SSRN)](https://papers.ssrn.com/abstract=6205478)
 
 ---

@@ -108,6 +108,7 @@ class CharterContext:
     spot_classifications: dict[str, list[str]] = field(default_factory=dict)
     cost_flags: list[str] = field(default_factory=list)
     red_flag_rules: list[str] = field(default_factory=list)
+    regulatory_alignment: list[str] = field(default_factory=list)
 
     # Metadata
     generated_at: str = field(default_factory=lambda: datetime.now().isoformat())

@@ -1,5 +1,5 @@
 """
-Maturity scoring rules — 22 rules across 8 pillars.
+Maturity scoring rules — 23 rules across 8 pillars.
 
 Each rule inspects a WorkspaceSnapshot and returns a RuleResult.
 Rules are pure functions: read-only, deterministic, no side effects.
@@ -149,6 +149,78 @@ def gov_03(snap: WorkspaceSnapshot) -> RuleResult:
     return RuleResult("GOV-03", "Workspace YAML Configured",
                       Pillar.GOVERNANCE_FOUNDATIONS, score, 1.0, evidence,
                       "Set organisation name, industry, and enforcement mode",
+                      flag)
+
+
+@_register("GOV-04", "Framework Tag Coverage", Pillar.GOVERNANCE_FOUNDATIONS)
+def gov_04(snap: WorkspaceSnapshot) -> RuleResult:
+    """Check that protocol artifacts have framework alignment tags (APQC/CDMC/BIAN/DAMA).
+
+    Evaluates rules, metrics, and DQ dimensions for cross-framework tagging.
+    """
+    # Collect items from all three artifact types
+    sources = [
+        ("data_rules", "rules"),
+        ("standard_metrics", "metrics"),
+        ("dq_dimensions", "DQ dimensions"),
+    ]
+    total = 0
+    tagged = 0
+    parts = []
+
+    for artifact_key, label in sources:
+        art = snap.artifacts.get(artifact_key)
+        if not art or not art.exists or not art.data:
+            continue
+        items = art.data if isinstance(art.data, list) else []
+        n = len(items)
+        t = sum(1 for r in items
+                if r.get("framework_tags")
+                and any(r["framework_tags"].values()))
+        total += n
+        tagged += t
+        parts.append(f"{t}/{n} {label}")
+
+    if total == 0:
+        return RuleResult("GOV-04", "Framework Tag Coverage",
+                          Pillar.GOVERNANCE_FOUNDATIONS, 0.0, 1.0,
+                          "No protocol artifacts found for framework alignment",
+                          "Install data quality rules with framework_tags",
+                          CostFlag.AMBER)
+
+    # ── Executive Gap Detection ──────────────────────────────────────────
+    # When artefacts exist but zero are mapped to governance frameworks,
+    # the organisation has technical enforcement without board-level risk
+    # quantification. This is the core commercial upsell trigger.
+    if tagged == 0 and total > 0:
+        return RuleResult(
+            "GOV-04", "Framework Tag Coverage",
+            Pillar.GOVERNANCE_FOUNDATIONS, 0.0, 1.0,
+            (
+                f"⚠️ EXECUTIVE GAP DETECTED: 0 of your {total} active artefacts "
+                f"are mapped to APQC, CDMC, or BIAN frameworks. Your pipeline is "
+                f"technically enforced, but business risk cannot be quantified "
+                f"for the Board."
+            ),
+            (
+                "🔗 Generate a Board-Ready Charter with full framework compliance "
+                "→ https://assess.metricprovenance.com"
+            ),
+            CostFlag.RED,
+        )
+
+    ratio = tagged / total
+    score = min(ratio * 2, 1.0)  # 50%+ tagged = full score
+
+    flag = CostFlag.GREEN if score >= 0.8 else (
+        CostFlag.AMBER if score >= 0.3 else CostFlag.RED)
+
+    detail = ", ".join(parts) + f" mapped to APQC/CDMC/BIAN/DAMA ({tagged}/{total} total)"
+
+    return RuleResult("GOV-04", "Framework Tag Coverage",
+                      Pillar.GOVERNANCE_FOUNDATIONS, score, 1.0,
+                      detail,
+                      "Add framework_tags to rules for cross-framework alignment",
                       flag)
 
 
@@ -558,6 +630,74 @@ def cert_02(snap: WorkspaceSnapshot) -> RuleResult:
                       Pillar.CERTIFICATION_TRUST, 1.0, 1.0,
                       f"{len(packs)} pack(s) with valid signatures",
                       "Signatures verified at install time", CostFlag.GREEN)
+
+
+@_register("CERT-03", "Sovereign Audit Trail Configured", Pillar.CERTIFICATION_TRUST)
+def cert_03(snap: WorkspaceSnapshot) -> RuleResult:
+    """
+    Check that forensic sovereignty (v5 §3.4 / Article 12) is configured.
+
+    A conformant ODGS workspace MUST generate cryptographic event logs
+    upon Administrative Recusal (Hard Stop) and write them to the client's
+    sovereign storage. This rule checks that the workspace YAML declares
+    a sovereign audit output path and that the output is not directed to
+    any external third-party service (Zero-Knowledge Auditing).
+    """
+    ws = snap.workspace_yaml
+    if not ws:
+        return RuleResult("CERT-03", "Sovereign Audit Trail Configured",
+                          Pillar.CERTIFICATION_TRUST, 0.0, 1.0,
+                          "No workspace YAML — sovereign audit trail cannot be assessed",
+                          "Create odgs-workspace.yaml with sovereign audit configuration",
+                          CostFlag.RED)
+
+    # Check for sovereign audit configuration
+    # Expected structure: sovereign: { audit_trail: { output: "path", format: "json" } }
+    sovereign = ws.get("sovereign", {})
+    audit = sovereign.get("audit_trail", {})
+
+    checks = []
+
+    # Check 1: Audit trail output path is declared
+    output_path = audit.get("output") or audit.get("path") or audit.get("destination")
+    checks.append(bool(output_path))
+
+    # Check 2: Output is NOT an external service (Zero-Knowledge Auditing)
+    is_external = False
+    if output_path and isinstance(output_path, str):
+        external_indicators = ("http://", "https://", "s3://", "gs://", "azure://")
+        is_external = output_path.lower().startswith(external_indicators)
+    checks.append(not is_external)
+
+    # Check 3: Enforcement mode is strict (Hard Stops actually trigger audit)
+    enforcement_strict = snap.enforcement_mode == "strict"
+    checks.append(enforcement_strict)
+
+    score = sum(checks) / len(checks)
+
+    missing = []
+    if not checks[0]:
+        missing.append("audit output path")
+    if not checks[1]:
+        missing.append("output must be sovereign (local/git), not external SaaS")
+    if not checks[2]:
+        missing.append("enforcement must be 'strict' for audit trail to trigger")
+
+    if score == 0.0:
+        flag = CostFlag.RED
+    elif score < 1.0:
+        flag = CostFlag.AMBER
+    else:
+        flag = CostFlag.GREEN
+
+    evidence = f"Sovereign audit trail: {sum(checks)}/3 checks passed"
+    if missing:
+        evidence += f" (missing: {', '.join(missing)})"
+
+    return RuleResult("CERT-03", "Sovereign Audit Trail Configured",
+                      Pillar.CERTIFICATION_TRUST, score, 1.0, evidence,
+                      "Configure sovereign.audit_trail in workspace YAML with local/git output",
+                      flag)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

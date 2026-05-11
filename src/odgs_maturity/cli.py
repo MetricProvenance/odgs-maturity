@@ -110,6 +110,42 @@ def _render_score(result):
     console.print(f"\n[dim]{result.total_rules} rules evaluated, "
                   f"{result.total_gaps} gaps found[/dim]")
 
+    # ── Executive Gap CTA ────────────────────────────────────────────────
+    # When GOV-04 detects zero framework mappings (free tier), surface a
+    # prominent upgrade panel. This is the primary lead magnet trigger.
+    gov04_gap = any(
+        r.rule_id == "GOV-04" and r.score == 0.0
+        for r in reds
+    ) if reds else False
+    # Also check all rule results for GOV-04
+    if not gov04_gap:
+        for pillar_result in result.pillars.values():
+            for rr in pillar_result.rules:
+                if rr.rule_id == "GOV-04" and rr.score == 0.0:
+                    gov04_gap = True
+                    break
+
+    if gov04_gap:
+        console.print()
+        console.print(Panel(
+            "⚠️  [bold red]EXECUTIVE GAP DETECTED[/bold red]\n\n"
+            "0 of your active artefacts are mapped to APQC, CDMC, or BIAN\n"
+            "frameworks. Your pipeline is technically enforced, but business\n"
+            "risk cannot be quantified for the Board.\n\n"
+            "🔗 [bold]Generate a Board-Ready Charter[/bold] with full\n"
+            "   framework compliance:\n\n"
+            "   [link=https://assess.metricprovenance.com]"
+            "https://assess.metricprovenance.com[/link]",
+            title="[bold]Framework Compliance[/bold]",
+            border_style="red",
+        ))
+
+    # Benchmark portal promotion
+    console.print(
+        "\n[dim]📊 Compare your score against 99 European enterprises:[/dim]"
+        "\n[dim]   https://benchmark.metricprovenance.com[/dim]"
+    )
+
 
 @app.command()
 def charter(
@@ -283,6 +319,118 @@ def _prompt_strategic_context() -> dict:
         "initiative_name": initiative,
         "ai_use_case": ai_use_case,
     }
+
+
+@app.command()
+def export(
+    workspace: Optional[Path] = typer.Option(
+        None, "--workspace", "-w",
+        help="Path to ODGS workspace (auto-detects if omitted)",
+    ),
+    output: Optional[Path] = typer.Option(
+        None, "--output", "-o",
+        help="Output JSON file path (default: ./data.json)",
+    ),
+    target_dir: Optional[Path] = typer.Option(
+        None, "--target-dir", "-d",
+        help="Target directory for benchmark report (writes data.json inside it)",
+    ),
+    pretty: bool = typer.Option(
+        True, "--pretty/--compact",
+        help="Pretty-print JSON output",
+    ),
+):
+    """Export maturity assessment as JSON for the benchmark report pipeline.
+
+    This command scores the workspace and writes a comprehensive JSON file
+    that the benchmark report front-end can consume. The JSON includes:
+    - Aggregate score and maturity level
+    - Per-pillar breakdown with rule-level detail
+    - Metadata (org, industry, timestamp, engine version)
+    - Gap analysis summary for dashboard rendering
+
+    Usage:
+        odgs-maturity export                          # writes ./data.json
+        odgs-maturity export -d benchmark-report/site # writes benchmark-report/site/data.json
+        odgs-maturity export -o /tmp/report.json      # explicit output path
+    """
+    import json as json_mod
+    from datetime import datetime, timezone
+
+    from .scoring.engine import score_workspace
+    from .workspace.reader import WorkspaceReader
+
+    reader = WorkspaceReader()
+    snapshot = reader.read(workspace)
+
+    if snapshot.errors:
+        for err in snapshot.errors:
+            console.print(f"[yellow]⚠ {err}[/yellow]")
+
+    result = score_workspace(snapshot)
+
+    # Build export payload with benchmark report metadata
+    payload = result.to_dict()
+    payload["_meta"] = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "engine": "odgs-maturity",
+        "engine_version": _get_version(),
+        "workspace_path": str(workspace) if workspace else "auto-detected",
+        "schema_version": "1.0",
+    }
+
+    # Add gap summary for dashboard quick rendering
+    payload["gap_summary"] = {
+        "total_gaps": result.total_gaps,
+        "red_flags": [
+            {
+                "rule_id": r.rule_id,
+                "rule_name": r.rule_name,
+                "pillar": r.pillar.display_name,
+                "recommendation": r.recommendation,
+            }
+            for r in result.red_flags
+        ],
+        "amber_flags": [
+            {
+                "rule_id": r.rule_id,
+                "rule_name": r.rule_name,
+                "pillar": r.pillar.display_name,
+                "recommendation": r.recommendation,
+            }
+            for r in result.amber_flags
+        ],
+    }
+
+    # Resolve output path
+    if output:
+        out_path = output
+    elif target_dir:
+        target_dir.mkdir(parents=True, exist_ok=True)
+        out_path = target_dir / "data.json"
+    else:
+        out_path = Path("data.json")
+
+    indent = 2 if pretty else None
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(
+        json_mod.dumps(payload, indent=indent, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    console.print(f"\n[green]✓ Exported maturity data to {out_path}[/green]")
+    console.print(f"  Score: {result.aggregate_score}% ({result.level.label})")
+    console.print(f"  Rules: {result.total_rules}, Gaps: {result.total_gaps}")
+    console.print(f"  Size: {out_path.stat().st_size:,} bytes")
+
+
+def _get_version() -> str:
+    """Get odgs-maturity package version."""
+    try:
+        from importlib.metadata import version
+        return version("odgs-maturity")
+    except Exception:
+        return "0.0.0-dev"
 
 
 if __name__ == "__main__":

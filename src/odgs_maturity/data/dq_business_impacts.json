@@ -56,7 +56,7 @@
     "damaId": 4,
     "dimensionName": "Appropriateness (Format)",
     "positiveImpactsGoodDQ": [
-      "Seamless data processing and integration between systems due to suitable data formats.",
+      "Deterministic data processing and integration between systems due to suitable data formats.",
       "Reduced need for complex data transformations, saving time and resources.",
       "Improved usability of data for analytics, reporting, and automated processes.",
       "Enhanced interoperability with partner systems and industry standards."
