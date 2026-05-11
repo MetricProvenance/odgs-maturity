@@ -175,9 +175,11 @@ class WorkspaceReader:
         # Try to find installed odgs package
         try:
             import odgs  # type: ignore[import-not-found]
-            pkg_path = Path(odgs.__file__).parent
-            if (pkg_path / "executive").exists():
-                return pkg_path
+            # Namespace packages may have __file__ = None
+            if odgs.__file__ is not None:
+                pkg_path = Path(odgs.__file__).parent
+                if (pkg_path / "executive").exists():
+                    return pkg_path
         except ImportError:
             pass
 
