@@ -2,7 +2,7 @@
 
 > **Diagnostic scoring and improvement charters for any ODGS workspace.**
 
-[![Protocol](https://img.shields.io/badge/Protocol-v6.0.3_(Sovereign_Engine)-0055AA)](https://github.com/MetricProvenance/odgs-protocol)
+[![Protocol](https://img.shields.io/badge/Protocol-v6.0.5_(Sovereign_Engine)-0055AA)](https://github.com/MetricProvenance/odgs-protocol)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![DAMA DMBOK](https://img.shields.io/badge/Framework-DAMA_DMBOK_8--Pillar-006644)](https://www.dama.org/cpages/body-of-knowledge)
 [![License](https://img.shields.io/badge/License-Apache_2.0-lightgrey)](LICENSE)
@@ -11,7 +11,7 @@
 
 > **For data engineers:** See [Quick Start](#quick-start) below.
 > **For governance leads:** This tool measures *how well* your governance workspace is configured — not just whether files exist.
-> **For platform operators:** The JSON output (`--json`) integrates directly with the [ODGS Operating System](https://github.com/MetricProvenance/odgs-OS) dashboard.
+> **For platform operators:** The JSON output (`--json`) integrates directly with your governance dashboarding or CI/CD pipeline.
 
 ---
 

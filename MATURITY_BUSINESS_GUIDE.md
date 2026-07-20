@@ -28,14 +28,14 @@ The ODGS Maturity Model solves this by providing:
 
 The ODGS Maturity Assessment evaluates your organisation across **8 Core Pillars**:
 
-1. **Metadata & Schema Control (META):** Are data sources mapped and catalogued?
-2. **Quality & Error Handling (QE):** Are rules enforced and errors triaged automatically?
-3. **Lineage & Provenance (LIN):** Can data be traced from origin to consumption?
-4. **Access & Sovereignty (SEC):** Is data access controlled, and are sovereign borders respected?
-5. **Regulatory Alignment (REG):** Are legal frameworks (GDPR, DORA, Basel III) mapped to physical rules?
-6. **Process & Business Logic (PROC):** Are data pipelines aligned with standard business operations (e.g., O2C, P2P)?
-7. **Certification & Audit (CERT):** Are there cryptographically verified, tamper-evident audit trails?
-8. **Bridge & Ecosystem Integration (BRIDGE):** Is the governance framework connected to physical platforms (Collibra, Databricks, Snowflake)?
+1. **Governance Foundations (GOV):** Are rules bound to business processes? Do context bindings map governance to reality?
+2. **Quality Enforcement (QE):** Are rules enforced with executable logic? Are there owners — real people accountable?
+3. **Operational Readiness (OPS):** Is the interceptor installed? Is enforcement set to `strict` (blocking) or `permissive` (logging only)?
+4. **Metadata Integrity (META):** Is the ontology populated with real terms? Do metrics have calculation logic?
+5. **Usage & Analytics (USE):** Are rules linked to measurable DQ dimensions? Can improvement be tracked?
+6. **Organisational Adoption (ORG):** Have rules been customised for your industry? Are contexts bound to enforcement?
+7. **Certification & Trust (CERT):** Are regulation packs installed and cryptographically signed? Is the sovereign audit trail configured?
+8. **Bridge Connectivity (BRIDGE):** Are source systems connected? Is there diversity in connection types?
 
 Based on the configuration in your `odgs-workspace.yaml`, the assessment assigns a score and categorises your maturity into a tier (e.g., *Developing*, *Measured*, *Optimised*).
 

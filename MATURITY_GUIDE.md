@@ -268,4 +268,4 @@ That's governance grounded in reality, not theatre.
 
 ---
 
-*For technical implementation details, see the [odgs-maturity README](./README.md). For the normative specification, see [ODGS v5](../odgs-v5/1_NORMATIVE_SPECIFICATION/). For the philosophical foundation, read the [Reality-Based Revolution Manifesto](../my-writings/manifesto.md).*
+*For technical implementation details, see the [odgs-maturity README](./README.md).*
