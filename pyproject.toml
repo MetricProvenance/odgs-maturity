@@ -4,14 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "odgs-maturity"
-version = "1.0.1"
+version = "1.1.0"
 description = "ODGS Governance Maturity Assessment — Diagnostic scoring and charter generation for ODGS workspaces"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "Apache-2.0"}
 authors = [{name = "Metric Provenance", email = "partner@metricprovenance.com"}]
 keywords = [
-    "data-governance", "maturity-assessment", "dama-dmbok",
+    "data-governance", "maturity-assessment", "iso-38505", "iso-25012",
     "data-quality", "compliance", "odgs", "charter-generation",
 ]
 classifiers = [

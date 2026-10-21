@@ -1,7 +1,7 @@
 """
 Reference data loader for charter generation.
 
-Loads the embedded DAMA DMBOK-aligned JSON datasets that power
+Loads the embedded ISO/IEC 38505-1 & ISO/IEC 25012-aligned JSON datasets that power
 the charter template engine. All files ship inside the package
 to avoid external network dependencies.
 """
@@ -47,9 +47,9 @@ def load_charter_templates() -> dict[str, Any]:
 @lru_cache(maxsize=1)
 def load_dq_dimensions() -> list[dict[str, Any]]:
     """
-    Load the 60 DAMA DMBOK data quality dimensions.
+    Load the 60 ISO/IEC 25012 & ISO 8000-8 data quality dimensions.
 
-    Each dimension has: id, damaId, name, category, definition.
+    Each dimension has: id, dimensionIndex, name, category, definition.
     """
     return _load_json("dq_dimensions.json")
 
@@ -106,18 +106,18 @@ def load_lifecycle_impacts() -> list[dict[str, Any]]:
     return _load_json("lifecycle_impacts.json")
 
 
-def get_dimension_by_dama_id(dama_id: int) -> dict[str, Any] | None:
-    """Look up a DQ dimension by its DAMA ID."""
+def get_dimension_by_index(dim_index: int) -> dict[str, Any] | None:
+    """Look up a DQ dimension by its dimension index."""
     for dim in load_dq_dimensions():
-        if dim.get("damaId") == dama_id:
+        if dim.get("dimensionIndex") == dim_index:
             return dim
     return None
 
 
-def get_impacts_for_dimension(dama_id: int) -> dict[str, Any] | None:
+def get_impacts_for_dimension(dim_index: int) -> dict[str, Any] | None:
     """Get positive/negative business impacts for a DQ dimension."""
     for impact in load_business_impacts():
-        if impact.get("damaId") == dama_id:
+        if impact.get("dimensionIndex") == dim_index:
             return impact
     return None
 

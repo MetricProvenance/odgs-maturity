@@ -154,7 +154,7 @@ def gov_03(snap: WorkspaceSnapshot) -> RuleResult:
 
 @_register("GOV-04", "Framework Tag Coverage", Pillar.GOVERNANCE_FOUNDATIONS)
 def gov_04(snap: WorkspaceSnapshot) -> RuleResult:
-    """Check that protocol artifacts have framework alignment tags (APQC/CDMC/BIAN/DAMA).
+    """Check that protocol artifacts have framework alignment tags (ISO/IEC 25012, ISO 8000-8, APQC, CDMC, BIAN).
 
     Evaluates rules, metrics, and DQ dimensions for cross-framework tagging.
     """
@@ -204,7 +204,7 @@ def gov_04(snap: WorkspaceSnapshot) -> RuleResult:
             ),
             (
                 "🔗 Generate a Board-Ready Charter with full framework compliance "
-                "→ https://assess.metricprovenance.com"
+                "→ https://metricprovenance.com/executive-brief"
             ),
             CostFlag.RED,
         )
@@ -215,7 +215,7 @@ def gov_04(snap: WorkspaceSnapshot) -> RuleResult:
     flag = CostFlag.GREEN if score >= 0.8 else (
         CostFlag.AMBER if score >= 0.3 else CostFlag.RED)
 
-    detail = ", ".join(parts) + f" mapped to APQC/CDMC/BIAN/DAMA ({tagged}/{total} total)"
+    detail = ", ".join(parts) + f" mapped to ISO/IEC 25012, ISO 8000-8, APQC, CDMC, BIAN ({tagged}/{total} total)"
 
     return RuleResult("GOV-04", "Framework Tag Coverage",
                       Pillar.GOVERNANCE_FOUNDATIONS, score, 1.0,
@@ -308,7 +308,7 @@ def qe_03(snap: WorkspaceSnapshot) -> RuleResult:
     return RuleResult("QE-03", "DQ Dimensions Coverage",
                       Pillar.QUALITY_ENFORCEMENT, score, 1.0,
                       f"{count} DQ dimensions loaded",
-                      "Ensure all DAMA DQ dimensions are configured", flag)
+                      "Ensure all 60 ISO/IEC 25012 & ISO 8000-8 DQ dimensions are configured", flag)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

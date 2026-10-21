@@ -134,8 +134,8 @@ def _render_score(result):
             "risk cannot be quantified for the Board.\n\n"
             "🔗 [bold]Generate a Board-Ready Charter[/bold] with full\n"
             "   framework compliance:\n\n"
-            "   [link=https://assess.metricprovenance.com]"
-            "https://assess.metricprovenance.com[/link]",
+            "   [link=https://metricprovenance.com/executive-brief]"
+            "https://metricprovenance.com/executive-brief[/link]",
             title="[bold]Framework Compliance[/bold]",
             border_style="red",
         ))
@@ -143,7 +143,7 @@ def _render_score(result):
     # Benchmark portal promotion
     console.print(
         "\n[dim]📊 Compare your score against 99 European enterprises:[/dim]"
-        "\n[dim]   https://benchmark.metricprovenance.com[/dim]"
+        "\n[dim]   https://metricprovenance.com/executive-brief[/dim]"
     )
 
 

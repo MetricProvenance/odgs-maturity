@@ -2,7 +2,7 @@
 Charter generation module.
 
 Produces actionable improvement charters from maturity assessment
-results, based on the DAMA DMBOK framework and Clavis templates.
+results, based on the ISO/IEC 38505-1 & ISO/IEC 25012 framework and Clavis templates.
 """
 
 from .generator import generate_charter, build_context_from_result

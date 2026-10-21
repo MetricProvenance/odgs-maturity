@@ -2,9 +2,9 @@
 
 > **Diagnostic scoring and improvement charters for any ODGS workspace.**
 
-[![Protocol](https://img.shields.io/badge/Protocol-v6.0.5_(Sovereign_Engine)-0055AA)](https://github.com/MetricProvenance/odgs-protocol)
+[![Protocol](https://img.shields.io/badge/Protocol-v6.1.0-0055AA)](https://github.com/MetricProvenance/odgs-protocol)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![DAMA DMBOK](https://img.shields.io/badge/Framework-DAMA_DMBOK_8--Pillar-006644)](https://www.dama.org/cpages/body-of-knowledge)
+[![ISO Alignment](https://img.shields.io/badge/Framework-ISO%2FIEC_38505--1_%26_25012_8--Pillar-006644)](https://github.com/MetricProvenance/odgs-protocol)
 [![License](https://img.shields.io/badge/License-Apache_2.0-lightgrey)](LICENSE)
 
 ---
@@ -88,20 +88,20 @@ odgs-maturity score --workspace ./my-project --json
 
 ## The 8-Pillar Maturity Model
 
-The assessment framework adapts 6 knowledge areas from the **DAMA DMBOK** (Data Management Body of Knowledge) and adds 2 pillars native to the ODGS protocol.
+The assessment framework adapts 6 knowledge areas from **ISO/IEC 38505-1** (Governance of Data) and **ISO/IEC 25012** (Data Quality Model) and adds 2 pillars native to the ODGS protocol.
 
 | # | Pillar | Source | Weight | What It Measures |
 |:--|:---|:---|:---|:---|
-| 1 | **Governance Foundations** | DAMA | 20% | Context bindings, process governance maps, workspace identity |
-| 2 | **Quality Enforcement** | DAMA | 18% | Rules with executable logic, owner assignment, DQ dimensions |
-| 3 | **Operational Readiness** | DAMA | 15% | Interceptor presence, enforcement mode, SPOT risk factors |
-| 4 | **Metadata Integrity** | DAMA | 12% | Ontology graph depth, metrics documentation, physical data map |
-| 5 | **Usage & Analytics** | DAMA | 8% | Metrics count, rules-to-dimensions linkage coverage |
-| 6 | **Organisational Adoption** | DAMA | 12% | Industry targeting, context-rule binding density, org identity |
+| 1 | **Governance Foundations** | ISO 38505 / 25012 | 20% | Context bindings, process governance maps, workspace identity |
+| 2 | **Quality Enforcement** | ISO 38505 / 25012 | 18% | Rules with executable logic, owner assignment, DQ dimensions |
+| 3 | **Operational Readiness** | ISO 38505 / 25012 | 15% | Interceptor presence, enforcement mode, SPOT risk factors |
+| 4 | **Metadata Integrity** | ISO 38505 / 25012 | 12% | Ontology graph depth, metrics documentation, physical data map |
+| 5 | **Usage & Analytics** | ISO 38505 / 25012 | 8% | Metrics count, rules-to-dimensions linkage coverage |
+| 6 | **Organisational Adoption** | ISO 38505 / 25012 | 12% | Industry targeting, context-rule binding density, org identity |
 | 7 | **Certification & Trust** | ODGS | 8% | Regulation packs installed, cryptographic signature validity |
 | 8 | **Bridge Connectivity** | ODGS | 7% | Active bridge configs, connector type diversity |
 
-### Maturity Levels (DAMA-aligned)
+### Maturity Levels (ISO/IEC 38505-1 & ISO/IEC 25012-aligned)
 
 | Level | Score | Interpretation |
 |:---|:---|:---|
@@ -273,7 +273,7 @@ odgs init → odgs-maturity score → gaps identified → bridges + packs resolv
 
 ## Improvement Charters
 
-Turn gaps into action plans. The charter generator transforms your maturity score into a structured **DAMA-aligned improvement charter** — complete with root cause analysis, strategic alignment, and recommended action items.
+Turn gaps into action plans. The charter generator transforms your maturity score into a structured **ISO/IEC 38505-1 & ISO/IEC 25012-aligned improvement charter** — complete with root cause analysis, strategic alignment, and recommended action items.
 
 ```bash
 # Interactive — guided prompts for business context
@@ -299,7 +299,7 @@ odgs-maturity charter --workspace ./my-project --non-interactive --json > charte
 Every generated charter includes:
 
 - **SPOT Root Cause Analysis** — Gaps classified as Standard / Process / Organisation / Technology
-- **DAMA Dimension Mapping** — The specific data quality dimensions (from 60 DAMA DMBOK dimensions) most affected by your gaps
+- **ISO/IEC 25012 Dimension Mapping** — The specific data quality dimensions (from 60 ISO/IEC 25012 & ISO 8000-8 dimensions) most affected by your gaps
 - **Strategic Alignment** — Auto-matched strategic objective from 8 universal governance goals
 - **Cost/Risk Flags** — Critical indicators requiring immediate attention
 - **Actionable Sections** — Each section contains populated recommendations, not just templates

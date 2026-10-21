@@ -1,6 +1,6 @@
 [
   {
-    "damaId": 1,
+    "dimensionIndex": 1,
     "dimensionName": "Access security",
     "positiveImpactsGoodDQ": [
       "Protection of sensitive company, customer, and employee data, maintaining trust and legal standing.",
@@ -17,7 +17,7 @@
     "illustrativeKpisAffected": ["Number of Security Incidents/Breaches", "Cost of Compliance Fines (Security)", "Customer Churn Rate (post-breach)", "Brand Reputation Score", "Time to Detect Security Incidents"]
   },
   {
-    "damaId": 2,
+    "dimensionIndex": 2,
     "dimensionName": "Accessibility",
     "positiveImpactsGoodDQ": [
       "Faster, more informed decision-making through quick and easy access to necessary information.",
@@ -34,7 +34,7 @@
     "illustrativeKpisAffected": ["Time to Decision", "Employee Productivity Rate", "Project Completion Time", "Customer Service Resolution Time", "Data Search Time"]
   },
   {
-    "damaId": 3,
+    "dimensionIndex": 3,
     "dimensionName": "Accuracy",
     "positiveImpactsGoodDQ": [
       "Improved strategic and operational decision-making based on reliable, factual data.",
@@ -53,7 +53,7 @@
     "illustrativeKpisAffected": ["Customer Satisfaction Score (CSAT)", "Operational Cost", "Return on Investment (ROI)", "AI Model Prediction Accuracy", "Compliance Breach Incidents", "Order Fulfillment Accuracy", "Inventory Shrinkage"]
   },
   {
-    "damaId": 4,
+    "dimensionIndex": 4,
     "dimensionName": "Appropriateness (Format)",
     "positiveImpactsGoodDQ": [
       "Deterministic data processing and integration between systems due to suitable data formats.",
@@ -70,7 +70,7 @@
     "illustrativeKpisAffected": ["Data Integration Success Rate", "ETL Development Cost/Time", "System Interoperability Score", "Data Processing Error Rate"]
   },
   {
-    "damaId": 5,
+    "dimensionIndex": 5,
     "dimensionName": "Availability",
     "positiveImpactsGoodDQ": [
       "Uninterrupted business operations and continuous service delivery to customers and internal users.",
@@ -87,7 +87,7 @@
     "illustrativeKpisAffected": ["System Uptime Percentage", "Service Availability Rate", "Mean Time To Recovery (MTTR)", "Customer Self-Service Success Rate", "Lost Revenue Due to Downtime"]
   },
   {
-    "damaId": 6,
+    "dimensionIndex": 6,
     "dimensionName": "Ability to represent null values",
     "positiveImpactsGoodDQ": [
       "Accurate representation of missing or inapplicable information, preventing misinterpretation.",
@@ -104,7 +104,7 @@
     "illustrativeKpisAffected": ["Data Cleansing Effort/Cost", "Analytical Model Accuracy", "Report Accuracy", "Data Entry Error Rate"]
   },
   {
-    "damaId": 7,
+    "dimensionIndex": 7,
     "dimensionName": "Clarity (of Metadata)",
     "positiveImpactsGoodDQ": [
       "Faster and more accurate data interpretation, analysis, and usage by all stakeholders.",
@@ -121,7 +121,7 @@
     "illustrativeKpisAffected": ["Time to Insight", "Data User Onboarding Time", "Number of Data Misinterpretation Incidents", "Adoption Rate of BI/Analytics Tools", "Data Governance Maturity Score"]
   },
   {
-    "damaId": 8,
+    "dimensionIndex": 8,
     "dimensionName": "Coherence",
     "positiveImpactsGoodDQ": [
       "Ability to create a unified, consistent view of business entities (e.g., 360-degree customer view, end-to-end product lifecycle).",
@@ -138,7 +138,7 @@
     "illustrativeKpisAffected": ["Data Integration Project Success Rate/Cost", "Time to Consolidate Enterprise Reports", "Customer Data Completeness (360 view %)", "Inter-departmental Process Efficiency Score"]
   },
   {
-    "damaId": 9,
+    "dimensionIndex": 9,
     "dimensionName": "Comparability of populations",
     "positiveImpactsGoodDQ": [
       "Fair and meaningful comparisons of performance or characteristics across different groups or segments.",
@@ -155,7 +155,7 @@
     "illustrativeKpisAffected": ["Benchmarking Accuracy", "Market Share Analysis Reliability", "Policy Effectiveness Measurement", "Resource Allocation Equity"]
   },
   {
-    "damaId": 10,
+    "dimensionIndex": 10,
     "dimensionName": "Comparability over time",
     "positiveImpactsGoodDQ": [
       "Accurate trend analysis and reliable tracking of performance changes over time.",
@@ -172,7 +172,7 @@
     "illustrativeKpisAffected": ["Forecast Accuracy", "Historical Reporting Consistency", "Long-term KPI Trend Reliability", "Return on Investment (Time-Series Analysis)"]
   },
   {
-    "damaId": 11,
+    "dimensionIndex": 11,
     "dimensionName": "Completeness (Attributes)",
     "positiveImpactsGoodDQ": [
       "Ensures data models and datasets capture all necessary characteristics of an entity for business processes.",
@@ -189,7 +189,7 @@
     "illustrativeKpisAffected": ["Data Model Fitness for Purpose Score", "Analytical Richness Score", "Time to Develop New Reports/Analyses", "Business Process Exception Rate (due to missing attributes)"]
   },
   {
-    "damaId": 12,
+    "dimensionIndex": 12,
     "dimensionName": "Completeness (Records)",
     "positiveImpactsGoodDQ": [
       "Comprehensive and accurate understanding of business operations, customer populations, and market activities.",
@@ -206,7 +206,7 @@
     "illustrativeKpisAffected": ["Sales Coverage Rate", "Customer Database Completeness %", "Operational Process Audit Completeness", "Audit Pass Rate (Record Integrity)"]
   },
   {
-    "damaId": 13,
+    "dimensionIndex": 13,
     "dimensionName": "Completeness (Data files)",
     "positiveImpactsGoodDQ": [
       "Ensures all necessary data feeds and files are available for batch processing and system updates.",
@@ -223,7 +223,7 @@
     "illustrativeKpisAffected": ["Batch Job Success Rate", "Data Pipeline Reliability", "End-of-Day Processing Completion Rate", "Manual Intervention Rate (for missing files)"]
   },
   {
-    "damaId": 14,
+    "dimensionIndex": 14,
     "dimensionName": "Completeness (Data values)",
     "positiveImpactsGoodDQ": [
       "More effective and efficient execution of business processes that rely on complete data fields for each record.",
@@ -240,7 +240,7 @@
     "illustrativeKpisAffected": ["Process Automation Rate", "Marketing Campaign Effectiveness/Targeting Accuracy", "AI Model Performance Metrics (e.g., F1 score, AUC)", "Manual Data Entry/Correction Hours"]
   },
   {
-    "damaId": 15,
+    "dimensionIndex": 15,
     "dimensionName": "Completeness (Data values of an attribute)",
     "positiveImpactsGoodDQ": [
       "Ensures specific critical attributes are consistently populated across all records, supporting key processes.",
@@ -257,7 +257,7 @@
     "illustrativeKpisAffected": ["Fill Rate for Critical Attributes (%)", "Targeted Communication Success Rate", "Specific Process Step Completion Rate", "Report Field Population Rate"]
   },
   {
-    "damaId": 16,
+    "dimensionIndex": 16,
     "dimensionName": "Completeness (Metadata)",
     "positiveImpactsGoodDQ": [
       "Thorough understanding of data assets, including definitions, lineage, business rules, and ownership.",
@@ -274,7 +274,7 @@
     "illustrativeKpisAffected": ["Data Catalog Completion Rate (%)", "Self-Service BI Adoption Rate", "Time to Understand a Dataset", "Data Governance Audit Findings (Metadata)"]
   },
   {
-    "damaId": 17,
+    "dimensionIndex": 17,
     "dimensionName": "Compliance (Data)",
     "positiveImpactsGoodDQ": [
       "Avoidance of legal penalties, significant fines, and sanctions from regulatory bodies.",
@@ -291,7 +291,7 @@
     "illustrativeKpisAffected": ["Number of Regulatory Compliance Breaches", "Cost of Regulatory Fines & Penalties", "Audit Finding Severity/Frequency", "Legal Expenditure on Compliance Issues", "Customer Trust Index"]
   },
   {
-    "damaId": 18,
+    "dimensionIndex": 18,
     "dimensionName": "Compliance (Composition of datasets)",
     "positiveImpactsGoodDQ": [
       "Ensures aggregated or derived datasets meet reporting standards and legal requirements.",
@@ -308,7 +308,7 @@
     "illustrativeKpisAffected": ["Data Aggregation Compliance Rate", "Ethical AI Review Pass Rate", "Regulatory Reporting Accuracy (Composition)", "Data Sharing Agreement Violations"]
   },
   {
-    "damaId": 19,
+    "dimensionIndex": 19,
     "dimensionName": "Confidentiality",
     "positiveImpactsGoodDQ": [
       "Protection of sensitive business, customer, and personal information from unauthorized disclosure or theft.",
@@ -325,7 +325,7 @@
     "illustrativeKpisAffected": ["Number of Confidentiality Incidents/Data Spills", "Value of Intellectual Property Lost", "Employee/Customer Trust Score (Privacy)", "Data Loss Prevention (DLP) Effectiveness Rate", "Cost of Data Breach Remediation"]
   },
   {
-    "damaId": 20,
+    "dimensionIndex": 20,
     "dimensionName": "Consistency",
     "positiveImpactsGoodDQ": [
       "Reliable, coherent, and trustworthy data across different systems, reports, and analytical outputs.",
@@ -342,7 +342,7 @@
     "illustrativeKpisAffected": ["Data Reconciliation Effort (Hours/Cost)", "Report Generation Accuracy & Consistency", "User Trust in Data Score", "Cross-System Process Error Rate", "Decision Reversal Rate (due to conflicting data)"]
   },
   {
-    "damaId": 21,
+    "dimensionIndex": 21,
     "dimensionName": "Consistency (Temporal)",
     "positiveImpactsGoodDQ": [
       "Reliable tracking of changes and states over time.",
@@ -359,7 +359,7 @@
     "illustrativeKpisAffected": ["Historical Data Reconstruction Accuracy", "Audit Trail Integrity Score", "Time-Series Forecast Error Rate", "Event Sequence Anomaly Rate"]
   },
   {
-    "damaId": 22,
+    "dimensionIndex": 22,
     "dimensionName": "Consistency (Across Datasets)",
     "positiveImpactsGoodDQ": [
       "Single version of truth for key entities and metrics across the enterprise.",
@@ -376,7 +376,7 @@
     "illustrativeKpisAffected": ["Cross-Departmental Report Discrepancy Rate", "Data Silo Reduction Index", "Enterprise Data Warehouse Accuracy", "Strategic Alignment Score"]
   },
   {
-    "damaId": 23,
+    "dimensionIndex": 23,
     "dimensionName": "Consistency (Cross-Record)",
     "positiveImpactsGoodDQ": [
       "Ensures that unique identifiers or key attributes are not improperly duplicated across different records representing distinct entities.",
@@ -393,7 +393,7 @@
     "illustrativeKpisAffected": ["Unique Constraint Violation Rate (Cross-Record Rules)", "Data Relationship Integrity Score", "Accuracy of Network Analysis", "False Positive/Negative Linkage Rate"]
   },
   {
-    "damaId": 24,
+    "dimensionIndex": 24,
     "dimensionName": "Consistency (Record-Level)",
     "positiveImpactsGoodDQ": [
       "Ensures logical sense and adherence to business rules within individual data records.",
@@ -410,7 +410,7 @@
     "illustrativeKpisAffected": ["Internal Record Error Rate", "Automated Validation Exception Rate", "Data Quality Score (Record Level)", "Process Straight-Through Processing (STP) Rate"]
   },
   {
-    "damaId": 25,
+    "dimensionIndex": 25,
     "dimensionName": "Credibility",
     "positiveImpactsGoodDQ": [
       "Increased trust and confidence in data among users and decision-makers.",
@@ -427,7 +427,7 @@
     "illustrativeKpisAffected": ["User Trust in Data (Survey Score)", "BI/Analytics Tool Adoption Rate", "Data-Driven Decision Rate", "Perceived Reliability of Data Sources"]
   },
   {
-    "damaId": 26,
+    "dimensionIndex": 26,
     "dimensionName": "Currency",
     "positiveImpactsGoodDQ": [
       "Decisions based on the most up-to-date and recent information available, reflecting current reality.",
@@ -444,7 +444,7 @@
     "illustrativeKpisAffected": ["Time to Market for New Products/Services (Data Refresh Rate)", "Inventory Accuracy (Real-time vs. Batch)", "Customer Complaint Rate (due to outdated info)", "Effectiveness of Real-time Alerts & Monitoring", "Data Freshness Index"]
   },
   {
-    "damaId": 27,
+    "dimensionIndex": 27,
     "dimensionName": "Equivalence",
     "positiveImpactsGoodDQ": [
       "Simplified data integration and mapping between different systems or datasets.",
@@ -461,7 +461,7 @@
     "illustrativeKpisAffected": ["Data Mapping Effort/Complexity", "Semantic Consistency Score", "Common Business Vocabulary Adoption", "Cross-System Data Harmonization Rate"]
   },
   {
-    "damaId": 28,
+    "dimensionIndex": 28,
     "dimensionName": "Granularity (Attributes)",
     "positiveImpactsGoodDQ": [
       "Enables precise data capture and more detailed analysis.",
@@ -478,7 +478,7 @@
     "illustrativeKpisAffected": ["Analytical Depth Score", "Data Query Flexibility", "Business Rule Implementation Complexity", "Report Customization Capability"]
   },
   {
-    "damaId": 29,
+    "dimensionIndex": 29,
     "dimensionName": "Granularity (Records)",
     "positiveImpactsGoodDQ": [
       "Ability to perform detailed, low-level analysis of transactions, events, or individual entities.",
@@ -495,7 +495,7 @@
     "illustrativeKpisAffected": ["Drill-Down Capability Index", "Root Cause Analysis Effectiveness", "Predictive Model Granularity Fit", "Lowest Level of Detail Available for Analysis"]
   },
   {
-    "damaId": 30,
+    "dimensionIndex": 30,
     "dimensionName": "Integrity",
     "positiveImpactsGoodDQ": [
       "Preservation of data accuracy and completeness during storage, processing, and transmission.",
@@ -512,7 +512,7 @@
     "illustrativeKpisAffected": ["Data Corruption Rate", "Data Loss Incident Frequency", "System Error Rate (Data Integrity related)", "Data Validation Success Rate"]
   },
   {
-    "damaId": 31,
+    "dimensionIndex": 31,
     "dimensionName": "Interpretability",
     "positiveImpactsGoodDQ": [
       "Clear understanding of data by users, regardless of their technical background.",
@@ -529,7 +529,7 @@
     "illustrativeKpisAffected": ["Data Literacy Score", "User Comprehension Test Score (for data reports)", "Time to Understand Reports/Dashboards", "Error Rate in Data Application"]
   },
   {
-    "damaId": 32,
+    "dimensionIndex": 32,
     "dimensionName": "Latency",
     "positiveImpactsGoodDQ": [
       "Real-time or near real-time availability of data for immediate operational decisions and actions.",
@@ -546,7 +546,7 @@
     "illustrativeKpisAffected": ["Data Refresh Rate/Frequency", "Real-time Decision Window Adherence", "Algorithmic Trading Profitability (Latency Impact)", "Customer Wait Time (Information Dependent)"]
   },
   {
-    "damaId": 33,
+    "dimensionIndex": 33,
     "dimensionName": "Linkability",
     "positiveImpactsGoodDQ": [
       "Ability to create comprehensive, interconnected views of business entities and processes (e.g., 360-degree customer view, supply chain visibility).",
@@ -563,7 +563,7 @@
     "illustrativeKpisAffected": ["Master Data Record Accuracy & Linkage Completeness", "Customer Lifetime Value (CLV) Calculation Accuracy", "Supply Chain End-to-End Visibility Percentage", "Analytical Query Performance on Joins", "Network Analysis Effectiveness"]
   },
   {
-    "damaId": 34,
+    "dimensionIndex": 34,
     "dimensionName": "Metadata compliance",
     "positiveImpactsGoodDQ": [
       "Ensures data values adhere to their defined business rules, formats, and value domains.",
@@ -580,7 +580,7 @@
     "illustrativeKpisAffected": ["Data Validation Error Rate", "Automated Data Quality Rule Pass Rate", "Data Conformance to Schema (%)", "Data Transformation Error Rate (due to non-compliance)"]
   },
   {
-    "damaId": 35,
+    "dimensionIndex": 35,
     "dimensionName": "Naturalness",
     "positiveImpactsGoodDQ": [
       "Data models that intuitively reflect real-world business entities and processes.",
@@ -597,7 +597,7 @@
     "illustrativeKpisAffected": ["Data Model Understandability Score", "Query Complexity Index", "Data Model Maintenance Effort", "User Satisfaction with Data Structure"]
   },
   {
-    "damaId": 36,
+    "dimensionIndex": 36,
     "dimensionName": "Objectivity",
     "positiveImpactsGoodDQ": [
       "Data collection and recording processes are free from personal bias or subjective influence.",
@@ -614,7 +614,7 @@
     "illustrativeKpisAffected": ["Data Bias Audit Findings", "Fairness Metrics for AI Models", "Employee/Customer Perception of Fairness Score", "Decision Appeal Rate (due to perceived bias)"]
   },
   {
-    "damaId": 37,
+    "dimensionIndex": 37,
     "dimensionName": "Obtainability",
     "positiveImpactsGoodDQ": [
       "Data needed for business processes and decision-making can be readily acquired when needed.",
@@ -631,7 +631,7 @@
     "illustrativeKpisAffected": ["Time to Acquire Data", "Data Access Request Fulfillment Time", "User Frustration Score (Data Access)", "Process Cycle Time (Data Dependent Steps)"]
   },
   {
-    "damaId": 38,
+    "dimensionIndex": 38,
     "dimensionName": "Plausibility",
     "positiveImpactsGoodDQ": [
       "Early detection of potential data errors or anomalies that contradict real-world knowledge.",
@@ -648,7 +648,7 @@
     "illustrativeKpisAffected": ["Data Anomaly Detection Rate", "Number of Implausible Data Values Flagged", "User Reported Data Absurdities", "Automated Decision Override Rate (due to implausible inputs)"]
   },
   {
-    "damaId": 39,
+    "dimensionIndex": 39,
     "dimensionName": "Portability (Data)",
     "positiveImpactsGoodDQ": [
       "Ability to easily migrate data between systems, platforms, or cloud providers.",
@@ -665,7 +665,7 @@
     "illustrativeKpisAffected": ["Data Migration Cost/Time", "Vendor Switching Cost Index", "Data Sharing Compatibility Score", "Disaster Recovery Test Success Rate (Data Portability)"]
   },
   {
-    "damaId": 40,
+    "dimensionIndex": 40,
     "dimensionName": "Portability (Format)",
     "positiveImpactsGoodDQ": [
       "Data formats that are widely supported and can be used across various applications and platforms.",
@@ -682,7 +682,7 @@
     "illustrativeKpisAffected": ["Format Conversion Effort/Cost", "Industry Standard Adoption Rate (Formats)", "Number of Systems Supporting Data Format", "Long-Term Data Accessibility Risk Score"]
   },
   {
-    "damaId": 41,
+    "dimensionIndex": 41,
     "dimensionName": "Precision (1 - Recording Accuracy)",
     "positiveImpactsGoodDQ": [
       "Data recorded with sufficient detail and exactness to meet business or analytical requirements.",
@@ -699,7 +699,7 @@
     "illustrativeKpisAffected": ["Measurement Error Rate", "Calculation Accuracy (Precision Dependent)", "Smallest Detectable Change (Data Sensitivity)", "Fitness for Purpose (High Precision Tasks)"]
   },
   {
-    "damaId": 42,
+    "dimensionIndex": 42,
     "dimensionName": "Precision (2 - Statistical Spread)",
     "positiveImpactsGoodDQ": [
       "High degree of repeatability and low random error in measurements or data collection processes.",
@@ -716,7 +716,7 @@
     "illustrativeKpisAffected": ["Standard Deviation/Variance of Measurements", "Confidence Interval Width", "Signal-to-Noise Ratio", "Process Capability Index (Cp/Cpk)"]
   },
   {
-    "damaId": 43,
+    "dimensionIndex": 43,
     "dimensionName": "Punctuality",
     "positiveImpactsGoodDQ": [
       "Reliable and predictable delivery of data and reports according to agreed schedules.",
@@ -733,7 +733,7 @@
     "illustrativeKpisAffected": ["On-Time Data Delivery Rate (%)", "Schedule Adherence for Reports", "Process Delay Time (Waiting for Data)", "User Satisfaction with Data Punctuality"]
   },
   {
-    "damaId": 44,
+    "dimensionIndex": 44,
     "dimensionName": "Reasonability",
     "positiveImpactsGoodDQ": [
       "Data patterns and trends align with business expectations and known behaviors.",
@@ -750,7 +750,7 @@
     "illustrativeKpisAffected": ["Data Pattern Anomaly Rate", "Number of Unexplained Data Fluctuations", "Forecast Deviation from Expected Patterns", "User Confidence in Data Predictability"]
   },
   {
-    "damaId": 45,
+    "dimensionIndex": 45,
     "dimensionName": "Recoverability",
     "positiveImpactsGoodDQ": [
       "Ability to restore data and resume business operations quickly after an incident (e.g., system failure, cyber-attack, disaster).",
@@ -767,7 +767,7 @@
     "illustrativeKpisAffected": ["Recovery Time Objective (RTO) Adherence", "Recovery Point Objective (RPO) Adherence", "Data Loss Percentage (Post-Incident)", "Disaster Recovery Test Success Rate", "Cost of Downtime"]
   },
   {
-    "damaId": 46,
+    "dimensionIndex": 46,
     "dimensionName": "Redundancy",
     "positiveImpactsGoodDQ": [
       "Reduced data storage costs and streamlined data management.",
@@ -784,7 +784,7 @@
     "illustrativeKpisAffected": ["Data Storage Costs", "Data Consistency Rate Across Systems", "Data Management Overhead", "Data Reconciliation Effort"]
   },
   {
-    "damaId": 47,
+    "dimensionIndex": 47,
     "dimensionName": "Referential integrity",
     "positiveImpactsGoodDQ": [
       "Ensures valid and consistent relationships between data in different tables, files, or datasets.",
@@ -801,7 +801,7 @@
     "illustrativeKpisAffected": ["Number of Orphan Records/Broken Relationships", "Data Processing Error Rate (due to linkage issues)", "Application Stability Score (Data Dependent)", "Database Maintenance Effort (Integrity Checks)"]
   },
   {
-    "damaId": 48,
+    "dimensionIndex": 48,
     "dimensionName": "Relevance",
     "positiveImpactsGoodDQ": [
       "Users receive information that is pertinent, applicable, and useful for their specific roles, tasks, and decisions.",
@@ -818,7 +818,7 @@
     "illustrativeKpisAffected": ["Report/Dashboard Usage Statistics", "User Satisfaction Score with BI Tools (Relevance)", "Time to Find Relevant Information", "Decision Effectiveness & Speed", "Actionable Insight Rate from Data"]
   },
   {
-    "damaId": 49,
+    "dimensionIndex": 49,
     "dimensionName": "Reliability",
     "positiveImpactsGoodDQ": [
       "Consistent and dependable data values over repeated measurements or observations under stable conditions.",
@@ -835,7 +835,7 @@
     "illustrativeKpisAffected": ["Measurement System Variation (Gage R&R)", "Data Point Stability Index", "False Alarm Rate (Monitoring Systems)", "Process Control Chart Stability"]
   },
   {
-    "damaId": 50,
+    "dimensionIndex": 50,
     "dimensionName": "Reproducibility",
     "positiveImpactsGoodDQ": [
       "Ability to recreate datasets, reports, or analytical results consistently using the same inputs and processes.",
@@ -852,7 +852,7 @@
     "illustrativeKpisAffected": ["Audit Pass Rate (Reproducibility)", "Scientific Validation Success Rate", "Report Consistency Score (Across Runs)", "AI Model Output Variance (Fixed Inputs)"]
   },
   {
-    "damaId": 51,
+    "dimensionIndex": 51,
     "dimensionName": "Reputation",
     "positiveImpactsGoodDQ": [
       "Data from specific sources or systems is widely trusted and highly regarded within and outside the organization.",
@@ -869,7 +869,7 @@
     "illustrativeKpisAffected": ["Data Source Trust Score (User Survey)", "Adoption Rate of Data from Specific Sources", "Perceived Credibility of Reports (Source Dependent)", "Brand Trust Index (Data Handling)"]
   },
   {
-    "damaId": 52,
+    "dimensionIndex": 52,
     "dimensionName": "Retention period",
     "positiveImpactsGoodDQ": [
       "Compliance with legal, regulatory, and business requirements for data archival and disposal.",
@@ -886,7 +886,7 @@
     "illustrativeKpisAffected": ["Data Retention Policy Compliance Rate (%)", "Storage Cost Savings (from disposal)", "Audit Findings (Retention Related)", "Legal Discovery Cost/Time"]
   },
   {
-    "damaId": 53,
+    "dimensionIndex": 53,
     "dimensionName": "Timeliness",
     "positiveImpactsGoodDQ": [
       "Ability to make decisions and take actions based on data that accurately reflects recent events and current conditions.",
@@ -903,7 +903,7 @@
     "illustrativeKpisAffected": ["Order-to-Cash Cycle Time", "Incident Response Time", "Customer Issue Resolution Time", "Real-time Process Adherence Rate", "Data Lag Time (Creation to Availability)"]
   },
   {
-    "damaId": 54,
+    "dimensionIndex": 54,
     "dimensionName": "Traceability (Data Lineage)",
     "positiveImpactsGoodDQ": [
       "Increased trust, transparency, and confidence in data by understanding its origin, journey, and transformations.",
@@ -922,7 +922,7 @@
     "illustrativeKpisAffected": ["Audit Trail Completeness & Accessibility", "Time to Resolve Data Issues (Root Cause Analysis)", "Data Governance Compliance Rate (Traceability aspect)", "AI Model Explainability Score", "Impact Analysis Accuracy (for data changes)"]
   },
   {
-    "damaId": 55,
+    "dimensionIndex": 55,
     "dimensionName": "Uniqueness (Objects)",
     "positiveImpactsGoodDQ": [
       "Accurate counting, reporting, and representation of real-world entities (e.g., customers, products, employees, assets).",
@@ -939,7 +939,7 @@
     "illustrativeKpisAffected": ["Customer Record Duplication Rate (%)", "Product Master Duplication Rate (%)", "Marketing Spend Effectiveness (Impacted by targeting duplicates)", "Data Cleansing & De-duplication Costs", "MDM 'Golden Record' Accuracy"]
   },
   {
-    "damaId": 56,
+    "dimensionIndex": 56,
     "dimensionName": "Uniqueness (Records)",
     "positiveImpactsGoodDQ": [
       "Ensures each record in a dataset is distinct and not an exact duplicate, preventing processing errors.",
@@ -956,7 +956,7 @@
     "illustrativeKpisAffected": ["Exact Duplicate Record Rate (%)", "Transactional Error Rate (due to duplicates)", "Report Aggregation Accuracy", "Storage Utilization Efficiency"]
   },
   {
-    "damaId": 57,
+    "dimensionIndex": 57,
     "dimensionName": "Validity",
     "positiveImpactsGoodDQ": [
       "Smooth data processing, system interoperability, and adherence to defined data structures.",
@@ -973,7 +973,7 @@
     "illustrativeKpisAffected": ["Data Entry Error Rate (Format/Type)", "System Processing Failure Rate (due to invalid data)", "Automated Decision Accuracy & Reliability", "Data Transformation Success Rate", "Data Quality Rule Pass Rate (Validity Checks)"]
   },
   {
-    "damaId": 58,
+    "dimensionIndex": 58,
     "dimensionName": "Value",
     "positiveImpactsGoodDQ": [
       "Data assets directly contribute to achieving specific business objectives and key strategic goals.",
@@ -990,7 +990,7 @@
     "illustrativeKpisAffected": ["Return on Data Investment (RODI)", "Revenue Growth Attributable to Data Insights", "Cost Savings from Data-Driven Optimizations", "Strategic Goal Achievement Rate (Data-linked goals)", "New Product/Service Success Rate (Data-informed)"]
   },
   {
-    "damaId": 59,
+    "dimensionIndex": 59,
     "dimensionName": "Variety",
     "positiveImpactsGoodDQ": [
       "Richer insights and more robust models from integrating diverse data types and sources (structured, unstructured, internal, external).",
@@ -1007,7 +1007,7 @@
     "illustrativeKpisAffected": ["Number of Data Sources Integrated", "Richness of Analytical Features", "Predictive Model Generalizability Score", "Innovation Rate (Data-driven ideas)", "Completeness of 360-Degree Views"]
   },
   {
-    "damaId": 60,
+    "dimensionIndex": 60,
     "dimensionName": "Volatility",
     "positiveImpactsGoodDQ": [ 
       "Accurate reflection of highly dynamic data environments where change is frequent and expected.",

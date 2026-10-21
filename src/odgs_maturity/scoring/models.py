@@ -13,7 +13,7 @@ from enum import Enum
 
 class MaturityLevel(Enum):
     """
-    5-point maturity scale aligned with DAMA DMBOK.
+    5-point maturity scale aligned with ISO/IEC 38505-1 and ISO/IEC 25012.
 
     1 = Initial/Ad-hoc
     2 = Developing/Managed
@@ -58,9 +58,9 @@ class Pillar(Enum):
     """
     The 8 maturity pillars.
 
-    6 adapted from DAMA DMBOK knowledge areas + 2 ODGS-native pillars.
+    6 adapted from ISO/IEC 38505-1 & ISO/IEC 25012 governance domains + 2 ODGS-native pillars.
     """
-    # DAMA-adapted pillars
+    # ISO/IEC 38505-1 & 25012 pillars
     GOVERNANCE_FOUNDATIONS = "governance_foundations"
     QUALITY_ENFORCEMENT = "quality_enforcement"
     OPERATIONAL_READINESS = "operational_readiness"
@@ -91,7 +91,7 @@ class Pillar(Enum):
         """
         Relative weight for aggregate score calculation.
 
-        Weights sum to 1.0. Core DAMA pillars are weighted higher
+        Weights sum to 1.0. Core ISO/IEC 38505-1 & 25012 pillars are weighted higher
         because they represent fundamental governance capability.
         """
         weights = {
@@ -148,7 +148,7 @@ class PillarResult:
 
     @property
     def level(self) -> MaturityLevel:
-        """DAMA maturity level for this pillar."""
+        """Governance maturity level for this pillar."""
         return MaturityLevel.from_score(self.score)
 
     @property
@@ -191,7 +191,7 @@ class MaturityResult:
 
     @property
     def level(self) -> MaturityLevel:
-        """Overall DAMA maturity level."""
+        """Overall Governance maturity level."""
         return MaturityLevel.from_score(self.aggregate_score)
 
     @property

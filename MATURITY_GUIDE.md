@@ -23,7 +23,7 @@ The maturity engine reads your **actual workspace configuration** — the files,
 
 ### The 8 Pillars
 
-The scoring framework spans 8 pillars, 6 adapted from DAMA DMBOK knowledge areas and 2 native to ODGS. Each pillar has a weight reflecting its importance to operational governance:
+The scoring framework spans 8 pillars, 6 adapted from ISO/IEC 38505-1 & ISO/IEC 25012 governance domains and 2 native to ODGS. Each pillar has a weight reflecting its importance to operational governance:
 
 | Pillar | Weight | What It Measures |
 |--------|--------|-----------------|
@@ -40,7 +40,7 @@ The scoring framework spans 8 pillars, 6 adapted from DAMA DMBOK knowledge areas
 
 ### The 5 Maturity Levels
 
-The aggregate score maps to a standard 5-level maturity model aligned with DAMA DMBOK and CMMI:
+The aggregate score maps to a standard 5-level maturity model aligned with ISO/IEC 38505-1 and ISO/IEC 25012 and CMMI:
 
 | Level | Range | Label | What It Means |
 |-------|-------|-------|--------------|
@@ -136,7 +136,7 @@ odgs-maturity charter --type kpi --workspace /path/to/workspace
 odgs-maturity charter --type strategic --workspace /path/to/workspace
 ```
 
-The charter generator reads your maturity gaps, classifies them using SPOT analysis (Standard / Process / Organisation / Technology), maps them to DAMA dimensions, and produces a structured improvement plan with priorities, owners, and timelines.
+The charter generator reads your maturity gaps, classifies them using SPOT analysis (Standard / Process / Organisation / Technology), maps them to ISO/IEC 25012 & ISO 8000-8 dimensions, and produces a structured improvement plan with priorities, owners, and timelines.
 
 ---
 

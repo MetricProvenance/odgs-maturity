@@ -5,7 +5,7 @@ authors:
   - name: "Kartik Iyer"
     email: "partner@metricprovenance.com"
 title: "ODGS Maturity — Governance Maturity Assessment"
-abstract: "Industry-agnostic governance maturity assessment for ODGS workspaces. Evaluates configuration across 8 pillars (Governance Foundations, Quality Enforcement, Semantic Architecture, Regulatory Coverage, Certification Readiness, Operational Execution, Integration Ecosystem, Continuous Improvement) and generates DAMA DMBOK-aligned improvement charters with SPOT root cause classification."
+abstract: "Industry-agnostic governance maturity assessment for ODGS workspaces. Evaluates configuration across 8 pillars (Governance Foundations, Quality Enforcement, Semantic Architecture, Regulatory Coverage, Certification Readiness, Operational Execution, Integration Ecosystem, Continuous Improvement) and generates ISO/IEC 38505-1 & ISO/IEC 25012-aligned improvement charters with SPOT root cause classification."
 version: 1.0.0
 date-released: 2026-04-30
 license: Apache-2.0
@@ -14,7 +14,7 @@ repository-code: "https://github.com/MetricProvenance/odgs-maturity"
 keywords:
   - "data-governance"
   - "maturity-assessment"
-  - "dama-dmbok"
+  - "iso-38505", "iso-25012"
   - "data-quality"
   - "odgs"
   - "charter-generation"

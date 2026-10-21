@@ -11,7 +11,7 @@
           "Inconsistent quoting across different sales reps or channels.",
           "Inability to accurately assess product availability for quotes."
         ],
-        "criticalDimensionDamaIds": [3, 5, 12, 14, 20, 26, 48, 53, 57], 
+        "criticalDimensionIds": [3, 5, 12, 14, 20, 26, 48, 53, 57], 
         "impactOfPoorDQ": "Lost sales opportunities due to slow or inaccurate responses. Damaged initial customer perception. Wasted sales effort on non-viable quotes. Price erosion due to inconsistent quoting."
       },
       {
@@ -24,7 +24,7 @@
           "Difficulties in validating customer credit status leading to risky orders.",
           "Delays in order processing due to incomplete or inconsistent order information."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 15, 20, 24, 26, 47, 56, 57], 
+        "criticalDimensionIds": [3, 12, 14, 15, 20, 24, 26, 47, 56, 57], 
         "impactOfPoorDQ": "Increased operational costs due to order corrections and rework. Customer dissatisfaction from incorrect orders. Fulfillment delays and errors. Potential financial loss from unfulfillable orders or shipping to wrong addresses. Revenue recognition issues."
       },
       {
@@ -37,7 +37,7 @@
           "Lack of visibility into shipment status for customers.",
           "High shipping costs due to inefficient routing or incorrect package details."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 30, 32, 53, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 30, 32, 53, 57], 
         "impactOfPoorDQ": "Increased returns and reshipment costs. Customer complaints and dissatisfaction. Damage to brand reputation. Inefficient use of warehouse and logistics resources. Potential loss of goods."
       },
       {
@@ -49,7 +49,7 @@
           "Manual effort and errors in generating invoices.",
           "Non-compliance with customer-specific billing requirements."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 24, 47, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 24, 47, 57], 
         "impactOfPoorDQ": "Increased Days Sales Outstanding (DSO). Revenue leakage due to under-billing or unbilled items. High administrative costs for resolving billing disputes and re-issuing invoices. Customer dissatisfaction and potential legal issues."
       },
       {
@@ -61,7 +61,7 @@
           "Delays in identifying and following up on overdue payments.",
           "Manual and time-consuming bank reconciliation processes."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 47, 56], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 47, 56], 
         "impactOfPoorDQ": "Poor cash flow management. Increased bad debt risk. Wasted accounting effort on reconciliation. Inaccurate view of accounts receivable."
       },
       {
@@ -73,7 +73,7 @@
           "Inconsistent application of return policies.",
           "Lack of root cause analysis for returns and disputes."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 53, 54, 57],
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 53, 54, 57],
         "impactOfPoorDQ": "Customer dissatisfaction with return process. Increased inventory costs for returned goods. Inability to identify and fix systemic issues causing returns. Potential for fraudulent returns if data is poor."
       }
     ]
@@ -90,7 +90,7 @@
           "Lack of visibility into existing inventory or approved supplier catalogs, leading to off-contract spend.",
           "Manual and slow requisition approval processes."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 46, 48, 56, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 46, 48, 56, 57], 
         "impactOfPoorDQ": "Procurement of wrong items/services. Wasted spend on unnecessary purchases. Higher costs due to maverick buying. Delays in procurement cycle."
       },
       {
@@ -102,7 +102,7 @@
           "Lack of clear criteria or data for objective supplier evaluation.",
           "Manual PO creation leading to errors and delays."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 19, 20, 26, 51, 55, 57], 
+        "criticalDimensionIds": [3, 12, 14, 19, 20, 26, 51, 55, 57], 
         "impactOfPoorDQ": "Overpayment for goods/services. Strained supplier relationships due to PO errors. Risk of selecting unreliable suppliers. Delays in receiving goods/services."
       },
       {
@@ -114,7 +114,7 @@
           "Failure to identify damaged or non-conforming goods upon receipt.",
           "Delays in updating inventory systems after receipt."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 30, 53, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 30, 53, 57], 
         "impactOfPoorDQ": "Payment for goods not received or services not rendered. Incorrect inventory levels leading to stockouts or overstock. Acceptance of substandard goods. Delays in availability of materials for production."
       },
       {
@@ -126,7 +126,7 @@
           "Duplicate invoice payments.",
           "Delayed invoice processing leading to missed early payment discounts or late payment penalties."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 24, 47, 56, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 24, 47, 56, 57], 
         "impactOfPoorDQ": "Overpayments or underpayments to suppliers. Increased administrative costs for exception handling. Lost financial benefits (discounts). Strained supplier relationships due to payment issues."
       },
       {
@@ -138,7 +138,7 @@
           "Difficulties in reconciling payments with bank statements and accounts payable records.",
           "Lack of visibility into payment status."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 47, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 47, 57], 
         "impactOfPoorDQ": "Financial loss due to incorrect payments or fraud. Compliance issues with payment processing. Strained supplier relations. Inefficient use of accounting resources for reconciliation."
       },
       {
@@ -150,7 +150,7 @@
           "Difficulty in segmenting suppliers or assessing supplier risk.",
           "Subjective supplier evaluations not based on objective data."
         ],
-        "criticalDimensionDamaIds": [3, 10, 12, 14, 20, 26, 36, 48, 51, 53, 55], 
+        "criticalDimensionIds": [3, 10, 12, 14, 20, 26, 36, 48, 51, 53, 55], 
         "impactOfPoorDQ": "Inability to effectively manage supplier performance and drive improvements. Increased supply chain risk. Missed opportunities for better terms or collaboration. Over-reliance on problematic suppliers."
       }
     ]
@@ -167,7 +167,7 @@
           "Difficulty tracking applicants and their status.",
           "Bias in screening due to inconsistent data capture or evaluation criteria."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 36, 48, 55, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 36, 48, 55, 57], 
         "impactOfPoorDQ": "Hiring unsuitable candidates. High recruitment costs. Damage to employer brand. Potential discrimination claims."
       },
       {
@@ -179,7 +179,7 @@
           "Incomplete onboarding paperwork or compliance documentation.",
           "Poor communication of company policies and procedures."
         ],
-        "criticalDimensionDamaIds": [1, 3, 12, 14, 15, 17, 19, 20, 26, 53, 57], 
+        "criticalDimensionIds": [1, 3, 12, 14, 15, 17, 19, 20, 26, 53, 57], 
         "impactOfPoorDQ": "Payroll errors. Security risks from improper access. Compliance breaches. Reduced new hire productivity and engagement."
       },
       {
@@ -191,7 +191,7 @@
           "Lack of accurate data to identify training needs or track skill development.",
           "Difficulty linking performance to compensation or promotions fairly."
         ],
-        "criticalDimensionDamaIds": [3, 10, 12, 14, 20, 36, 48, 50], 
+        "criticalDimensionIds": [3, 10, 12, 14, 20, 36, 48, 50], 
         "impactOfPoorDQ": "Demotivated employees due to perceived unfairness. Ineffective training investments. Poor succession planning. Legal risks in promotion/termination decisions."
       },
       {
@@ -203,7 +203,7 @@
           "Delays in processing payroll or benefits enrollments.",
           "Difficulties managing leave balances accurately."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 17, 20, 26, 57], 
+        "criticalDimensionIds": [3, 12, 14, 17, 20, 26, 57], 
         "impactOfPoorDQ": "Employee dissatisfaction and trust erosion. Financial penalties for incorrect tax withholding or payments. Overpayments or underpayments. Legal compliance issues."
       },
       {
@@ -215,7 +215,7 @@
           "Difficulty tracking diversity and inclusion metrics accurately.",
           "Poor communication due to outdated employee contact information."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 19, 20, 26, 36, 48, 51], 
+        "criticalDimensionIds": [3, 12, 14, 19, 20, 26, 36, 48, 51], 
         "impactOfPoorDQ": "Inability to proactively address employee concerns. Increased attrition. Potential for workplace disputes. Ineffective D&I initiatives."
       },
       {
@@ -227,7 +227,7 @@
           "Incomplete exit interview data capture or analysis.",
           "Failure to comply with legal requirements for termination documentation."
         ],
-        "criticalDimensionDamaIds": [1, 3, 12, 14, 17, 19, 20, 26, 52, 53, 57], 
+        "criticalDimensionIds": [1, 3, 12, 14, 17, 19, 20, 26, 52, 53, 57], 
         "impactOfPoorDQ": "Security vulnerabilities. Financial errors in final settlements. Lost opportunity to gather valuable feedback. Legal and compliance risks."
       }
     ]
@@ -244,7 +244,7 @@
           "Incorrect coding of transactions (e.g., wrong account, department, cost center).",
           "Delays in recording transactions, leading to outdated financial views."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 24, 26, 53, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 24, 26, 53, 57], 
         "impactOfPoorDQ": "Inaccurate general ledger balances. Difficulty in reconciling sub-ledgers. Misstated financial positions. Increased effort for corrections during period-end close."
       },
       {
@@ -256,7 +256,7 @@
           "Errors in consolidation adjustments or currency conversions.",
           "Lack of visibility into the status of close tasks."
         ],
-        "criticalDimensionDamaIds": [3, 8, 10, 12, 14, 20, 22, 26, 47, 50, 57], 
+        "criticalDimensionIds": [3, 8, 10, 12, 14, 20, 22, 26, 47, 50, 57], 
         "impactOfPoorDQ": "Delayed financial reporting. Inaccurate consolidated financial statements. Increased audit scrutiny and risk of material misstatements. High stress levels for finance teams."
       },
       {
@@ -268,7 +268,7 @@
           "Slow generation of management reports, hindering timely analysis.",
           "Lack of confidence in financial numbers by stakeholders."
         ],
-        "criticalDimensionDamaIds": [3, 7, 8, 10, 12, 14, 16, 20, 31, 48, 50, 53, 54], 
+        "criticalDimensionIds": [3, 7, 8, 10, 12, 14, 16, 20, 31, 48, 50, 53, 54], 
         "impactOfPoorDQ": "Poor strategic decisions based on flawed financial insights. Misleading performance assessments. Regulatory compliance issues with external reporting. Reduced investor confidence."
       },
       {
@@ -280,7 +280,7 @@
           "Lack of agility in re-forecasting based on changing market conditions.",
           "Poor alignment between strategic plans and financial forecasts."
         ],
-        "criticalDimensionDamaIds": [3, 8, 10, 12, 14, 20, 26, 44, 48, 50], 
+        "criticalDimensionIds": [3, 8, 10, 12, 14, 20, 26, 44, 48, 50], 
         "impactOfPoorDQ": "Unrealistic budgets leading to poor resource allocation. Inaccurate forecasts resulting in missed targets or financial surprises. Inability to effectively plan for the future."
       },
       {
@@ -292,7 +292,7 @@
           "Audit findings related to data inaccuracies or control weaknesses.",
           "Risk of non-compliance with accounting standards (IFRS, GAAP) or tax regulations."
         ],
-        "criticalDimensionDamaIds": [1, 3, 12, 14, 16, 17, 19, 20, 34, 45, 50, 52, 54, 57], 
+        "criticalDimensionIds": [1, 3, 12, 14, 16, 17, 19, 20, 34, 45, 50, 52, 54, 57], 
         "impactOfPoorDQ": "Increased audit fees and longer audit cycles. Qualified audit opinions or material weakness findings. Reputational damage. Potential legal and financial penalties for non-compliance."
       }
     ]
@@ -309,7 +309,7 @@
           "Poor collaboration and knowledge sharing for new ideas across teams.",
           "Subjective idea screening not based on data-driven criteria."
         ],
-        "criticalDimensionDamaIds": [2, 3, 5, 12, 14, 26, 36, 48, 51, 59], 
+        "criticalDimensionIds": [2, 3, 5, 12, 14, 26, 36, 48, 51, 59], 
         "impactOfPoorDQ": "Missed market opportunities. Development of products that don't meet customer needs. Wasted R&D resources on unvaiable ideas. Slow innovation pipeline."
       },
       
@@ -322,7 +322,7 @@
           "Lack of accurate cost estimation data for materials and labor.",
           "Inefficient collaboration between design and engineering teams due to inconsistent data."
         ],
-        "criticalDimensionDamaIds": [3, 4, 12, 14, 20, 26, 30, 48, 57], 
+        "criticalDimensionIds": [3, 4, 12, 14, 20, 26, 30, 48, 57], 
         "impactOfPoorDQ": "Product defects and quality issues. Increased development costs and time overruns. Manufacturing problems due to design flaws. Delayed time-to-market."
       },
       {
@@ -334,7 +334,7 @@
           "Inability to accurately track initial sales and customer feedback.",
           "Stockouts or overstocking due to flawed demand forecasting for the new product."
         ],
-        "criticalDimensionDamaIds": [3, 5, 12, 14, 20, 26, 43, 48, 53], 
+        "criticalDimensionIds": [3, 5, 12, 14, 20, 26, 43, 48, 53], 
         "impactOfPoorDQ": "Failed product launch. Wasted marketing spend. Customer dissatisfaction. Missed revenue targets."
       }
     ]
@@ -351,7 +351,7 @@
           "Duplicate leads wasting sales effort.",
           "Incomplete lead information hindering qualification."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 48, 55, 56, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 48, 55, 56, 57], 
         "impactOfPoorDQ": "Wasted marketing budget. Low lead quality. Sales team frustration. Missed growth opportunities."
       },
       
@@ -364,7 +364,7 @@
           "Inability to track issue status effectively.",
           "High volume of repeat issues due to lack of root cause analysis from support data."
         ],
-        "criticalDimensionDamaIds": [2, 3, 5, 12, 14, 20, 26, 48, 53, 54], 
+        "criticalDimensionIds": [2, 3, 5, 12, 14, 20, 26, 48, 53, 54], 
         "impactOfPoorDQ": "Low customer satisfaction. Increased customer churn. High support costs. Inefficient use of support resources."
       }
     ]
@@ -381,7 +381,7 @@
           "Poor resource scheduling (labor, materials, equipment) due to unreliable data.",
           "Lack of visibility into future constraints or bottlenecks."
         ],
-        "criticalDimensionDamaIds": [3, 10, 12, 14, 20, 26, 44, 48, 50, 53, 59], 
+        "criticalDimensionIds": [3, 10, 12, 14, 20, 26, 44, 48, 50, 53, 59], 
         "impactOfPoorDQ": "Lost sales due to stockouts. Increased inventory holding costs. Underutilized or overstrained resources. Inefficient production schedules. Higher operational costs."
       },
       {
@@ -393,7 +393,7 @@
           "Inefficient workflows and bottlenecks.",
           "Lack of real-time visibility into production/service status."
         ],
-        "criticalDimensionDamaIds": [3, 5, 12, 14, 20, 24, 26, 30, 32, 53, 57], 
+        "criticalDimensionIds": [3, 5, 12, 14, 20, 24, 26, 30, 32, 53, 57], 
         "impactOfPoorDQ": "Increased scrap and rework costs. Lower product/service quality. Reduced throughput and productivity. Customer dissatisfaction. Safety incidents."
       },
       {
@@ -405,7 +405,7 @@
           "Difficulty in tracking material movements or work-in-progress (WIP).",
           "Manual and error-prone stock-taking processes."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 30, 53, 55, 56, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 30, 53, 55, 56, 57], 
         "impactOfPoorDQ": "Production stoppages due to material unavailability. High inventory holding costs. Wasted warehouse space. Inefficient order fulfillment."
       },
       {
@@ -417,7 +417,7 @@
           "Delayed identification of non-conforming products/services.",
           "Lack of reliable data for continuous quality improvement initiatives."
         ],
-        "criticalDimensionDamaIds": [3, 10, 12, 14, 20, 26, 36, 41, 42, 48, 50, 53, 54, 57], 
+        "criticalDimensionIds": [3, 10, 12, 14, 20, 26, 36, 41, 42, 48, 50, 53, 54, 57], 
         "impactOfPoorDQ": "Increased cost of poor quality (scrap, rework, warranty claims). Customer complaints and returns. Damage to brand reputation. Regulatory compliance issues for quality standards."
       },
       {
@@ -429,7 +429,7 @@
           "Lack of accurate data on asset performance, condition, or maintenance history.",
           "High maintenance costs or suboptimal asset utilization."
         ],
-        "criticalDimensionDamaIds": [3, 10, 12, 14, 20, 26, 30, 48, 50, 53, 54, 57], 
+        "criticalDimensionIds": [3, 10, 12, 14, 20, 26, 30, 48, 50, 53, 54, 57], 
         "impactOfPoorDQ": "Increased operational downtime and lost production. Higher repair costs. Reduced asset lifespan. Safety risks from poorly maintained equipment."
       },
       {
@@ -441,7 +441,7 @@
           "Lack of real-time visibility into shipment status.",
           "Damage to goods during transit due to poor handling or packaging information."
         ],
-        "criticalDimensionDamaIds": [3, 12, 14, 20, 26, 30, 32, 48, 53, 57], 
+        "criticalDimensionIds": [3, 12, 14, 20, 26, 30, 32, 48, 53, 57], 
         "impactOfPoorDQ": "Increased logistics costs. Customer dissatisfaction from delivery issues. Lost or damaged goods. Inefficient fleet utilization."
       },
       {
@@ -453,7 +453,7 @@
           "Lack of timely insights to make corrective actions.",
           "Inconsistent operational KPIs across different plants or shifts."
         ],
-        "criticalDimensionDamaIds": [3, 5, 7, 10, 12, 14, 16, 20, 26, 31, 32, 44, 48, 50, 53], 
+        "criticalDimensionIds": [3, 5, 7, 10, 12, 14, 16, 20, 26, 31, 32, 44, 48, 50, 53], 
         "impactOfPoorDQ": "Poor operational decision-making. Inability to effectively track performance against targets. Missed opportunities for efficiency gains. Subjective assessments of operational health."
       }
     ]

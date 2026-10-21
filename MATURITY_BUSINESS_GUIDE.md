@@ -59,9 +59,9 @@ The tool evaluates your workspace and generates a **Governance Charter**. This d
 Engineers use the generated Charter to present the findings to the CDO. The Charter will typically indicate that manually closing these gaps requires **6-12 weeks of consultant time**.
 
 ### Step 4: Close the Gaps
-Instead of hiring expensive consultants, your organisation can engage a **Metric Provenance certified implementation partner** — see [metricprovenance.com/brief](https://metricprovenance.com/brief) to request a partner introduction. Partners deliver pre-configured certified packs that close the identified gaps far faster than manual remediation.
+Instead of hiring expensive consultants, your organisation can engage a **Metric Provenance certified implementation partner** — see [metricprovenance.com/executive-brief](https://metricprovenance.com/executive-brief) to request a partner introduction. Partners deliver pre-configured certified packs that close the identified gaps far faster than manual remediation.
 
-> The [European Data Governance Maturity Benchmark 2026](https://benchmark.metricprovenance.com) scored 99 enterprises across the EU. Average governance maturity: **37.6%** — a 62.4% enforcement gap. Your organisation is not alone, but the gap is closing faster for those who automate.
+> The [European Data Governance Maturity Benchmark 2026](https://metricprovenance.com/executive-brief) scored 99 enterprises across the EU. Average governance maturity: **37.6%** — a 62.4% enforcement gap. Your organisation is not alone, but the gap is closing faster for those who automate.
 
 ### Step 5: Verify and Certify
 Re-run the maturity assessment after deploying the automation skills. The score will reflect the improvements (e.g., jumping from 32% to 65%+). You can then generate **S-Cert Certificates** to cryptographically prove your compliance to auditors and partners.

@@ -1,420 +1,420 @@
 [
   {
     "id": 1,
-    "damaId": 6,
+    "dimensionIndex": 6,
     "name": "Ability to represent null values",
     "category": "Format",
     "definition": "The degree to which a format allows null values in an attribute."
   },
   {
     "id": 2,
-    "damaId": 1,
+    "dimensionIndex": 1,
     "name": "Access security",
     "category": "Datasets",
     "definition": "The degree to which access to datasets is restricted."
   },
   {
     "id": 3,
-    "damaId": 2,
+    "dimensionIndex": 2,
     "name": "Accessibility",
     "category": "Data",
     "definition": "The ease with which data can be consulted or retrieved."
   },
   {
     "id": 4,
-    "damaId": 3,
+    "dimensionIndex": 3,
     "name": "Accuracy",
     "category": "Data values",
     "definition": "The degree of closeness of data values to real values."
   },
   {
     "id": 5,
-    "damaId": 4,
+    "dimensionIndex": 4,
     "name": "Appropriateness",
     "category": "Format",
     "definition": "The degree to which the format is suitable for use."
   },
   {
     "id": 6,
-    "damaId": 5,
+    "dimensionIndex": 5,
     "name": "Availability",
     "category": "Data",
     "definition": "The degree to which data can be consulted or retrieved by data consumers or a process."
   },
   {
     "id": 7,
-    "damaId": 7,
+    "dimensionIndex": 7,
     "name": "Clarity",
     "category": "Metadata",
     "definition": "The ease with which data consumers can understand the metadata."
   },
   {
     "id": 8,
-    "damaId": 8,
+    "dimensionIndex": 8,
     "name": "Coherence",
     "category": "Composition of datasets",
     "definition": "The degree to which datasets can be combined."
   },
   {
     "id": 9,
-    "damaId": 9,
+    "dimensionIndex": 9,
     "name": "Comparability of populations",
     "category": "Data values",
     "definition": "The degree to which data values representing two populations have the same definition and are measured in the same way."
   },
   {
     "id": 10,
-    "damaId": 10,
+    "dimensionIndex": 10,
     "name": "Comparability over time",
     "category": "Data values",
     "definition": "The degree to which data values over time have the same definition and are measured in the same way."
   },
   {
     "id": 11,
-    "damaId": 11,
+    "dimensionIndex": 11,
     "name": "Completeness (Attributes)",
     "category": "Attributes",
     "definition": "The degree to which all required attributes in the dataset are present."
   },
   {
     "id": 12,
-    "damaId": 12,
+    "dimensionIndex": 12,
     "name": "Completeness (Records)",
     "category": "Records",
     "definition": "The degree to which all required records in the dataset are present."
   },
   {
     "id": 13,
-    "damaId": 13,
+    "dimensionIndex": 13,
     "name": "Completeness (Data files)",
     "category": "Data files",
     "definition": "The degree to which all required data files are present."
   },
   {
     "id": 14,
-    "damaId": 14,
+    "dimensionIndex": 14,
     "name": "Completeness (Data values)",
     "category": "Data values",
     "definition": "The degree to which all required data values are present."
   },
   {
     "id": 15,
-    "damaId": 15,
+    "dimensionIndex": 15,
     "name": "Completeness (Data values of an attribute)",
     "category": "Data values of an attribute",
     "definition": "The degree to which all required data values of an attribute are present."
   },
   {
     "id": 16,
-    "damaId": 16,
+    "dimensionIndex": 16,
     "name": "Completeness (Metadata)",
     "category": "Metadata",
     "definition": "The degree to which the metadata are fully described."
   },
   {
     "id": 17,
-    "damaId": 17,
+    "dimensionIndex": 17,
     "name": "Compliance with laws, regulations, or standards (Data)",
     "category": "Data",
     "definition": "The degree to which data is in accordance with laws, regulations, or standards."
   },
   {
     "id": 18,
-    "damaId": 18,
+    "dimensionIndex": 18,
     "name": "Compliance with laws, regulations, or standards (Composition of datasets)",
     "category": "Composition of datasets",
     "definition": "The degree to which the composition of datasets is in accordance with laws, regulations, or standards."
   },
   {
     "id": 19,
-    "damaId": 19,
+    "dimensionIndex": 19,
     "name": "Confidentiality",
     "category": "Data",
     "definition": "The degree to which disclosure of data should be restricted to authorized data consumers."
   },
   {
     "id": 20,
-    "damaId": 20,
+    "dimensionIndex": 20,
     "name": "Consistency (Data values)",
     "category": "Data values",
     "definition": "The degree to which data values of two sets of attributes comply with a rule."
   },
   {
     "id": 21,
-    "damaId": 21,
+    "dimensionIndex": 21,
     "name": "Consistency (Temporal)",
     "category": "Data values of a set of attributes of a dataset at different points in time (temporal consistency)",
     "definition": "The degree to which the data values of a set of attributes of a dataset at different points in time comply with a rule."
   },
   {
     "id": 22,
-    "damaId": 22,
+    "dimensionIndex": 22,
     "name": "Consistency (Across Datasets)",
     "category": "Data values of two sets of attributes between datasets (across datasets)",
     "definition": "The degree to which data values of two sets of attributes between datasets comply with a rule."
   },
   {
     "id": 23,
-    "damaId": 23,
+    "dimensionIndex": 23,
     "name": "Consistency (Cross-Record)",
     "category": "Data values of two sets of attributes between records (cross record)",
     "definition": "The degree to which data values of two sets of attributes between records comply with a rule."
   },
   {
     "id": 24,
-    "damaId": 24,
+    "dimensionIndex": 24,
     "name": "Consistency (Record-Level)",
     "category": "Data values of two sets of attributes within a record (record level)",
     "definition": "The degree to which data values of two sets of attributes within a record comply with a rule."
   },
   {
     "id": 25,
-    "damaId": 25,
+    "dimensionIndex": 25,
     "name": "Credibility",
     "category": "Data values",
     "definition": "The degree to which data values are regarded as true and believable by data consumers."
   },
   {
     "id": 26,
-    "damaId": 26,
+    "dimensionIndex": 26,
     "name": "Currency",
     "category": "Data values",
     "definition": "The degree to which data values are up to date."
   },
   {
     "id": 27,
-    "damaId": 27,
+    "dimensionIndex": 27,
     "name": "Equivalence",
     "category": "Attributes",
     "definition": "The degree to which attributes stored in multiple datasets are conceptually equal."
   },
   {
     "id": 28,
-    "damaId": 28,
+    "dimensionIndex": 28,
     "name": "Granularity (Attributes)",
     "category": "Attributes",
     "definition": "The degree to which a single characteristic is subdivided in attributes."
   },
   {
     "id": 29,
-    "damaId": 29,
+    "dimensionIndex": 29,
     "name": "Granularity (Records)",
     "category": "Records",
     "definition": "The degree to which objects are aggregated to records."
   },
   {
     "id": 30,
-    "damaId": 30,
+    "dimensionIndex": 30,
     "name": "Integrity",
     "category": "Data values",
     "definition": "The degree of absence of data value loss or corruption."
   },
   {
     "id": 31,
-    "damaId": 31,
+    "dimensionIndex": 31,
     "name": "Interpretability",
     "category": "Data",
     "definition": "The degree to which data are in an appropriate language and units of measure."
   },
   {
     "id": 32,
-    "damaId": 32,
+    "dimensionIndex": 32,
     "name": "Latency",
     "category": "Data",
     "definition": "The period of time between the point when the data is created and the point when it is available for use."
   },
   {
     "id": 33,
-    "damaId": 33,
+    "dimensionIndex": 33,
     "name": "Linkability",
     "category": "Data files",
     "definition": "The degree to which records of one data file can be correctly coupled with records of another data file."
   },
   {
     "id": 34,
-    "damaId": 34,
+    "dimensionIndex": 34,
     "name": "Metadata compliance",
     "category": "Data values",
     "definition": "The degree to which the data values are in accordance with their definition, format specification and value domain."
   },
   {
     "id": 35,
-    "damaId": 35,
+    "dimensionIndex": 35,
     "name": "Naturalness",
     "category": "Composition of datasets",
     "definition": "The degree to which the composition of datasets is aligned with the real-world objects that they represent."
   },
   {
     "id": 36,
-    "damaId": 36,
+    "dimensionIndex": 36,
     "name": "Objectivity",
     "category": "Data values",
     "definition": "The degree to which the data values are created in an unbiased manner."
   },
   {
     "id": 37,
-    "damaId": 37,
+    "dimensionIndex": 37,
     "name": "Obtainability",
     "category": "Data",
     "definition": "The degree to which the data can be acquired."
   },
   {
     "id": 38,
-    "damaId": 38,
+    "dimensionIndex": 38,
     "name": "Plausibility",
     "category": "Data values",
     "definition": "The degree to which data values match knowledge of the real world."
   },
   {
     "id": 39,
-    "damaId": 39,
+    "dimensionIndex": 39,
     "name": "Portability (Data)",
     "category": "Data",
     "definition": "The degree to which data can be installed, replaced or moved from one system to another while preserving the existing quality."
   },
   {
     "id": 40,
-    "damaId": 40,
+    "dimensionIndex": 40,
     "name": "Portability (Format)",
     "category": "Format",
     "definition": "The degree to which a format can be applied in a wide range of situations."
   },
   {
     "id": 41,
-    "damaId": 41,
+    "dimensionIndex": 41,
     "name": "Precision (1 - Recording Accuracy)",
     "category": "Data values",
     "definition": "The degree of accuracy with which data values are recorded or classified."
   },
   {
     "id": 42,
-    "damaId": 42,
+    "dimensionIndex": 42,
     "name": "Precision (2 - Statistical Spread)",
     "category": "Data values",
     "definition": "The degree to which the error in data values spreads around zero (in statistics)."
   },
   {
     "id": 43,
-    "damaId": 43,
+    "dimensionIndex": 43,
     "name": "Punctuality",
     "category": "Dataset availability",
     "definition": "The degree to which the period between the actual and target point of time of availability of a dataset is appropriate."
   },
   {
     "id": 44,
-    "damaId": 44,
+    "dimensionIndex": 44,
     "name": "Reasonability",
     "category": "Data pattern",
     "definition": "The degree to which a data pattern meets expectations."
   },
   {
     "id": 45,
-    "damaId": 45,
+    "dimensionIndex": 45,
     "name": "Recoverability",
     "category": "Datasets",
     "definition": "The degree to which datasets are preserved in the event of incident."
   },
   {
     "id": 46,
-    "damaId": 46,
+    "dimensionIndex": 46,
     "name": "Redundancy",
     "category": "Data",
     "definition": "The degree to which logically identical data are stored more than once."
   },
   {
     "id": 47,
-    "damaId": 47,
+    "dimensionIndex": 47,
     "name": "Referential integrity",
     "category": "Data files",
     "definition": "The degree to which data values of the primary key of one data file and data values of the foreign key of another data file are equal."
   },
   {
     "id": 48,
-    "damaId": 48,
+    "dimensionIndex": 48,
     "name": "Relevance",
     "category": "Composition of datasets",
     "definition": "The degree to which the composition of datasets meets the needs of the data consumer."
   },
   {
     "id": 49,
-    "damaId": 49,
+    "dimensionIndex": 49,
     "name": "Reliability",
     "category": "Initial data value",
     "definition": "The closeness of the initial data value to the subsequent data value."
   },
   {
     "id": 50,
-    "damaId": 50,
+    "dimensionIndex": 50,
     "name": "Reproducibility",
     "category": "Dataset",
     "definition": "The degree to which a dataset can be recreated with the same data values."
   },
   {
     "id": 51,
-    "damaId": 51,
+    "dimensionIndex": 51,
     "name": "Reputation",
     "category": "Data",
     "definition": "The degree to which data are trusted or highly regarded in terms of their source or content."
   },
   {
     "id": 52,
-    "damaId": 52,
+    "dimensionIndex": 52,
     "name": "Retention period",
     "category": "Datasets",
     "definition": "The period that datasets are available until they can or must be deleted."
   },
   {
     "id": 53,
-    "damaId": 53,
+    "dimensionIndex": 53,
     "name": "Timeliness",
     "category": "Dataset availability",
     "definition": "The degree to which the period between the time of creation of the real value and the time that the dataset is available is appropriate."
   },
   {
     "id": 54,
-    "damaId": 54,
+    "dimensionIndex": 54,
     "name": "Traceability",
     "category": "Data",
     "definition": "The degree to which data lineage is available."
   },
   {
     "id": 55,
-    "damaId": 55,
+    "dimensionIndex": 55,
     "name": "Uniqueness (Objects)",
     "category": "Objects",
     "definition": "The degree to which objects (of the real world) occur only once as a record in a data file."
   },
   {
     "id": 56,
-    "damaId": 56,
+    "dimensionIndex": 56,
     "name": "Uniqueness (Records)",
     "category": "Records",
     "definition": "The degree to which records occur only once in a data file."
   },
   {
     "id": 57,
-    "damaId": 57,
+    "dimensionIndex": 57,
     "name": "Validity",
     "category": "Data values",
     "definition": "The degree to which data values comply with rules."
   },
   {
     "id": 58,
-    "damaId": 58,
+    "dimensionIndex": 58,
     "name": "Value",
     "category": "Data",
     "definition": "The degree to which data provide advantages from their use."
   },
   {
     "id": 59,
-    "damaId": 59,
+    "dimensionIndex": 59,
     "name": "Variety",
     "category": "Data",
     "definition": "The degree to which data are available from different data sources."
   },
   {
     "id": 60,
-    "damaId": 60,
+    "dimensionIndex": 60,
     "name": "Volatility",
     "category": "Data values",
     "definition": "The degree to which data values change over time."

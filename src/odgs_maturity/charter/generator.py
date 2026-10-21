@@ -8,7 +8,7 @@ data and produces structured improvement charters.
 The generator:
   1. Takes a MaturityResult from the scoring engine
   2. Identifies the worst-performing DQ dimensions
-  3. Maps gaps to DAMA business lifecycles and strategic objectives
+  3. Maps gaps to enterprise business lifecycles and strategic objectives
   4. Populates charter templates with contextual content
   5. Produces a Charter object ready for export
 
@@ -26,7 +26,7 @@ from ..data.loader import (
     load_business_impacts,
     load_business_lifecycles,
     load_strategic_alignment,
-    get_dimension_by_dama_id,
+    get_dimension_by_index,
     get_impacts_for_dimension,
 )
 from .models import (
@@ -45,7 +45,7 @@ logger = logging.getLogger(__name__)
 
 # ── Gap-to-Dimension Mapping ─────────────────────────────────────────
 #
-# Maps rule IDs from the scoring engine to the DAMA dimension IDs
+# Maps rule IDs from the scoring engine to the ISO/IEC 25012 dimension indices
 # they most directly relate to. This allows the charter generator
 # to recommend specific DQ dimensions for improvement.
 
@@ -111,7 +111,7 @@ RULE_SPOT_MAP: dict[str, SPOTCategory] = {
 
 def _extract_gap_dimensions(result: "MaturityResult") -> list[int]:
     """
-    Extract the DAMA dimension IDs most affected by maturity gaps.
+    Extract the ISO/IEC 25012 dimension indices most affected by maturity gaps.
 
     Returns a deduplicated, priority-ordered list of dimension IDs.
     """
@@ -119,10 +119,10 @@ def _extract_gap_dimensions(result: "MaturityResult") -> list[int]:
 
     for pillar_result in result.pillars.values():
         for rule in pillar_result.gaps:
-            dama_ids = RULE_DIMENSION_MAP.get(rule.rule_id, [])
+            dim_indices = RULE_DIMENSION_MAP.get(rule.rule_id, [])
             gap_severity = 1.0 - rule.score  # Higher = worse
-            for dama_id in dama_ids:
-                dim_scores[dama_id] = dim_scores.get(dama_id, 0.0) + gap_severity
+            for dim_index in dim_indices:
+                dim_scores[dim_index] = dim_scores.get(dim_index, 0.0) + gap_severity
 
     # Sort by cumulative severity (worst first)
     sorted_dims = sorted(dim_scores.keys(), key=lambda d: dim_scores[d], reverse=True)
@@ -165,8 +165,8 @@ def _find_best_strategic_objective(
     best_overlap = 0
 
     for obj in objectives:
-        critical = set(obj.get("criticalDimensionDamaIds", []))
-        supporting = set(obj.get("supportingDimensionDamaIds", []))
+        critical = set(obj.get("criticalDimensionIds", []))
+        supporting = set(obj.get("supportingDimensionIds", []))
         overlap = len(critical.intersection(dimension_ids)) * 2 + \
                   len(supporting.intersection(dimension_ids))
         if overlap > best_overlap:
@@ -193,12 +193,12 @@ def _build_dimension_summary(
     positives = []
     negatives = []
 
-    for dama_id in dimension_ids[:max_dims]:
-        dim = get_dimension_by_dama_id(dama_id)
+    for dim_index in dimension_ids[:max_dims]:
+        dim = get_dimension_by_index(dim_index)
         if dim:
             dim_names.append(dim["name"])
 
-        impact = get_impacts_for_dimension(dama_id)
+        impact = get_impacts_for_dimension(dim_index)
         if impact:
             pos = impact.get("positiveImpactsGoodDQ", [])
             neg = impact.get("negativeImpactsPoorDQ", [])
@@ -422,7 +422,7 @@ def generate_charter(
         context=ctx,
         metadata={
             "generator_version": "1.0.0",
-            "template_source": "DAMA DMBOK / Clavis Framework",
+            "template_source": "ISO/IEC 38505-1 & ISO/IEC 25012 / SPOT Framework",
             "dimensions_affected": len(dim_ids),
             "spot_summary": {k: len(v) for k, v in ctx.spot_classifications.items()},
             "maturity_score": ctx.maturity_score,

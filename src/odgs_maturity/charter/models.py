@@ -3,7 +3,7 @@ Charter data models.
 
 Defines the structures for improvement charters generated
 from maturity assessment results. Three charter types map
-directly to the DAMA DMBOK framework:
+directly to the ISO/IEC 38505-1 & ISO/IEC 25012 framework:
 
   1. LifecyclePainPoint — Process-stage improvement charter
   2. KPIImprovement — KPI reliability charter

@@ -34,7 +34,7 @@ from odgs_maturity.data.loader import (
     load_strategic_alignment,
     load_environmental_factors,
     load_lifecycle_impacts,
-    get_dimension_by_dama_id,
+    get_dimension_by_index,
     get_impacts_for_dimension,
     get_lifecycle_by_id,
 )
@@ -163,7 +163,7 @@ class TestDataLoading:
         dims = load_dq_dimensions()
         assert len(dims) == 60
         # Verify structure
-        assert "damaId" in dims[0]
+        assert "dimensionIndex" in dims[0]
         assert "name" in dims[0]
         assert "category" in dims[0]
 
@@ -189,12 +189,12 @@ class TestDataLoading:
         assert len(impacts) > 0
 
     def test_dimension_lookup(self):
-        dim = get_dimension_by_dama_id(3)
+        dim = get_dimension_by_index(3)
         assert dim is not None
         assert "name" in dim
 
     def test_dimension_lookup_missing(self):
-        dim = get_dimension_by_dama_id(99999)
+        dim = get_dimension_by_index(99999)
         assert dim is None
 
     def test_lifecycle_lookup(self):
